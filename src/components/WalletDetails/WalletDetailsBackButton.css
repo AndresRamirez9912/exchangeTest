@@ -1,0 +1,9 @@
+.wallet-details-back-button__item {
+  width: 100%;
+  justify-content: center;
+  color: var(--link__color);
+}
+
+.wallet-details-back-button--arrowPrevious {
+  margin-right: 0.75rem;
+}

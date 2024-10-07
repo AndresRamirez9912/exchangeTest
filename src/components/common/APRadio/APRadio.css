@@ -1,0 +1,80 @@
+.ap-radio {
+  color: var(--radio__color);
+  display: block;
+  position: relative;
+}
+
+.ap-radio__input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.ap-radio__label {
+  position: relative;
+  padding: 1.5rem 1.5rem 0.1rem 3rem;
+  cursor: pointer;
+  text-align: left;
+  transition: none;
+}
+
+.ap-radio__label:hover {
+  color: var(--radio__color);
+}
+
+.ap-radio__check {
+  display: block;
+  position: absolute;
+  border: 2px solid var(--border__color--hover);
+  border-radius: 100%;
+  height: 1.6rem;
+  width: 1.6rem;
+  top: 1.3rem;
+  left: 1rem;
+  transform: translate(-50%, -50%);
+  transition: all 0.25s ease;
+}
+
+.ap-radio__label:hover .ap-radio__check {
+  border: 2px solid var(--radio__color);
+  background: var(--checkbox__bg-color--hover);
+}
+
+.ap-radio__checked {
+  opacity: 0;
+  display: inline-block;
+  border-radius: 50%;
+
+  width: 0.7rem;
+  height: 0.7rem;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: translate(-50%, -50%);
+
+  transition: all 0.25s ease;
+  background: var(--radio__color);
+}
+
+.ap-radio input[type='radio']:checked ~ .ap-radio__check {
+  border: 2px solid var(--radio__color);
+}
+
+.ap-radio input[type='radio']:checked ~ label {
+  color: var(--font__color-primary);
+}
+
+.ap-radio input[type='radio']:checked ~ label > .ap-radio__checked {
+  opacity: 1;
+}
+
+.ap-radio__radio-error {
+  color: var(--danger__color);
+  padding-top: 0.5rem;
+  display: inline-block;
+}
+
+.ap-radio__form-text-muted {
+  display: inline-block;
+  color: var(--font__color-secondary);
+  padding-top: 0.5rem;
+}

@@ -1,0 +1,163 @@
+.user-settings-page {
+  background: var(--settings__body-bg-color);
+  max-width: calc(
+      var(--settings__body-max-width) - (var(--settings__body-padding) * 2)
+  );
+  margin: var(--settings__body-margin);
+  padding: var(--settings__body-padding);
+  height: var(--settings__body-height);
+}
+
+.user-settings-page__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: var(--settings__body-padding);
+}
+
+.user-settings-page__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: var(--settings__profile-and-security-row-width);
+  flex: 1 0 auto;
+}
+
+.profile-and-security-layout__layout-template {
+  width: 51rem;
+  height: 43rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.profile-and-security-layout__layout-template--sm {
+  height: 27rem;
+}
+
+.profile-and-security-widget__layout-template {
+  max-width: var(--settings__profile-and-security-card-max-width);
+  border-radius: var(--settings__card-border-radius-size);
+  box-shadow: var(--settings__card-box-shadow);
+  margin-bottom: var(--settings__profile-and-security-card-margin-b);
+  border-right: var(--settings__profile-and-security-card-border-right);
+  border-bottom: var(--settings__profile-and-security-card-border-bottom);
+}
+
+.profile-and-security-widget__layout-template:first-of-type {
+  margin-right: var(--settings__profile-and-security-card-margin-r);
+}
+
+.profile-and-security-widget__header {
+  border-top-left-radius: var(--settings__card-border-radius-size);
+  border-top-right-radius: var(--settings__card-border-radius-size);
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: var(--settings__card-header-accent-border);
+  background: var(--settings__card-header-bg-color);
+  font-size: var(--settings__card-header-title-font-size);
+  flex-basis: auto;
+  color: var(--settings__card-header-title-font-color);
+  letter-spacing: var(--settings__card-header-title-letter-spacing);
+}
+
+.profile-and-security-widget__header
+> .profile-and-security-widget__header {
+  border-bottom: none;
+  padding: 0;
+}
+
+.profile-and-security-widget__header-text {
+  font-size: var(--settings__card-header-title-font-size);
+}
+
+.profile-and-security-widget__body--sm {
+  height: 20rem;
+}
+
+.profile-and-security-widget__icon {
+  margin-right: 1rem;
+  cursor: pointer;
+  height: 14px;
+}
+
+.user-settings-page__page-header {
+  background: var(--settings__body-header-bg-color);
+  margin: var(--settings__body-header-margin);
+  flex: 1 1 auto;
+  width: calc(100% - (var(--settings__body-header-margin) * 2));
+  position: relative;
+}
+
+.user-settings-page__page-header:before {
+  display: var(--settings__accent-bar-display);
+  content: '';
+  background-image: var(--accent-bar__gradient);
+  min-width: 100vw;
+  height: calc(
+      100% + (var(--settings__body-header-margin) * 2) +
+      (var(--settings__body-padding) * 4)
+  );
+  position: absolute;
+  z-index: -1;
+  top: calc(((var(--settings__body-padding) * 2) + 2px) * -1);
+  bottom: 0;
+  left: calc(
+      (
+      var(--side-menu__item-width) + var(--settings__body-header-margin) +
+      var(--settings__body-padding) + 10px
+      ) * -1
+  );
+  right: 0;
+}
+
+.user-settings-page__page-header h1,
+.user-settings-page__page-header h2 {
+  margin: 0;
+}
+
+.user-settings-page__title {
+  font-size: var(--settings__body-header-title-font-size);
+  color: var(--settings__body-header-title-font-color);
+  letter-spacing: var(--settings__body-header-title-letter-spacing);
+  padding-bottom: var(--settings__body-header-title-padding-bottom);
+}
+.user-settings-page__sub-title {
+  font-size: var(--settings__body-header-sub-title-font-size);
+  color: var(--settings__body-header-sub-title-font-color);
+  letter-spacing: var(--settings__body-header-sub-title-letter-spacing);
+  line-height: var(--settings__body-header-sub-title-line-height);
+}
+
+/* MEDIA QUERIES */
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .user-settings-page__container {
+    flex-direction: column;
+  }
+  .user-settings-page__row {
+    width: 100%;
+  }
+  .profile-and-security-widget__body {
+    min-height: 38rem;
+  }
+  .profile-and-security-widget__layout-template {
+    max-width: unset;
+  }
+  .profile-and-security-widget__layout-template:first-of-type {
+    margin-right: 0;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .user-settings-page__page-header:before {
+    left: calc(
+        (
+        var(--settings__body-header-margin) + var(--settings__body-padding) +
+        10px
+        ) * -1
+    );
+  }
+}

@@ -1,0 +1,29 @@
+.loyalty-token-page {
+  padding: 3rem;
+  background: var(--settings__body-bg-color);
+  height: var(--settings__body-height);
+  width: 100%;
+}
+.loyalty-token-page__header {
+  color: var(--component__color-primary);
+  font-size: var(--advanced-settings__header-text-size);
+  margin-bottom: var(--advanced-settings__header-text-margin-bottom);
+  letter-spacing: var(--advanced-settings__header-text-letter-spacing);
+}
+
+.loyalty-token-page__description {
+  max-width: 30.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: var(--font__color-secondary);
+}
+
+/* MEDIA QUERIES */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .loyalty-token-page {
+    height: unset;
+    flex: 1;
+  }
+}

@@ -1,0 +1,42 @@
+.ap-segmented-button {
+  display: flex;
+  border-radius: 2px;
+  background: var(--button-segmented__bg-color);
+}
+
+.ap-segmented-button__label {
+  padding: 0.5rem 2rem;
+  color: var(--font__color-secondary);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.ap-segmented-button__label:hover {
+  background: var(--button-segmented__bg-color--hover);
+}
+
+.ap-segmented-button__label:active {
+  color: var(--button-segmented__color--active);
+}
+
+.ap-segmented-button__label--checked {
+  color: var(--font__color-primary);
+}
+
+.ap-segmented-button__label--checked-general,
+.ap-segmented-button__label--checked-general:hover {
+  background: var(--button-segmented__checked-general-bg-color);
+}
+
+.ap-segmented-button__label--checked-additive,
+.ap-segmented-button__label--checked-additive:hover {
+  background: var(--success__color);
+}
+
+.ap-segmented-button__label--checked-subtractive,
+.ap-segmented-button__label--checked-subtractive:hover {
+  background: var(--danger__color);
+}

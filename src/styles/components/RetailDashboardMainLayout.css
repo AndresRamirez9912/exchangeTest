@@ -1,0 +1,55 @@
+.retail-dashboard-main-layout {
+  display: flex;
+  flex-flow: column;
+  margin: -22.5rem auto 10rem;
+  width: 120rem;
+}
+
+.retail-dashboard-main-layout__row {
+  display: flex;
+  height: 60rem;
+  margin-top: 4rem;
+}
+
+.retail-dashboard-main-layout__widget {
+  width: 60%;
+  background-color: var(--component__bg-color);
+  border-radius: 1rem;
+}
+
+.retail-dashboard-main-layout__widget--lg {
+  width: 100%;
+}
+
+.retail-dashboard-main-layout__widget--sm {
+  width: 35%;
+}
+
+.retail-dashboard-main-layout__widget--sm-margin-left {
+  width: 35%;
+  margin-left: 5%;
+}
+
+.retail-dashboard-main-layout__component-header {
+  height: 7rem;
+  font-size: 2rem;
+  color: var(--component__color-primary);
+  padding: 2.8rem 0 0 2.4rem;
+  border-bottom: 2px solid var(--component__color-primary);
+}
+
+.retail-dashboard-main-layout__component-container {
+  height: 53rem;
+  overflow: auto;
+}
+
+.retail-dashboard-main-layout__placeholder {
+  background: var(--retail-dashboard-main-layout__placeholder-bg-color);
+  height: 100%;
+  width: 100%;
+}
+
+.retail-dashboard-main-layout__component-container--auto-height {
+  height: auto;
+  overflow: auto;
+}

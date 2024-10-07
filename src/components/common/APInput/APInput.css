@@ -1,0 +1,183 @@
+.form-group {
+  position: relative;
+  line-height: 1rem;
+}
+
+.ap-input__input-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ap-input__input-wrapper {
+  margin-bottom: 2rem;
+}
+
+.ap-input__input,
+.ap-select__select,
+.ap-datepicker__input,
+.react-phone-number-input__input.ap-phone-input__input {
+  font-size: var(--input__font-size);
+  height: var(--input__height);
+  padding: 0 1rem;
+  border-radius: 2px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  color: var(--input__color);
+  background: var(--input__bg-color);
+  border: 1px solid var(--input__border-color);
+}
+
+.ap-input__text-area {
+  display: block;
+  width: 100%;
+  min-height: 5rem;
+  resize: none;
+  line-height: 1.4rem;
+  padding: 0.5rem 1rem;
+}
+
+.ap-select__select{
+  -webkit-appearance: none;
+  line-height: normal;
+}
+
+.ap-select__triangles-container{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: .75rem;
+  pointer-events: none;
+  right: 0.5rem;
+}
+
+.ap-input__input:hover,
+.ap-select__select:hover,
+.ap-datepicker__input:hover,
+.react-phone-number-input__input.ap-phone-input__input:hover {
+  background: var(--input__bg-color--hover);
+  border: 1px solid var(--input__border-color--hover);
+}
+
+.ap-input__input:disabled,
+.ap-select__select:disabled,
+.ap-datepicker__input:disabled {
+  background: var(--input__bg-color--disabled);
+  border: 1px solid transparent;
+}
+
+.ap-input__input--error {
+  border: 1px solid var(--danger__color);
+  background: var(--danger__bg-color);
+  color: var(--font__color-primary);
+}
+
+.ap-input__error {
+  color: var(--danger__color);
+  padding-top: 0.5rem;
+  display: inline-block;
+}
+
+.ap-input__input:focus,
+.ap-select__select:focus,
+.ap-datepicker__input:focus,
+.react-phone-number-input__input.ap-phone-input__input:focus {
+  background: var(--input__bg-color--focus);
+  border: 1px solid var(--input__border-color--focus);
+}
+
+.ap-input__input--error:hover {
+  border: 1px solid var(--danger__color);
+  background: var(--danger__color);
+}
+
+.ap-input__input--error:focus {
+  background: var(--danger__color);
+  border: 1px solid var(--danger__border-color--focus);
+}
+
+.ap-input__with-label {
+  padding-left: 4.25rem;
+}
+
+.label-in-input {
+  position: absolute;
+  margin-top: 2px;
+  font-size: 0.9rem;
+  color: var(--font__color-secondary);
+  letter-spacing: 0.5px;
+  background: var(--input__label-bg-color);
+  border-radius: 3px 0 0 3px;
+  width: 3.5rem;
+  text-align: center;
+  height: calc(var(--input__height) - 3px);
+  line-height: calc(var(--input__height) - 3px);
+  margin-left: 2px;
+}
+
+.ap-input__input-with-right-label-container {
+  display: inline-flex;
+}
+
+.ap-input__input--with-right-label {
+  width: 17.5rem;
+  margin-right: 1px;
+  border-right: none;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border: 1px solid var(--border__color);
+}
+
+.ap-input__right-label {
+  width: 45px;
+  height: 2.4rem;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  border-left: none;
+  letter-spacing: 0.6px;
+  text-align: center;
+  border: 1px solid var(--border__color);
+}
+
+.ap--label {
+  display: inline-block;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.5px;
+  color: var(--font__color-secondary);
+  flex-shrink: 0;
+}
+
+.ap-input__template {
+  height: 3rem;
+}
+
+.ap-input__form-text-muted {
+  display: inline-block;
+  color: var(--font__color-secondary);
+  padding-top: 0.5rem;
+}
+
+.ap-input__input-with-icon {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .ap-input__input,
+  .ap-select__select,
+  .ap-datepicker__input,
+  .ap-input__right-label {
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  .ap-input__right-label {
+    line-height: 3rem;
+  }
+  .ap--label {
+    font-size: 1.4rem;
+  }
+}

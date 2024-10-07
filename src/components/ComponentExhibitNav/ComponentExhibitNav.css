@@ -1,0 +1,110 @@
+.component-menu__container--closed {
+  overflow: hidden;
+}
+
+.component-menu__item {
+  color:#686868;
+  height: auto;
+  padding: 1.5rem;
+}
+
+.component-menu__item:hover{
+  color: black;
+  background: none;
+  cursor: pointer;
+  background:rgb(231, 231, 231);
+}
+
+.component-menu__item.active,
+.component-menu__item.active:hover{
+  background:var(--side-menu__item-accent-color--selected);
+}
+
+.component-menu__list li,
+.nav-menu-vertical__list li:last-child{
+  border-bottom: none;
+}
+
+  /* MEDIA QUERIES */
+  /* Small Devices, Phones */
+  @media only screen and (min-width: 480px) {
+    .component-menu__menu-toggle {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .component-menu__container {
+      order: 1;
+      z-index: 1;
+      height: var(--nav-header__height);
+    }
+
+    .component-menu__triangles-container {
+      display: flex;
+      flex-direction: column;
+      pointer-events: none;
+    }
+
+    .component-menu__menu-toggle {
+      cursor: pointer;
+      min-height: var(--nav-header__height);
+      background: var(--settings__header-background-gradient);
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+      padding:0 2rem;
+      font-size: 19px;
+      color: var(--font__color-secondary);
+      font-weight: bold;
+      z-index: 1;
+      width: 100%;
+      border: 0;
+    }
+
+    .component-menu__menu-toggle--active::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      border-left: 0.8rem solid transparent;
+      border-right: 0.8rem solid transparent;
+      border-bottom: 0.8rem solid var(--side-pane__content-bg-color);
+      left: calc(50% - 0.8rem);
+      bottom: 0;
+    }
+  
+    .nav-menu-vertical__list {
+      flex-direction: column;
+      box-shadow: 0 3px 20px var(--border__color);
+    }
+
+    .nav-menu-vertical__item {
+      background: var(--side-pane__content-bg-color);
+      width: 100%;
+      border-right: 0;
+      font-weight: 600;
+    }
+
+    .nav-menu-vertical__item.active {
+      border: 0;
+      background: var(--side-menu__item-bg-color--selected);
+    }
+    
+    .fix-left-fluid-layout__side-bar{
+      border-right: 0;
+      border-bottom: 2px solid var(--side-menu__item-accent-color--selected);
+    }
+  }
+  
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 768px) {
+  .component-menu {
+    overflow-y: hidden;
+    height: calc(var(--side-menu__item-height) * 4);
+    width: calc(100% - 6rem);
+    background: white;
+    border-bottom-right-radius: 10px;
+  }
+}

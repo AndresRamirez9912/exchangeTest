@@ -1,0 +1,33 @@
+.ap-snackbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-index__snackbar);
+}
+
+.ap-snackbar__snack {
+  margin-bottom: 1px;
+  position: relative;
+}
+
+.ap-snackbar__snack:last-child {
+  margin-bottom: 0;
+}
+
+.ap-snackbar__snack-progress {
+  height: 1px;
+  width: 100%;
+  animation-name: slidein;
+  background: var(--snackbar__progress-bar-bg-color);
+}
+
+@keyframes slidein {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}

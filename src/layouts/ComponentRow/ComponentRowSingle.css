@@ -1,0 +1,25 @@
+.component-row-single__container {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.component-row-single__container:not(:last-of-type) {
+  margin-bottom: 4rem;
+}
+
+.component-row-single__header {
+  padding: 3rem 3rem 3.6rem;
+  font-size: 2.4rem;
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+  .component-row-single {
+    margin: 0 0.5rem;
+  }
+
+  .component-row-single__header  {
+    font-size: 1.8rem;
+    padding: 3rem 2.4rem 1.6rem;
+  }
+}

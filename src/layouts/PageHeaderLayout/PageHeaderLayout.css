@@ -1,0 +1,131 @@
+.page-header__container{
+  background: var(--nav-header__bg-gradient);
+  box-shadow: 0 4px 0 0 var(--nav-item__bg-color--selected),
+  0 2px 2rem 0 var(--component__box-shadow-color);
+  margin-bottom: 4px;
+}
+
+.page-header__content-wrapper {
+  max-width: var(--nav-header__max-width);
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  z-index: var(--z-index__navigation);
+  margin: 0 auto;
+  height: var(--nav-header__height);
+  background: var(--nav-header__bg-gradient);
+}
+
+.page-header__header-item {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 16rem;
+  padding-top: 0.8rem;
+  border-right: 1px solid var(--nav-item__separator-color);
+  border-color: var(--nav-item__separator-color);
+  color: var(--nav-item__color);
+}
+
+.page-header__header-item--hoverable {
+  cursor: pointer;
+}
+
+.page-header__header-item--hoverable:hover,
+.page-header__header-item--active {
+  background: var(--component__bg-color);
+  color: var(--font__color-primary);
+}
+
+.page-header__header-item--logo {
+  width: 19.5rem;
+  color: var(--font__color-primary);
+  flex-shrink: 0;
+  border-right: 0px;
+}
+
+.page-header__header-item--logo .ap-logo .ap-logo__img{
+  width: 100%;
+  height: 100%;
+  max-width: 14.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header__right-panel {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.page-header__icon {
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 0 0.8rem 0 0;
+  cursor: pointer;
+}
+
+.page-header__icon--logo > svg {
+  width: 10rem;
+  height: 2.4rem;
+}
+
+.page-header__header-item--last {
+  position: relative;
+  width: 6.5rem;
+  cursor: pointer;
+  border-right: 0;
+}
+
+.page-header__icon--user-settings {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  margin: 0;
+  margin-bottom: 0.3rem;
+}
+
+.page-header__header-item--last {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+/* Medium Devices, Tablets */
+@media only screen and (max-width: 1024px) {
+  .page-header__header-item{
+    border-right: 0px solid transparent;
+  }
+
+  .page-header__header-item--logo{
+    width: 16.2rem;
+  }
+
+  .page-header__header-item--logo .ap-logo .ap-logo__img{
+    max-width: 12.8rem;
+  }
+
+  .page-header__right-panel {
+    flex-grow: unset;
+  }
+}
+
+/* Small Devices, Phones */
+@media only screen and (max-width: 720px) {
+  .page-header__header-item{
+    flex: 1 1;
+  }
+
+  .page-header__right-panel {
+    order: 3;
+    flex-grow: unset;
+    position: absolute;
+    right: 0;
+    height: var(--nav-header__height);
+  }
+}

@@ -1,0 +1,96 @@
+.user-contacts-page {
+  width: 100%;
+  height: var(--settings__body-height);
+  position: relative;
+  z-index: 0;
+  background: var(--settings__body-bg-color);
+  max-width: var(--settings__body-max-width);
+  margin: var(--settings__body-margin);
+  padding: var(--settings__body-padding);
+}
+
+.user-contacts-page__block-with-text {
+  max-width: calc(var(--retail-setting__body-max-width) / 1.5);
+  color: var(--user-contacts__header-text-color);
+  background: var(--settings__body-header-bg-color);
+  margin: var(--settings__body-header-margin);
+  position: relative;
+}
+
+.user-contacts-page__block-with-text:before {
+  display: var(--settings__accent-bar-display);
+  content: '';
+  background-image: var(--accent-bar__gradient);
+  min-width: 100vw;
+  height: calc(
+    100% + (var(--settings__body-header-margin) * 2) + (var(--settings__body-padding) * 4)
+  );
+  position: absolute;
+  z-index: -1;
+  top: calc(((var(--settings__body-padding) * 2) + 2px) * -1);
+  bottom: 0;
+  left: calc(
+    (
+        var(--side-menu__item-width) + var(--settings__body-header-margin) +
+          var(--settings__body-padding) + 2px
+      ) * -1
+  );
+  right: 0;
+}
+
+.user-contacts-page__header-text {
+  font-size: var(--settings__body-header-title-font-size);
+  color: var(--settings__body-header-title-font-color);
+  letter-spacing: var(--settings__body-header-title-letter-spacing);
+  padding-bottom: var(--settings__body-header-title-padding-bottom);
+}
+
+.user-contacts-page__text {
+  font-size: var(--settings__body-header-sub-title-font-size);
+  color: var(--settings__body-header-sub-title-font-color);
+  letter-spacing: var(--settings__body-header-sub-title-letter-spacing);
+  line-height: var(--settings__body-header-sub-title-line-height);
+}
+
+.user-contacts-page__transfer {
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--settings__card-box-shadow);
+  border-radius: var(--settings__card-border-radius-size);
+  overflow: hidden;
+}
+
+.user-contacts-page__transfer-header {
+  display: flex;
+  align-items: center;
+  color: var(--settings__card-header-title-font-color);
+  background: var(--settings__card-header-bg-color);
+  font-size: var(--settings__card-header-title-font-size);
+  letter-spacing: var(--settings__card-header-title-letter-spacing);
+  line-height: normal;
+  height: var(--settings__body-header-with-border-height);
+  padding: var(--settings__card-header-padding);
+  padding-left: var(--settings__body-header-title-padding-left);
+  background: var(--component__header-bg-color);
+  border-bottom: var(--settings__card-header-accent-border);
+  border-top-left-radius: var(--settings__card-border-radius-size);
+  border-top-right-radius: var(--settings__card-border-radius-size);
+}
+
+.user-contacts-page__transfer-items {
+  background: var(--table__bg-color);
+}
+
+/* MEDIA QUERIES */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .user-contacts-page {
+    height: unset;
+    flex: 1;
+  }
+
+  .user-contacts-page__block-with-text:before {
+    left: calc((var(--settings__body-header-margin) + var(--settings__body-padding)) * -1);
+  }
+}

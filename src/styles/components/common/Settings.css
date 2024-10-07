@@ -1,0 +1,70 @@
+.settings {
+  padding: 3rem 3rem 5rem 3rem;
+}
+
+.settings__instructions h2 {
+  font-size: 1.4rem;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.settings__instructions p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-align: left;
+  color: #969db0;
+}
+
+.settings__card {
+  display: grid;
+  min-height: 20rem;
+  border: solid 1px #323744;
+  border-radius: 2px;
+  grid-gap: 0;
+  grid-template-columns: auto;
+  grid-template-rows: 6.7rem 1fr 4rem;
+}
+
+.settings__card-header {
+  margin: 0;
+  padding: 2rem 1.6rem 1.8rem 1.6rem;
+  border-bottom: solid 1px #323744;
+  font-size: 2.5rem;
+  text-align: left;
+  color: #969db0;
+}
+
+.settings__card-body {
+  margin: 0;
+  padding: 20rem 1.6rem 1.8rem 1.6rem;
+}
+.settings__card-body-primary-text {
+  font-size: 2.5rem;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.settings__card-body-secondary-text {
+  font-size: 11px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.settings__card-footer {
+  margin: 0;
+  padding: 0.4rem 1.6rem 0.4rem 1.6rem;
+}
+
+.settings__card-footer-button {
+  height: 2.4rem;
+  border-radius: 2px;
+  background-color: #1b2029;
+  border: solid 1px #141820;
+  font-size: 1.1rem;
+  line-height: 2;
+  text-align: center;
+  color: #7ea6ff;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  margin: 0 1.6rem 0 0;
+}

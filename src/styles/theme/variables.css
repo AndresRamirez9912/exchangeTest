@@ -1,0 +1,651 @@
+:root {
+    /* EXAMPLE: USING THE VARIABLES */
+    --example: rgb(var(--pc__background-tertiary));
+    /* EXAMPLE: USING THE VARIABLE WITH OPACITY */
+    --example2: rgba(var(--pc__background-tertiary), 0.9);
+  
+    /* -------------------- */
+    /* -------------------- */
+    /*  GENERAL UI,
+        PARTS,
+        & NONSPECIFIC COMPONENTS */
+    /* -------------------- */
+    /* -------------------- */
+    /* RULES: */
+    /* CAN inherit styles from selected palette */
+    /* CAN also create its own styles */
+    /* CANNOT inherit from Component-Specific selection Below This One*/
+    /* -------------------- */
+  
+    --body__content-height: 94.8vh;
+  
+    --transition__time: 0.3s;
+    --transition__settings: color var(--transition__time) ease, background var(--transition__time) ease, border var(--transition__time) ease;
+  
+    /* BACKGROUND COLORS */
+    --primary__bg-color: rgb(var(--pc__background-tertiary));
+    --secondary__bg-color: #222136;
+    --secondary__bg-color--focus: rgb(var(--pc__background-tertiary));
+    --secondary__bg-color--hover: rgb(var(--pc__background-tertiary));
+    --tertiary__bg-color: rgb(var(--pc__background-tertiary));
+    --body__gradient: linear-gradient(var(--body__gradient-start),var(--body__gradient-end));
+    --body__gradient-start: rgb(var(--pc__background-secondary));
+    --body__gradient-end: rgb(var(--pc__background-tertiary));
+    --accent-bar__gradient: linear-gradient(var(--accent-bar__gradient-start),var(--accent-bar__gradient-end));
+    --accent-bar__gradient-start: rgb(var(--pc__branding-gradient-start));
+    --accent-bar__gradient-end: rgb(var(--pc__branding-gradient-end));
+  
+    /* MISC */
+    --logo__color: rgb(var(--pc__font-primary));
+    --shadow__color: rgba(var(--th__component-box-shadow-color));
+    --control__color--disabled: rgba(var(--pc__font-primary), 0.7);
+    /* INPUT TYPERS (various *different than input component*) */
+    --checkbox__bg-color--hover: rgb(var(--pc__font-secondary));
+    --checkbox__label-color: rgba(var(--pc__font-primary), 0.7);
+    --checkbox__label-color--hover: rgba(var(--pc__font-primary), 0.75);
+    --dropdown__height--ie: 20rem;
+    --dropdown__bg-color: rgb(var(--pc__background-primary));
+    --dropdown__arrow-size: 0.4rem; 
+    --dropdown__arrow-color: var(--component__color-primary);
+    /* ALERTS and ACTIONS
+    TODO: is the title above correct? below?? */
+    --information__color: rgb(var(--pc__font-secondary));
+  
+    /* BORDER */
+    --border__color: rgb(var(--pc__background-tertiary));
+    --border__color-secondary: rgb(var(--pc__background-secondary));
+    --border__color--selected: rgb(var(--pc__font-primary));
+    --border__color--hover: rgba(var(--pc__font-primary), 0.6);
+    --border__color--active: rgb(var(--pc__font-primary));
+  
+    /* BUTTONS (various) */
+    /* inline */
+    --button-inline__color: var(--font__color-secondary);
+    --button-inline__border-color: rgb(var(--pc__background-tertiary));
+    --button-inline__bg-color: rgb(var(--pc__background-secondary));
+    --button-inline__color--hover: inherit;
+    --button-inline__subtractive-color--hover: rgb(var(--pc__accent-subtractive));
+    --button-inline__additive-color--hover: rgb(var(--pc__accent-additive));
+    --button-inline__bg-color--hover: rgb(var(--pc__background-tertiary));
+    --button-inline__bg-color--active: rgb(var(--pc__background-primary));
+    --button-inline__border-color--hover: rgba(var(--pc__accent-additive), 0.2);
+    /* segmented */
+    --button-segmented__border-color: rgba(var(--pc__background-quaternary),0.25);
+    --button-segmented__bg-color: rgb(var(--pc__background-tertiary));
+    --button-segmented__bg-color--hover: rgb(var(--pc__background-primary));
+    --button-segmented__color--active: rgb(var(--pc__font-primary));
+    --button-segmented__checked-general-bg-color: rgb(var(--pc__font-secondary));
+    /* general */
+    --general__color: var(--font__color-primary);
+    --general__bg-color: rgba(var(--pc__font-secondary), 0.75);
+    --general__bg-color--hover: rgb(var(--pc__font-secondary));
+    --general__bg-color--focus: rgba(var(--pc__font-secondary), 0.75);
+    --general__border-color--hover: rgb(var(--pc__font-secondary));
+    --general__border-color--focus: rgb(var(--pc__font-secondary));
+  
+    /* success */
+    --success__color: linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%); /* COLOR DE LOS DIVS QUE SE INTERCAMBIAN LOS COLORES AL DARLE CLICK AL QUE ESTA AL LADO DENTRO DE LA EXCHANGE*/;
+    --success__bg-color: linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%); /* COLOR DE LOS DIVS QUE SE INTERCAMBIAN LOS COLORES AL DARLE CLICK AL QUE ESTA AL LADO */
+    --success__bg-color--hover: var(--success__color);
+    --success__bg-color--focus: var(--success__bg-color);
+    --success__border-color--focus: var(--success__color);
+    /* warning */
+    --warning__color: rgb(var(--pc__accent-warning));
+    --warning__bg-color: rgba(var(--pc__accent-warning), 0.75);
+    --warning__bg-color--hover: var(--warning__color);
+    --warning__bg-color--focus: var(--warning__bg-color);
+    --warning__border-color--focus: var(--warning__color);
+    /* danger */
+    --danger__color: rgb(var(--pc__accent-subtractive));
+    --danger__bg-color: rgba(var(--pc__accent-subtractive), 0.75);
+    --danger__bg-color--hover: var(--danger__color);
+    --danger__bg-color--focus: var(--danger__bg-color);
+    --danger__border-color--focus: var(--danger__color);
+  
+    /* RADIO BUTTONS */
+    --radio__tab-color--hover: rgb(var(--pc__font-primary));
+    --radio__color: rgb(var(--pc__font-secondary));
+  
+    /* COMPONENTS; are we currently using these? YES, SOME */
+    --component__color-primary: var(--font__color-primary);
+    --component__color-secondary: var(--font__color-secondary);
+    --component__bg-color: rgb(var(--pc__background-secondary));
+    --component__border: 2px solid rgb(var(--pc__background-tertiary));
+    --component__border-color: rgb(var(--pc__background-tertiary));
+    --component__border-color--hover: rgb(var(--pc__background-secondary));
+    --component__header-height: 3.6rem;
+    --component__sub-header-height: 3rem;
+    --component__sub-header-font-size: 1.1rem;
+    --component__sub-header-border-color: var(--table__row-separator-color);
+    --component__header-bg-color: rgb(var(--pc__background-primary));
+    --component__header-separator-color: #009ee1;
+    --component__box-shadow-color: var(--shadow__color);
+    --component__box-shadow: 0 0.5rem 2rem var(--component__box-shadow-color);
+    --component__border-radius: 0.4rem;
+    --component__border-color--glow: #009ee1;
+  
+    /* EXCHANGE COLORS */
+    --exchange-colors__buy: #009ee1;
+    --exchange-colors__sell: rgb(var(--pc__accent-subtractive));
+    --exchange-colors__execute: rgb(var(--pc__accent-additive)); /* Unused for now */
+    --exchange-colors__cancel: rgb(var(--pc__accent-subtractive)); /* Unused for now */
+    --exchange-colors__even: var(--font__color-secondary); /* Unused for now */
+  
+    /* FONT */
+    --font__typeface: 'Inter UI', 'SF Pro Display', 'Segoe UI', sans-serif;
+    --font__typeface-code: monospace, monospace;
+    --font__color-primary: rgb(var(--pc__font-primary));
+    --font__color-secondary: rgb(var(--pc__font-secondary));
+    --font__placeholder-color: rgba(var(--pc__font-primary), 0.5);
+    --font__bg-color--selected: rgb(var(--pc__background-tertiary));
+  
+    /* INPUT */
+    --input__height: 2.8rem;
+    --input__font-size: 1.1rem;
+    --input__color: var(--font__color-primary);
+    --input__bg-color: rgb(var(--pc__background-primary));
+    --input__bg-color--hover: rgb(var(--pc__background-primary));
+    --input__bg-color--focus: rgba(var(--pc__accent-additive), 0.2);
+    --input__border-color: rgba(var(--pc__font-secondary), 0.25);
+    --input__border-color--focus: rgb(var(--pc__accent-additive));
+    --input__border-color--hover: rgb(var(--pc__accent-additive));
+    --input__color--disabled: rgba(var(--pc__font-primary), 0.25);
+    --input__bg-color--disabled: rgba(var(--pc__font-secondary), 0.25);
+    --input__label-bg-color: rgb(var(--pc__background-secondary));
+    --input__checkbox-icon-color: rgb(var(--pc__font-primary));
+  
+    /* LABEL WITH DATA
+    TODO: decided if this should just use component-font-color calls*/
+    --label-with-data__label-color: var(--font__color-secondary);
+    --label-with-data__value-color: var(--font__color-primary);
+  
+    /* LINKS */
+    --link__color: rgb(var(--pc__accent-additive));
+    --link__color--hover: var(--font__color-primary);
+    --link__color--disabled: rgba(var(--pc__accent-additive), 0.1);
+  
+    /* MODALS and OVERLAYS */
+    --modal__header-color: rgb(var(--pc__font-primary));
+    --modal__header-bg-color: rgb(var(--pc__background-primary));
+    --modal__bg-color: rgb(var(--pc__background-secondary));
+    --modal__overlay-color: rgba(var(--pc__background-tertiary), 0.75);
+  
+    /* NAVIGATION */
+    /* nav-header */
+    --nav-header__height: 6.8rem;
+    --nav-header__bg-color: rgb(var(--pc__background-primary));
+  /*   --nav-header__bg-gradient: linear-gradient(180deg, rgb(56, 64, 84) 0%, rgb(50, 56, 74) 100%); */
+    --nav-header__box-shadow: 0.5rem 1rem 3.2rem var(--shadow__color);
+    --nav-header__max-width: 100%;
+  
+  
+    /* nav-items */
+    --nav-item__font-size: 1.3rem;
+    --nav-item__icon-size: 2rem;
+    --nav-item__color: var(--font__color-secondary);
+    --nav-item__color--hover: var(--font__color-primary);
+    --nav-item__color--action: var(--font__color-primary);
+    --nav-item__bg-color: rgb(var(--pc__background-primary));
+    --nav-item__bg-color--hover: rgb(var(--pc__background-secondary));
+    --nav-item__bg-color--selected: rgb(var(--pc__background-secondary));
+    --nav-item__separator-color: rgb(var(--pc__background-secondary));
+  
+    /* PADDED DECIMAL */
+    /* default */
+    --padded-decimal__units-color: var(--font__color-secondary);
+    --padded-decimal__separator-color: rgb(var(--pc__font-primary));
+    --padded-decimal__decimals-color: rgb(var(--pc__font-primary));
+    --padded-decimal__padding-color: rgba(var(--pc__font-primary), 0.25);
+    /* sell */
+    --padded-decimal__units-sell-color: var(--exchange-colors__sell);
+    --padded-decimal__separator-sell-color: var(--exchange-colors__sell);
+    --padded-decimal__decimals-sell-color: var(--exchange-colors__sell);
+    --padded-decimal__padding-sell-color: var(--exchange-colors__sell);
+    /* buy */
+    --padded-decimal__units-buy-color: var(--exchange-colors__buy);
+    --padded-decimal__separator-buy-color: var(--exchange-colors__buy);
+    --padded-decimal__decimals-buy-color: var(--exchange-colors__buy);
+    --padded-decimal__padding-buy-color: var(--exchange-colors__buy);
+  
+    /* POPOVER */
+    --popover__tooltip-color: rgb(var(--pc__background-primary));
+    --popover__content-border-color: rgb(var(--pc__background-secondary));
+    --popover__selector-border-color--selected: var(--component__border-color--glow);
+  
+    /* SETTINGS PAGES --- GENERAL SETTINGS*/
+    --settings__accent-bar-display: var(--th-settings__accent-bar-display);
+    /* SETTINGS -- container */
+    --settings__body-bg-color: var(--th-settings__body-bg-color);
+    --settings__body-max-width: var(--th-settings__body-max-width);
+    --settings__body-height: var(--th-settings__body-height);
+    --settings__body-margin: var(--th-settings__body-margin);
+    --settings__body-padding: var(--th-settings__body-padding);
+    --settings__body-header-bg-color: var(--th-settings__body-header-bg-color);
+    --settings__body-header-margin: var(--th-settings__body-header-margin);
+    --settings__body-header-with-border-height: var(--th-settings__body-header-with-border-height);
+    /* SETTINGS -- container - header title */
+    --settings__body-header-title-font-size: var(--th-settings__body-header-title-font-size);
+    --settings__body-header-title-font-color: var(--th-settings__body-header-title-font-color);
+    --settings__body-header-title-letter-spacing: var(--th-settings__body-header-title-letter-spacing);
+    --settings__body-header-title-padding-bottom: var(--th-settings__body-header-title-padding-bottom);
+    --settings__body-header-title-padding-left: var(--th-settings__body-header-title-padding-left);
+    --settings__body-header-title-padding-right: var(--th-settings__body-header-title-padding-right);
+    /* SETTINGS -- container - header sub title*/
+    --settings__body-header-sub-title-font-size: var(--th-settings__body-header-sub-title-font-size);
+    --settings__body-header-sub-title-font-color: var(--th-settings__body-header-sub-title-font-color);
+    --settings__body-header-sub-title-letter-spacing: var(--th-settings__body-header-sub-title-letter-spacing);
+    --settings__body-header-sub-title-line-height: var(--th-settings__body-header-sub-title-line-height);
+    /* SETTINGS -- card */
+    --settings__card-box-shadow: var(--th-settings__card-box-shadow);
+    --settings__card-border-radius-size: var(--th-settings__card-border-radius-size);
+    /* SETTINGS -- card - header*/
+    --settings__card-header-bg-color: var(--th-settings__card-header-bg-color);
+    --settings__card-header-accent-border: var(--th-settings__card-header-accent-border);
+    --settings__card-header-padding: var(--th-settings__card-header-padding);
+    --settings__card-header-title-font-size: var(--th-settings__card-header-title-font-size);
+    --settings__card-header-title-font-color: var(--th-settings__card-header-title-font-color);
+    --settings__card-header-title-letter-spacing: var(--th-settings__card-header-title-letter-spacing);
+    /* SETTINGS PAGES --- SPECIFIC SETTINGS*/
+    --settings__header-background-gradient: linear-gradient(var(--body__gradient-start),var(--border__color));
+    /* SETTINGS -- profile & security */
+    --settings__profile-and-security-card-max-width: var(--th-settings__profile-and-security-card-max-width);
+    --settings__profile-and-security-card-margin-r: var(--th-settings__profile-and-security-card-margin-r);
+    --settings__profile-and-security-card-margin-b: var(--th-settings__profile-and-security-card-margin-b);
+    --settings__profile-and-security-row-width: var(--th-settings__profile-and-security-row-width);
+    --settings__profile-and-security-card-border-right: var(--th-settings__profile-and-security-card-border-right);
+    --settings__profile-and-security-card-border-bottom: var(--th-settings__profile-and-security-card-border-bottom);
+    /* SETTINGS -- kyc */
+    --settings__kyc-cards-container-margin-l: var(--th-settings__kyc-cards-container-margin-l);
+    --settings__kyc-card-border-radius: var(--th-settings__kyc-card-border-radius);
+    --settings__kyc-card-bg-color: var(--th-settings__kyc-card-bg-color);
+    --settings__kyc-card-container-border-color: var(--th-settings__kyc-card-container-border-color);
+    --settings__kyc-card-container-border-color--selected: var(--th-settings__kyc-card-container-border-color--selected);
+    --settings__kyc-card-container-border-size: var(--th-settings__kyc-card-container-border-size);
+    --settings__kyc-card-container-border-size--selected: var(--th-settings__kyc-card-container-border-size--selected);
+    --settings__kyc-card-header-bg-color: var(--th-settings__kyc-card-header-bg-color);
+    --settings__kyc-card-body-top-border-color: var(--th-settings__kyc-card-body-top-border-color);
+    --settings__kyc-card-body-top-border-size: var(--th-settings__kyc-card-body-top-border-size);
+    --settings__kyc-card-body-bottom-border-color: var(--th-settings__kyc-card-body-bottom-border-color);
+    --settings__kyc-card-body-bottom-border-size: var(--th-settings__kyc-card-body-bottom-border-size);
+    --settings__kyc-card-footer-color--verified: var(--th-settings__kyc-card-footer-color--verified);
+    --settings__kyc-card-height: 30rem;
+    /* SETTINGS -- kyc - star */
+    --settings__kyc-card-star-display: var(--th-settings__kyc-card-star-display);
+    --settings__kyc-card-star-bg-color: var(--th-settings__kyc-card-star-bg-color);
+    --settings__kyc-card-star-fill-color: var(--th-settings__kyc-card-star-fill-color);
+    --settings__kyc-card-star-box-shadow: var(--th-settings__kyc-card-star-box-shadow);
+    /* SETTINGS -- trade reports*/
+    --settings__trade-reports-create-new-header-display: var(--th-settings__trade-reports-create-new-header-display);
+    --settings__trade-reports-create-new-actions-holder-padding: var(--th-settings__trade-reports-create-new-actions-holder-padding);
+    --settings__trade-reports-create-new-actions-holder-flex-direction: var(--th-settings__trade-reports-create-new-actions-holder-flex-direction);
+    --settings__trade-reports-create-new-actions-holder-border: var(--th-settings__trade-reports-create-new-actions-holder-border);
+    --settings__trade-reports-create-new-actions-btn-width: var(--th-settings__trade-reports-create-new-actions-btn-width);
+    --settings__trade-reports-create-new-actions-top-btn-margin-b: var(--th-settings__trade-reports-create-new-actions-top-btn-margin-b);
+    --settings__trade-reports-create-new-actions-btn-font-color: var(--th-settings__trade-reports-create-new-actions-btn-font-color);
+    --settings__trade-reports-create-new-actions-btn-bg-color: var(--th-settings__trade-reports-create-new-actions-btn-bg-color);
+    /* SETTINGS -- API keys*/
+    --settings__api-keys-create-new-header-display: var(--th-settings__api-keys-create-new-header-display);
+    --settings__api-keys-create-new-actions-holder-margin: var(--th-settings__api-keys-create-new-actions-holder-margin);
+    --settings__api-keys-create-new-actions-holder-btn-width: var(--th-settings__api-keys-create-new-actions-holder-btn-width);
+    --settings__api-keys-create-new-actions-holder-btn-border: var(--th-settings__api-keys-create-new-actions-holder-btn-border);
+    --settings__api-keys-create-new-actions-documentation-btn-margin-t: var(--th-settings__api-keys-create-new-actions-documentation-btn-margin-t);
+    --settings__api-keys-create-new-actions-documentation-btn-justify-content: var(--th-settings__api-keys-create-new-actions-documentation-btn-justify-content);
+    --settings__api-keys-create-new-actions-documentation-btn-font-color: var(--th-settings__api-keys-create-new-actions-documentation-btn-font-color);
+    --settings__api-keys-create-new-actions-btn-font-color: var(--th-settings__api-keys-create-new-actions-btn-font-color);
+    --settings__api-keys-create-new-actions-btn-bg-color: var(--th-settings__api-keys-create-new-actions-btn-bg-color);
+    /* SCROLLBAR */
+    --scrollbar__size: 8px;
+    --component-scrollbar__size: 2px;
+    --scrollbar__bg-color: rgba(0,158,225,0.20);
+    --scrollbar__thumb-bg-color: #009de1;
+    --scrollbar__thumb-bg-color--hover: #009de1;
+    /* SIDE MENU */
+    --side-menu__item-height: 6rem;
+    --side-menu__item-width: 23rem;
+    --side-menu__item-separator-color: rgb(var(--pc__background-tertiary));
+    --side-menu__item-bg-color--hover: rgb(var(--pc__background-tertiary));
+    --side-menu__item-bg-color--selected: rgb(var(--pc__background-primary));
+    --side-menu__item-accent-color: rgb(var(--pc__font-secondary));
+    --side-menu__item-accent-color--selected: #009ee1;
+    /* SIDE PANE */
+    --side-pane__border-color--active: rgb(var(--pc__accent-additive));
+    --side-pane__content-bg-color: rgb(var(--pc__background-secondary));
+    --side-pane__header-bg-color: rgb(var(--pc__background-primary));
+    /* SIDE PANE DETAILS */
+    --side-pane-details__header-bg-color: var(--font__color-primary);
+    --side-pane-details__lwt-label-color: var(--font__color-secondary);
+    --side-pane-details__lwt-text-color: var(--font__color-primary);
+    /* STANDALONE FORM */
+    --standalone-form__btn-bg-color: var(--general__bg-color);
+    --standalone-form__btn-height: initial;
+    --standalone-form__btn-width: 18rem;
+    --standalone-form__container-width: 41.6rem;
+    --standalone-form__container-bg-color: rgb(var(--pc__background-secondary));
+    --standalone-form__container-box-shadow: 0 0 3.2rem var(--shadow__color);
+    --standalone-form__header-bg-color: rgb(var(--pc__background-primary));
+    --standalone-form__header-color: rgb(var(--pc__font-primary));
+    --standalone-form__header-box-shadow: initial;
+    --standalone-form__header-border-color: #009ee1;
+    --standalone-form__logo-color: initial;
+    --standalone-form__message-color: rgb(var(--pc__font-primary));
+    --standalone-form__message-bg-color: rgb(var(--pc__background-primary));
+    --standalone-form__message-box-shadow: initial;
+    --standalone-form__wrapper-bg-image: url(../../images/new-background.webp);
+    --standalone-form__radio-check-bg-color--selected:  #009ee1;
+    --standalone-form__radio-bg-color--selected: rgb(255, 255, 255);
+    --standalone-form__radio-border-color--action: #009ee1;
+    --standalone-form__radio-check-border-color--action: #009ee1;
+    /* STANDALONE MODAL */
+    --standalone-modal__body-bg-color: rgb(var(--pc__background-primary));
+    --standalone-modal__body-box-shadow: initial;
+    --standalone-modal__btn-height: initial;
+    --standalone-modal__btn-width: 18rem;
+    --standalone-modal__container-width: 37.6rem;
+    --standalone-modal__container-bg-color: rgb(var(--pc__background-secondary));
+    --standalone-modal__container-box-shadow: 0 0 3.2rem rgba(var(--pc__background-tertiary), 0.25);
+    --standalone-modal__font-color: rgb(var(--pc__font-primary));
+    --standalone-modal__header-bg-color: rgb(var(--pc__background-primary));
+    --standalone-modal__logo-color: initial;
+    --standalone-modal__wrapper-bg-image: url(../../images/new-background.webp);
+    /* TABLE */
+    --table__bg-color: rgb(var(--pc__background-secondary));
+    --table__font-color: rgb(var(--pc__font-secondary));
+    --table__title-bg-color: rgb(var(--pc__background-primary));
+    --table__header-bg-color: rgb(var(--pc__background-secondary));
+    --table__header-font-color: rgb(var(--pc__font-secondary));
+    --table__header-separator-color: var(--border__color);
+    --table__header-height: 3.6rem;
+    --table__row-bg-color: rgb(var(--pc__background-secondary));
+    --table__row-bg-color--hover: rgb(var(--pc__background-tertiary));
+    --table__row-separator-color: rgba(var(--pc__background-tertiary), 0.75);
+    /* TAB */
+    --tab__font-color: var(--font__color-secondary);
+    --tab__bg-color: rgb(var(--pc__background-primary));
+    --tab__separator-color: rgb(var(--pc__background-secondary));
+    --tab__separator-color--hover: #009ee1;
+    --tab__item-color--hover: var(--font__color-primary);
+    --tab__font-color--selected: var(--font__color-primary);
+    --tab__border-color--selected: #009ee1;
+    /* Z-INDEX (for various components) */
+    --z-index__header: 50;
+    --z-index__price-chart: 100;
+    --z-index__popover: 200;
+    --z-index__navigation: 299;
+    --z-index__side-pane: 300;
+    --z-index__modal: 400;
+    --z-index__snackbar: 500;
+    --z-index__date-picker: 1000;
+    /* -------------------------------------------------------------------------------- */
+    /* -------------------- */
+    /* -------------------- */
+    /* COMPONENT SPECIFIC */
+    /* -------------------- */
+    /* -------------------- */
+    /* RULES: */
+    /* CAN inherit styles from selected palette */
+    /* CAN also inherit styles from Above */
+    /* CAN also create its own styles *IF NO SIMILAR STYLE IS SET ABOVE* */
+    /* ORGANIZED BY "LABEL" (A-Z) */
+    /* -------------------- */
+    /* ACTIVITY */
+    --activity__select-bg-color: rgb(var(--pc__background-secondary));
+    --activity__select-border-color: rgb(var(--pc__background-tertiary));
+    /* ADVANCED ORDER */
+    --advanced-order__limited-price-bg-color: rgb(var(--pc__background-tertiary));
+    /* ADVANCED ORDER SIDE PANEL */
+    --advanced-order__sidepane-tab-container-bg-color: rgb(var(--pc__background-primary));
+    /* ADVANCED SETTINGS */
+    --advanced-settings__bg-color: rgb(var(--pc__background-secondary));
+    --advanced-settings__header-text-size: 1.4rem;
+    --advanced-settings__header-text-margin-b: 2.5rem;
+    --advanced-settings__header-text-letter-spacing: 0.08rem;
+    /* AFFILIATE PROGRAM */
+    --affiliate__btn-color: rgb(var(--pc__accent-additive));
+    --affiliate__btn-bg-color: rgb(var(--pc__background-primary));
+    --affiliate__btn-bg-color--hover: rgb(var(--pc__background-tertiary));
+    --affiliate__btn-border-color: var(--pc__font-secondary);
+    --affiliate__btn-border-color--hover: rgb(var(--pc__background-tertiary));
+    --affiliate__border-color: rgba(var(--pc__font-secondary), 0.4);
+    --affiliate__border-radius: 1rem;
+    /* BALANCES */
+    --balances-order-history-tab-menu__max-width: 100%;
+    /* BALANCE HEADER*/
+    --balance-header__tabs-border-color: rgb(var(--pc__background-primary));
+    --balance-header__tabs-divider-color: rgb(var(--pc__background-tertiary));
+    --balance-header__tabs-bg-color--hover: rgb(var(--pc__background-tertiary));
+    --balance-header__tabs-button-text-color: rgb(var(--pc__font-primary));
+    --balance-header__tabs-deposit-button-bg-color: var(--pc__background-tertiary);
+    --balance-header__tabs-withdraw-button-bg-color: var(--pc__background-tertiary);
+    /* BALANCE ITEM */
+    --balance-item__container-bg-color: rgb(var(--pc__background-secondary));
+    --balance-item__bg-color--hover: rgb(var(--pc__background-tertiary));
+    /* BALANCES MENU*/
+    --balances-menu__bg-color: rgb(var(--pc__background-secondary));
+    --balances-menu__item-label-font-size: 1.1rem;
+    --balances-menu__item-value-font-size: 1.3rem;
+    /* --balances-menu__item-color*/
+    /* --balances-menu__item-color--selected */
+    --balances-menu__symbol-name-color: rgb(var(--pc__font-secondary));
+    /* BULK CANCEL BUTTONS */
+    --bulk-cancel-btn__bg-color: rgb(var(--pc__background-primary));
+    --bulk-cancel-btn__label-color: var(--font__color-secondary);
+    --balk-cancel-btn__border-color: rgb(var(--pc__background-tertiary));
+    /* BUY SELL CHART OVERVIEW */
+    --buysell-chart-overview__instrument-row-separator-color: rgb(var(--pc__background-tertiary));
+    /* CHART - APEX VERSION */
+    --chart__bullish-color: #009ee1;
+    --chart__bearish-color: rgb(var(--pc__accent-subtractive));
+    --chart__bullish-color_transparent: rgba(var(--pc__accent-additive), 0.1);
+    --chart__bearish-color_transparent: rgba(var(--pc__accent-subtractive), 0.1);
+    --chart__volume-bullish-color: rgb(var(--pc__accent-additive));
+    --chart__volume-bearish-color: rgb(var(--pc__accent-subtractive));
+    --chart__ema-line-color: rgb(var(--pc__accent-warning));
+    --chart__price-line-color: rgb(var(--pc__accent-additive));
+    --chart__retail-price-line-color: rgb(var(--pc__accent-additive));
+    --chart__sma-line: rgb(var(--pc__font-secondary));
+    --chart__bollinger-band-upper-color: rgba(var(--pc__accent-additive), 0.75);
+    --chart__bollinger-band-lower-color: rgba(var(--pc__accent-subtractive),0.75);
+    --chart__market-price-line-color: rgb(var(--pc__font-primary));
+    --chart__market-price-label-color: rgb(var(--pc__font-primary));
+    --chart__market-price-bg-color: rgba(var(--pc__accent-additive), 0.5);
+    --chart__info-color: rgb(var(--pc__font-primary));
+    --chart__info-label-color: rgb(var(--pc__font-secondary));
+    --chart__range-selection-color: rgba(var(--pc__font-primary), 0.25);
+    --chart__range-selector-bg-color: rgba(var(--pc__accent-additive), 0.15);
+    --chart__range-selector-handles-color: rgb(var(--pc__accent-additive));
+    --chart__gradient-color-start: rgba(var(--pc__accent-additive), 0.25);
+    --chart__gradient-color-end: transparent;
+    --chart__border-color-primary: rgba(var(--pc__font-secondary), 0.75);
+    --chart__border-color-secondary: rgb(var(--pc__background-primary));
+    --chart__row-separator-color: rgb(var(--pc__background-primary));
+    --chart__x-axis-step-color:rgb(var(--pc__font-secondary));
+    /* CHART - TRADINGVIEW VERSION */
+    --tv-chart__loading-screen-bg-color: var(--secondary__bg-color);
+    --tv-chart__bg-color: var(--secondary__bg-color);
+    --tv-chart__grid-color: var(--table__row-separator-color);
+    --tv-chart__grid-vertical-color: var(--table__row-separator-color);
+    --tv-chart__grid-horizontal-color: var(--table__row-separator-color);
+    --tv-chart__scale-font-color: var(--font__color-primary);
+    --tv-chart__scale-line-color: rgb(255,255,255);
+    --tv-chart__scale-bg-color: rgb(255,255,255);
+    --tv-chart__graph-up-color: var(--exchange-colors__buy);
+    --tv-chart__graph-down-color: var(--exchange-colors__sell);
+    --tv-chart__graph-border-up-color: var(--exchange-colors__buy);
+    --tv-chart__graph-border-down-color: var(--exchange-colors__sell);
+    /* CONFIRM API KEY */
+    --confirm-api-key__authenticate-user-pre-bg-color: rgb(var(--pc__background-tertiary));
+    /* ENABLE 2FA */
+    /* .ap-auto-tab-input:focus{ */
+    --enable-2fa-modal__ap-auto-tab-input-border-color--hover: rgba(var(--pc__accent-additive),0.3);
+    --enable-2fa-modal__ap-auto-tab-input-border-color--focus: rgb(var(--pc__accent-additive));
+    /* FOOTER */
+    --footer__bg-color: rgb(var(--pc__background-primary));
+    --footer__logo-color: rgb(var(--pc__font-secondary));
+    --footer__height: 19.3rem;
+    /* INSTRUMENT SELECTOR */
+    --instrument-selector__trigger-height: 6rem;
+    --instrument-selector__popover-border: 1px solid
+      rgb(var(--pc__background-tertiary));
+    --instrument-selector__trigger-border: 0.2rem solid
+      var(--tab__border-color--selected);
+    /* INSTRUMENT SELECTOR POPUP */
+    --instrument-selector-popup__max-height: 85.6rem;
+    --instrument-selector-popup__bg-color: rgb(var(--pc__background-primary));
+    --instrument-selector-popup__row-bg-color--hover: rgb(var(--pc__background-tertiary));
+    --instrument-selector-popup__row-bg-color--selected: rgb(var(--pc__background-secondary));
+    /* INSTRUMENT TABLE */
+    --instrument-table__row-height: 6rem;
+    --instrument-table__row-separator-color: rgb(var(--pc__background-tertiary));
+    /* KYC LEVEL CARDS:(RETAIL) used if (kyc) config highlightStyle set to: "star" or "outline" */
+    --kyc-level__bg-color: rgb(var(--pc__background-secondary));
+    --kyc-level__border-color: rgba(var(--pc__font-secondary), 0.4);
+    --kyc-level__border-color--selected: rgb(var(--pc__font-secondary));
+    --kyc-level__border-radius: 10px;
+    --kyc-level__star-fill-color: rgb(var(--pc__accent-additive));
+    --kyc-level__star-box-shadow-color: rgb(var(--pc__background-quaternary));
+    --kyc-level__footer-color--verified: rgb(var(--pc__accent-success));
+    --kyc-settings_bg-color: var(--advanced-settings__bg-color);
+    /* ORDERBOOK */
+    --orderbook__spread-bg-color: rgb(var(--pc__background-primary));
+    --orderbook__spread-border-color: var(--table__row-separator-color);
+    /* ORDER ENTRY */
+    --order-entry__item-btn-color--hover: var(--component__color-primary);
+    --order-entry__item-btn-bg-color--hover: rgba(var(--pc__background-tertiary),0.35);
+    /* PAGINATION */
+    --pagination__bg-color: rgb(var(--pc__background-secondary));
+    --pagination__bg-color--active: rgb(var(--pc__accent-additive));
+    --pagination__bg-color--hover: rgba(var(--pc__accent-additive), 0.75);
+    /* POPOVER MENU */
+    --popover-menu__item-bg-color--action: rgb(var(--pc__background-secondary));
+    --popover-menu__item-divider-bg-color: rgb(var(--pc__background-secondary));
+    /* PRODUCT ICON */
+    --product-icon__default-bg-color: rgb(var(--pc__accent-additive));
+    --product-icon__default-color: rgb(var(--pc__font-primary));
+    /* RETAIL -- SETTINGS LAYOUT */
+    --retail-settings__side-bar-width: 22rem;
+    --retail-settings__main-block-width: calc(100vw - var(--retail-settings__side-bar-width));
+    --retail-settings__widget-footer-height: 8rem;
+    --retail-settings__widget-footer-btn-height: 5rem;
+    --retail-settings__margin: 0;
+    --retail-setting__body-width: 95%;
+    --retail-setting__body-max-width: 106rem;
+    --retail-settings__padding: 3rem;
+    --retail-settings__retail-text-size: 2.4rem;
+    --retail-settings__retail-text-min-width: 30rem;
+    --retail-settings__retail-text-padding-bottom: 1rem;
+    --retail-settings__retail-sub-text-size: 1.1rem;
+    --retail-settings__retail-sub-text-line-height: 1.5rem;
+    --retail-settings__retail-sub-text-letter-spacing: 0.5px;
+    --retail-settings__toggle-color: var(--general__bg-color);
+    --retail-settings__toggle-color--on: var(--success__color);
+    /* RETAIL HEADER
+      TODO: is this being used?
+      this should apply to both retail and advanced header */
+    --retail-header__content-color: rgb(var(--pc__font-secondary));
+    --retail-header__item-color--active: rgb(var(--pc__font-primary));
+    /* RETAIL DASHBOARD MAIN LAYOUT */
+    --retail-dashboard-main-layout__placeholder-bg-color: rgba(var(--pc__font-primary),0.5);
+    --retail-dashboard__card-header-height: 7rem;
+    --retail-dashboard__card-header-title-padding: 3rem;
+    --retail-dashboard__card-header-title-font-size: 2rem;
+    --retail-dashboard__card-header-title-font-color: rgb(var(--pc__font-primary));
+    --retail-dashboard__card-row-height: 8rem;
+    --retail-dashboard__card-footer-height: 4rem; 
+    --retail-dashboard__layout-top-row-margin: 4rem;
+    --retail-dashboard__layout-top-row-height: 53.5rem;
+    /* RETAIL API Keys */
+    --retail-api-keys-form__create-new-border-color: rgba(255, 255, 255, 0.5);
+    --retail-api-keys-form__font-color: rgb(255, 255, 255);
+    /* RETAIL FIAT FORM TABS */
+    --retail-fiat-form-tabs__tab-color: rgb(var(--pc__font-secondary));
+    --retail-fiat-form-tabs__tab-color--selected: rgb(var(--pc__font-primary));
+    --retail-fiat-form-tabs__tab-border-color--selected: var(--general__bg-color);
+    /* RETAIL FIAT SIDE PANE */
+    --retail-fiat-side-pane__instructions-header-color: rgb(var(--pc__background-secondary));
+    --retail-fiat-side-pane__details-header-color: rgb(var(--pc__background-secondary));
+    /* RETAIL MAKE TRANSACTION */
+    --buy-sell-make-transaction__content-border-color: rgba(var(--pc__background-tertiary),0.3);
+    /* RETAIL BUY SELL */
+    --buy-sell__border-color: rgba(var(--pc__background-tertiary), 0.6);
+    --buy-sell__balances-border-color: rgba(var(--pc__background-tertiary), 0.6);
+    --buy-sell__input-background-color: rgb(var(--pc__background-tertiary));
+    --buy-sell__input-background-color--focus: rgb(var(--pc__background-primary));
+    --buy-sell__radio-bg-color: rgb(var(--pc__background-tertiary));
+    --buy-sell__radio-bg-color--selected: rgb(255, 255, 255);
+    --buy-sell__radio-check-bg-color--selected: #009ee1;
+    --buy-sell__radio-check-border-color--action: #009ee1;
+    --buy-sell__radio-border-color--action: #009ee1;
+    /* RETAIL PROFILE AND SETTINGS */
+    --retail-profile-and-settings__header-font-color: rgb(255, 255, 255);
+    /* RETAIL TRADE REPORTS */
+    --retail-trade-report__header-text-color: rgb(255, 255, 255);
+    --retail-trade-report__sidepane_bg: rgb(var(--pc__background-primary));
+    /* RETAIL USER CONTACT */
+    --retail-user-contacts__header-text-color: rgb(255, 255, 255);
+    /* RETAIL AFFILIATE */
+    --retail-affiliate__header-text-color: rgb(255, 255, 255);
+    /* SNACK BAR */
+    --snackbar__progress-bar-bg-color: rgba(var(--pc__font-primary), 0.6);
+    /* SPINNER */
+    --spinner__color-primary: rgb(var(--pc__font-secondary));
+    --spinner__color-secondary: rgb(var(--pc__background-primary));
+    --spinner__color-tertiary: rgb(var(--pc__background-tertiary));
+    --spinner__font-color: rgba(var(--pc__font-primary), 0.5);
+    /* SUB NAV ROW*/
+    --sub-nav-row__box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.25);
+    --sub-nav-row__border-color--hover: rgb(255, 255, 255);
+    --sub-nav-row__item-color: rgb(255, 255, 255);
+    --sub-nav-row__item-color-hover: rgb(255, 255, 255);
+    /* SWITCH COMPONENT */
+    --switch-component__border-color: rgb(var(--pc__background-tertiary));
+    --switch-component__toggle-bg-color: rgb(var(--pc__font-primary));
+    --switch-component__toggle-box-shadow-color: rgba(var(--pc__accent-additive),0.25);
+    --switch-component__toggle-bg-color--on: rgb(var(--pc__accent-additive));
+    --switch-component__toggle-box-shadow-color--on: rgba(var(--pc__accent-additive),0.75);
+    /* TRADING LAYOUT */
+    --trading-layout__container-min-height: 80rem;
+    --trading-layout__body-height: calc(var(--body__content-height) - 5.2rem);
+    --trading-layout__border: 2px solid rgb(var(--pc__background-tertiary));
+    --trading-layout__info-bar-bg-color: var(--tertiary__bg-color);
+    --trading-layout__info-bar-height: 5.2rem;
+    /* USER SUMMARY MENU */
+    --user-summary__content-bg-color: rgb(var(--pc__background-primary));
+    --user-summary__border-color: rgb(var(--pc__background-secondary));
+    /* USER SETTINGS */
+    --user-settings__bg-color: var(--advanced-settings__bg-color);
+    --user-setting-api-keys__bg-color: rgb(var(--pc__background-primary));
+    /* VERIFICATION REQUIRED */
+    --verification-required__font-color: rgb(var(--pc__accent-warning));
+    --verification-required__bg-color: rgba(var(--pc__background-tertiary), 0.75);
+    --verification-required__bg-color--hover: rgb(var(--pc__background-tertiary));
+    /* VIEW SELECTOR */
+    --view-selector__trigger-line-height: 5.2rem;
+    /* WALLET */
+    --wallet-side-pane__bg-color: rgb(var(--pc__background-primary));
+    --wallet-card__bg-color: rgb(var(--pc__background-secondary));
+    --wallet-card__button-bg-color: rgb(var(--pc__background-primary));
+    --wallet-card__button-border-color: rgba(var(--pc__background-tertiary),0.9);
+    --wallet-card__activity-link-row-bg-color: rgb(var(--pc__background-secondary));
+    --wallet-card__divider-border-color: rgba(var(--pc__background-tertiary),0.3);
+    --wallet-card__divider-border-color-secondary: rgba(var(--pc__background-tertiary),0.9);
+    --wallet-row__bg-color--hover: rgb(var(--pc__background-primary));
+    /* WALLET DETAILS */
+    --wallet-detail__label-color: rgb(var(--pc__font-secondary));
+    --wallet-details__body-margin: 4rem;
+    --wallet-details__body-width: calc(100% - 8rem);
+    /* RETAIL DATAPICKER */
+    --retail-datapicker__body-background: rgb(var(--pc__background-primary));
+    --retail-datapicker__title-color: rgb(var(--pc__accent-additive));
+    --retail-datapicker__button-active-background: rgb(var(--pc__accent-additive));
+    --retail-datapicker__button-hover-background: rgb(var(--pc__background-tertiary));
+    /* MARGIN BALANCES */
+    --margin-balances-layout__background: rgb(var(--pc__background-primary));
+    --margin-balances-layout-transfer-button__background: rgb(var(--pc__background-primary));
+    --margin-balances-layout-footer__background: rgb(var(--pc__background-secondary));
+  
+    /* LightWeightCharts: */
+    --default-histogram-unhued: rgb(238, 238, 238);
+    --default-histogram-color: rgba(var(--default-histogram-unhued), 0.2);
+    --default-price-line-color: rgba(var(--pc__accent-additive), 0.1);
+  }
+  

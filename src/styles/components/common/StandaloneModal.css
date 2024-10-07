@@ -1,0 +1,191 @@
+.standalone-modal__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: var(--standalone-modal__wrapper-bg-image);
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.standalone-modal__logo {
+  margin: 2.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--standalone-modal__logo-color);
+}
+
+.standalone-modal__container {
+  margin: auto;
+  width: var(--standalone-modal__container-width);
+  min-height: min-content;
+  display: flex;
+  flex-direction: column;
+  background: var(--standalone-modal__container-bg-color);
+  box-shadow: var(--component__box-shadow);
+}
+
+.standalone-modal__header {
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  color: var(--standalone-modal__font-color);
+  background: var(--standalone-modal__header-bg-color);
+  padding-left: 2.8rem;
+  box-shadow: var(--standalone-modal__body-box-shadow);
+}
+
+.standalone-modal__header-text {
+  font-size: 1.6rem;
+  color: var(--font__color-primary);
+}
+
+.standalone-modal__body {
+  height: 14rem;
+  display: flex;
+  align-items: center;
+  color: var(--standalone-modal__font-color);
+  background: var(--standalone-modal__body-bg-color);
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+  box-shadow: var(--standalone-modal__body-box-shadow);
+}
+
+.standalone-modal__body-text {
+  font-size: 1.45rem;
+  color: var(--font__color-primary);
+}
+
+.standalone-modal__success {
+  padding: 1rem;
+}
+
+.standalone-modal__btn {
+  font-size: 1.1rem;
+  display: inline-block;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 1rem;
+  border: 1px solid transparent;
+  color: var(--font__color-primary);
+  white-space: nowrap;
+}
+
+.standalone-modal__btn--subtractive {
+  background: var(--danger__bg-color);
+}
+
+.standalone-modal__btn--subtractive:hover {
+  background: var(--danger__bg-color--hover);
+}
+
+.standalone-modal__btn--subtractive:focus {
+  background: var(--danger__bg-color--focus);
+  border: solid 1px var(--danger__border-color--focus);
+}
+
+.standalone-modal__btn--additive {
+  background: var(--success__bg-color);
+}
+
+.standalone-modal__btn--additive:hover {
+  background: var(--success__bg-color--hover);
+}
+
+.standalone-modal__btn--additive:focus {
+  background: var(--success__bg-color--focus);
+  border: solid 1px var(--success__border-color--focus);
+}
+
+.standalone-modal__error {
+  color: var(--danger__color);
+}
+
+.standalone-modal__terms-text {
+  margin: 1rem 0;
+  line-height: 1.45;
+  color: var(--font__color-secondary);
+}
+
+.standalone-modal__input-box {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 3rem;
+}
+
+.standalone-modal__information-text {
+  margin-bottom: 2.8rem;
+  font-size: 1.4rem;
+  color: var(--font__color-secondary);
+}
+
+.standalone-modal__password-strength {
+  color: var(--information__color);
+}
+
+.standalone-modal__footer {
+  height: 6.2rem;
+  margin: 0 2.8rem;
+  display: flex;
+  align-items: center;
+  border-top: solid 1px var(--border__color);
+}
+
+.standalone-modal__footer-separator {
+  width: 0;
+  height: 2rem;
+  border-right: solid 1px var(--border__color);
+  margin: 0 1.5rem;
+}
+
+.standalone-modal__form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2.75rem;
+}
+
+.standalone-modal__btn {
+  width: var(--standalone-modal__btn-width);
+  height: var(--standalone-modal__btn-height);
+}
+
+.standalone-modal__separator {
+  margin: 0 0 2.5rem 0;
+  display: block;
+  border-top: solid 1px var(--border__color);
+}
+
+.standalone-modal__auto-tab-input {
+  margin-bottom: 2.5rem;
+}
+
+.standalone-modal__radio-list {
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 576px) {
+  .standalone-modal__wrapper {
+    justify-content: flex-start;
+  }
+  .standalone-modal__container {
+    width: 100%;
+    font-size: 1.3rem;
+    box-shadow: initial;
+    margin: initial;
+  }
+  .standalone-modal__logo {
+    align-self: flex-start;
+    position: initial;
+    top: initial;
+    left: initial;
+  }
+}

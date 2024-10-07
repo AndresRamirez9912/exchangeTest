@@ -1,0 +1,128 @@
+.flex-table {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  background: var(--table__bg-color);
+  flex-shrink: 0;
+}
+
+.flex-table__title {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--component__header-height);
+  line-height: 3.6rem;
+  padding: 0 1.6rem;
+  background: var(--table__title-bg-color);
+  border-bottom: 1px solid var(--table__row-separator-color);
+}
+
+.flex-table__column {
+  flex: 1;
+  letter-spacing: 0.4px;
+  color: var(--table__font-color);
+  flex-shrink: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+}
+
+.flex-table__header-cell {
+  margin-top: -2.1rem;
+  font-size: var(--component__sub-header-font-size);
+}
+
+.flex-table__header-cell--fixed {
+  position: fixed;
+}
+
+.flex-table__header-cell--absolute {
+  position: absolute;
+}
+
+.flex-table__header {
+  display: flex;
+  color: var(--table-header-color);
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.flex-table__header--inside {
+  height: 0;
+}
+
+.flex-table__header--background {
+  height: var(--component__sub-header-height);
+  background: var(--table__header-bg-color);
+  border-bottom: 1px solid var(--table__row-separator-color);
+}
+
+.flex-table__body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.flex-table__row {
+  display: flex;
+  width: 100%;
+  height: 1.9rem;
+  line-height: 1.9rem;
+  flex-shrink: 0;
+  align-items: center;
+  border-bottom: 1px solid var(--table__row-separator-color);
+  background: var(--table__row-bg-color);
+}
+
+.flex-table__row:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+.flex-table__row:hover {
+  background: var(--table__row-bg-color--hover);
+}
+
+.flex-table__row--no-hover {
+  background: transparent;
+}
+
+.flex-table__row--no-hover:hover {
+  background: transparent;
+}
+
+.flex-table__empty-icon,
+.flex-table__column--empty {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: var(--table__font-color);
+  padding: 0 1rem;
+}
+
+.flex-table__empty-icon {
+  margin-right: 0.5rem;
+  margin-top: 0.4em;
+}
+
+.flex-table__row--empty,
+.flex-table__row--empty:hover {
+  height: 4.5rem;
+  background: transparent;
+}
+
+.flex-table__pagination-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-table__wide-row-container {
+  overflow: auto;
+  flex: 1;
+  height: 100%;
+}

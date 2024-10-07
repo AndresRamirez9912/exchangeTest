@@ -1,0 +1,35 @@
+{
+    "BTC": { "iconFileName": "btc-48px.svg", "productColor": "#EA973D"},
+    "USD": { "iconFileName": "usd-48px.svg", "productColor": "#8ADB44"},
+    "ETH": { "iconFileName": "eth-48px.svg", "productColor": "#677FE3"},
+    "LTC": { "iconFileName": "litecoin-48px.svg", "productColor": "#345D9D"},
+    "BCC": { "iconFileName": "bcc-48px.svg", "productColor": "#EA973E"},
+    "XRP": { "iconFileName": "xrp-48px.svg", "productColor": "#4BA8DF"},
+    "USDT": { "iconFileName": "usdt-48px.svg", "productColor": "#4F9E7D"},
+    "XMR": { "iconFileName": "xmr-48px.svg", "productColor": "#ED6F2E"},
+    "ZEC": { "iconFileName": "zec-48px.svg", "productColor": "#E3B458"},
+    "DASH": { "iconFileName": "dash-48px.svg", "productColor": "#3974B7"},
+    "OMG": { "iconFileName": "omg-48px.svg", "productColor": "#2A55E7"},
+    "DOGE": { "iconFileName": "doge-48px.svg", "productColor": "#BEA64A"},
+    "EUR": { "iconFileName": "eur-48px.svg", "productColor": "#408EF1"},
+    "EOS": { "iconFileName": "eos-48px.svg", "productColor": "#000000"},
+    "REP": { "iconFileName": "rep-48px.svg", "productColor": "#592E50"},
+    "CVC": { "iconFileName": "cvc-48px.svg", "productColor": "#5EAD4E"},
+    "BCH": { "iconFileName": "bch-48px.svg", "productColor": "#8dc252"},
+    "XLM": { "iconFileName": "xlm-48px.svg", "productColor": "#408EF1"},
+    "CAD": { "iconFileName": "cad-48px.svg", "productColor": "#8ADB44"},
+    "JPY": { "iconFileName": "jpy-48px.svg", "productColor": "#8ADB44"},
+    "COP": { "iconFileName": "cop-48px.svg", "productColor": "#009ee1"},
+    "TRX": { "iconFileName": "tron-48px.svg", "productColor": "#FF0013"},
+    "USDC": { "iconFileName": "usdc-48px.svg", "productColor": "#42A5F5"},
+    "USDT ERC": { "iconFileName": "tether-48px.svg", "productColor": "#009393"},
+    "USDT TRX": { "iconFileName": "tether-48px.svg", "productColor": "#009393"},
+    "ADA": { "iconFileName": "cardano-48px.svg", "productColor": "#FFFFFF"},
+    "LINK": { "iconFileName": "chainlink-48px.svg", "productColor": "#335DD2"}
+
+
+
+ 
+
+
+}

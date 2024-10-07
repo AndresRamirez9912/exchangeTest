@@ -1,0 +1,39 @@
+.settings-page__container {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.settings-page__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.settings-page__menu {
+  display: flex;
+  flex-direction: column;
+  border-right: var(--component__border);
+  background: var(--secondary__bg-color);
+}
+
+.settings-page__footer {
+  flex-shrink: 0;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .settings-page__container {
+    flex-direction: column;
+  }
+
+  .settings-page__content {
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+}

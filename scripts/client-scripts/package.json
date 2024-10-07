@@ -1,0 +1,18 @@
+{
+  "name": "apex-web-client",
+  "description": "",
+  "repository": "",
+  "license": "",
+  "version": "0.0.1",
+  "dependencies": {},
+  "scripts": {
+    "apex-web-upgrade": "npm update apex-web-tools&&apex-web-upgrade",
+    "export-pot": "export-pot",
+    "import-po": "import-po",
+    "serve": "serve"
+  },
+  "devDependencies": {
+    "apex-web-tools": "git+https://github.com/alphapoint/apex-web-tools.git",
+    "serve": "^10.0.0"
+  }
+}

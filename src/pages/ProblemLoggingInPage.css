@@ -1,0 +1,33 @@
+.problem-logging-in-page__container {
+  border-radius: 10px;
+  width: 41.6rem;
+}
+
+.problem-logging-in-page__header {
+  height: 6.8rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 2px solid var(--standalone-form__header-border-color);
+}
+
+.problem-logging-in-page__header-text {
+  font-size: 2rem;
+}
+
+.problem-logging-in-page__footer {
+  margin: 0;
+  padding: 0 2.8rem;
+}
+
+.problem-logging-in-page__link {
+  font-size: 1.2rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  .problem-logging-in-page__container {
+    width: auto;
+  }
+}

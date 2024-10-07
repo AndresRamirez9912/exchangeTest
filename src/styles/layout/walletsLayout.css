@@ -1,0 +1,30 @@
+.wallets-layout__accent-bar {
+  width: 100%;
+  background-image: var(--accent-bar__gradient);
+  height: 21.5rem;
+  margin-bottom: -15rem;
+}
+
+.wallets-layout {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto 10rem;
+  width: 120rem;
+}
+
+.wallets-layout__component-header {
+  font-size: 2rem;
+  color: var(--font__color-primary);
+  margin: 0 0 3.5rem 2.4rem;
+}
+
+.wallets-layout__widget-lg {
+  width: 100%;
+}
+
+.wallets-layout__divider {
+  width: 100%;
+  height: 4px;
+  background-color: var(--border__color);
+  margin-bottom: 3.5rem;
+}

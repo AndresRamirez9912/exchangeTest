@@ -1,0 +1,27 @@
+.popover-menu__item {
+  height: 3.5rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  color: var(--component__color-primary);
+  border-bottom: 1px solid var(--component__border-color);
+  padding: 0 1.7rem;
+  cursor: pointer;
+}
+
+.popover-menu__item:hover,
+.popover-menu__item:active,
+.popover-menu__item:focus {
+  background: var(--popover-menu__item-bg-color--action);
+}
+
+.popover-menu__item-divider {
+  top: -1px;
+  height: 1px;
+  position: relative;
+  background: var(--popover-menu__item-divider-bg-color);
+}
+
+.popover-menu__item-label {
+  white-space: nowrap;
+}

@@ -1,0 +1,39 @@
+.eotc-buy-sell-layout__col {
+  margin-top: 50px;
+}
+
+.eotc-buy-sell-layout__col--lg {
+  width: 100%;
+}
+
+.eotc-buy-sell-layout__accent-bar {
+  height: 21.5rem;
+  margin-bottom: -21.5rem;
+  background-image: var(--accent-bar__gradient);
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.eotc-buy-sell-layout__container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1 0 auto;
+}
+
+.eotc-buy-sell-layout__footer {
+  margin-top: 8rem;
+  flex-shrink: 0;
+}
+
+.eotc-buy-sell-layout__balances-title {
+  padding-bottom: 2.4rem;
+  font-size: 1.3rem;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .eotc-buy-sell-layout__footer {
+    margin-top: 3.4rem;
+  }
+}

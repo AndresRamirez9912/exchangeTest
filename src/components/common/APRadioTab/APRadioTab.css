@@ -1,0 +1,38 @@
+/* .ap-radio-tab {
+} */
+
+.ap-radio-tab__label {
+  padding: 13px 34px;
+  background: none;
+  border: none;
+  border-radius: 0;
+  letter-spacing: 0.4px;
+  border-bottom: 2px solid transparent;
+  color: var(--font__color-secondary);
+}
+
+.ap-radio-tab__label:hover {
+  color: var(--font__color-primary);
+  cursor: pointer;
+  background: none;
+  border-color: var(--general);
+}
+
+.ap-radio-tab__label--checked {
+  color: var(--font__color-primary);
+}
+
+.ap-radio-tab__label--checked-general,
+.ap-radio-tab__label--checked-general:hover {
+  border-color: var(--general);
+}
+
+.ap-radio-tab__label--checked-additive,
+.ap-radio-tab__label--checked-additive:hover {
+  border-color: var(--success);
+}
+
+.ap-radio-tab__label--checked-subtractive,
+.ap-radio-tab__label--checked-subtractive:hover {
+  border-color: var(--danger__color);
+}

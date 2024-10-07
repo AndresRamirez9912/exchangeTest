@@ -1,0 +1,13 @@
+.component-row-dual {
+  display: flex;
+}
+
+.component-row-dual__component-container-left {
+  width: 67%;
+  margin-right: 3%;
+  border-radius: 1rem;
+}
+
+.component-row-dual__component-container-right {
+  width: 30%;
+}

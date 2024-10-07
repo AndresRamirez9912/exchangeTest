@@ -1,0 +1,19 @@
+.trade-component {
+  background: var(--component__bg-color);
+  min-height: 200px;
+  height: 100%;
+}
+
+.trade-component__header {
+  height: var(--component__header-height);
+  line-height: var(--component__header-height);
+  background: var(--component__header-bg-color);
+  padding: 0 1.75rem;
+  border-bottom: 1px solid var(--component__header-separator-color);
+}
+
+.trade-component__section {
+  padding-top: 1.75rem;
+  margin-top: 1.75rem;
+  border-top: 1px solid var(--border__color);
+}

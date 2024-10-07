@@ -1,0 +1,92 @@
+.ap-tab__menu {
+  display: flex;
+  flex-shrink: 0;
+  color: var(--tab__font-color);
+  background: var(--tab__bg-color);
+  border-bottom: 1px solid var(--table__header-separator-color);
+}
+
+.ap-tab__menu-item {
+  height: 3.6rem;
+  font-weight: bold;
+  line-height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  white-space: nowrap;
+  border-right: 1px solid var(--tab__separator-color);
+  flex: 1;
+  position: relative;
+}
+
+.ap-tab__menu-item:last-of-type {
+  border-right: 0;
+}
+
+.ap-tab__menu-item:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.ap-tab__tab--side-pane {
+  height: 100%;
+}
+
+.ap-tab__tab-content--side-pane {
+  height: calc(100% - 2.5rem);
+}
+
+.ap-tab__menu-item:hover {
+  color: var(--tab__item-color--hover);
+}
+
+.ap-tab__menu-item--active,
+.ap-tab__menu-item--active:hover {
+  color: var(--tab__font-color--selected);
+}
+
+.ap-tab__menu-item:hover:before,
+.ap-tab__menu-item--active:before,
+.ap-tab__menu-item--active:hover:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-bottom: 2px solid var(--tab__border-color--selected);
+}
+
+
+/* BROWSER QUERIES */
+
+/* IE10+ specific styles */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .ap-tab__menu-item:hover:before,
+  .ap-tab__menu-item--active:before,
+  .ap-tab__menu-item--active:hover:before {
+    border: none;
+  }
+
+  .ap-tab__menu-item{
+    border-bottom: 2px solid transparent;
+  }
+  
+  .ap-tab__menu-item:hover,
+  .ap-tab__menu-item--active,
+  .ap-tab__menu-item--active:hover {
+    border-bottom: 2px solid var(--tab__border-color--selected);
+  }
+}
+
+
+/* MEDIA QUERIES */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .ap-tab__menu-item {
+    white-space: pre-line;
+    line-height: inherit;
+  }
+}

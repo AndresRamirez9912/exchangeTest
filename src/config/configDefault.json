@@ -1,0 +1,646 @@
+{
+  "global": {
+    "template": "MILAN",
+    "siteName": "AlphaPoint",
+    "gateway": [
+      "wss://api_apexqa.alphapoint.com/WSGateway/",
+      "wss://apiapexqa2.alphapoint.com/WSGateway",
+      "wss://apiqa4.alphapoint.com/WSGateway/"
+    ],
+    "theme": "dark",
+    "locale": "en-EN",
+    "dateFormat": "M/D/YYYY",
+    "timeFormat": "HH:mm:ss",
+    "dateTimeFormat": "M-D-YYYY h:mma",
+    "phoneDefaultCountry": "CO",
+    "siteLogo": "logo-kiiex-dark-htal.svg",
+    "authTimeout": 0,
+    "allowTransfer": true
+  },
+  "TickerData": {
+    "defaultInterval": 60,
+    "show24HrVolume": false,
+    "show24HrPxChange": false
+  },
+  "ApiKeys": {
+    "documentationLink": "https://alphapoint.github.io/slate/"
+  },
+  "BalancesLayout": {
+    "usePagination": true,
+    "maxLines": 100
+  },
+  "TickerData": {
+    "show24HrVolume": false,
+    "show24HrPxChange": false
+  },
+  "Deposit": {
+    "hideDepositBankInfo": false,
+    "generateNewKey": true,
+    "bankName": "My Bank",
+    "bankWireNumber": "1234567890",
+    "bankAccountNumber": "123456",
+    "MinimumVerificationLevel": 0,
+    "showDepositIdModal": false
+  },
+  "InstrumentSelector": {
+    "instruments": []
+  },
+  "Withdraw": {
+    "MinimumVerificationLevel": 0,
+    "WithdrawDetails": [
+      {
+        "text":
+          "Note - The withdrawal and transfer of these funds might take up to 7 business days, and it is subject to operator review.",
+        "useLink": false,
+        "linkAddress": ""
+      }
+    ]
+  },
+  "KYC": {
+    "verificationRequiredUrl": "/settings/verification",
+    "UpfrontKYC": false,
+    "HideUpfrontCloseButton": true,
+    "KYCRedirectVerificationLevel": 0,
+    "MinimumVerificationLevel": 1,
+    "type": "IM",
+    "requestIdentifier": "",
+    "levels": [
+      {
+        "level": 1,
+        "label": "Level 01",
+        "button": "Increase to Level 1",
+        "description": {
+          "benefits": ["$500 Limit on Deposits", "$500 limit on Withdrawals"],
+          "requirements": "Register as an exchange user and verify your email."
+        },
+        "verifiedMessage": "Verified for Level 01",
+        "underReviewMessage": "Application under review.",
+        "sections": [
+          {
+            "label": "Personal Information",
+            "form": [
+              {
+                "label": "First Name",
+                "name": "firstName",
+                "type": "text",
+                "validators": ["required"]
+              },
+              {
+                "label": "Middle Name",
+                "name": "middleName",
+                "type": "text",
+                "validators": ["required"]
+              },
+              {
+                "label": "Last Name",
+                "name": "lastName",
+                "type": "text",
+                "validators": ["required"]
+              },
+              {
+                "label": "Date of Birth",
+                "name": "dob",
+                "type": "date",
+                "validators": ["required", "isDate"]
+              },
+              {
+                "label": "Phone",
+                "name": "phone",
+                "type": "phone",
+                "validators": ["required"]
+              }
+            ]
+          },
+          {
+            "label": "Billing Address",
+            "form": [
+              {
+                "label": "Billing Country",
+                "name": "country",
+                "type": "country",
+                "validators": ["required"]
+              },
+              {
+                "label": "Billing Street Address",
+                "name": "billingStreetAddress",
+                "type": "text",
+                "info": "(100 Washington Way)",
+                "validators": ["required"]
+              },
+              {
+                "label": "Billing State",
+                "name": "state",
+                "type": "text",
+                "info": "Abbreviation only",
+                "validators": ["required"]
+              },
+              {
+                "label": "Billing City",
+                "name": "billingCity",
+                "type": "text",
+                "validators": ["required"]
+              },
+              {
+                "label": "Billing Zip",
+                "name": "billingZip",
+                "type": "text",
+                "validators": ["required", "alphanumeric"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "label": "Level 02",
+        "button": "Increase to Level 2",
+        "description": {
+          "benefits": [
+            "$2000 Deposits",
+            "$2000 Withdrawals",
+            "$10,000 buy limit",
+            "$10,000 sell limit"
+          ],
+          "requirements": "Account and Billing Information"
+        },
+        "verifiedMessage": "Verified for Level 02",
+        "underReviewMessage": "Application under review.",
+        "sections": [
+          {
+            "label": ""
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "label": "Level 03",
+        "button": "Increase to Level 3",
+        "description": {
+          "benefits": [
+            "Unlimited Deposits",
+            "Unlimited Withdrawals",
+            "$50,000 Buy Limit",
+            "$50,000 Sell Limit"
+          ],
+          "requirements": "ID Verification"
+        },
+        "verifiedMessage": "Verified for Level 03",
+        "underReviewMessage": "Application under review.",
+        "sections": [
+          {
+            "label": ""
+          }
+        ]
+      }
+    ],
+    "highlightStyle": "star"
+  },
+  "LandingPage": {
+    "forceLogIn": false
+  },
+  "Pagination": {
+    "maxPages": 5
+  },
+  "ProblemLoggingIn": {
+    "showOptions": true
+  },
+  "RecentActivity": {
+    "showTransfers": false
+  },
+  "RetailBuySell": {
+    "roundBuyLimitPrices": false,
+    "dealPrices": {
+      "BTCUSD": [100, 200, 500, 1000],
+      "ETHUSD": [100, 200, 500, 1000],
+      "LTCUSD": [100, 200, 500, 1000],
+      "BCHUSD": [100, 200, 500, 1000],
+      "LTCBTC": [0.1, 0.5, 1, 2]
+    }
+  },
+  "OrderCalcBuffer": {
+    "priceBuffer": 0,
+    "quantityBuffer": 0
+  },
+  "Settings": {
+    "profile": true,
+    "apiKeys": true,
+    "tradeReports": true,
+    "userContacts": false,
+    "affiliate": true,
+    "loyaltyToken": true,
+    "kyc": true,
+    "demoMode": false
+  },
+  "SignupForm": {
+    "useEmailAsUsername": false,
+    "additionalFields": [],
+    "privacyPolicyLink": "https://www.kiiex.io/politicadeprivacidad",
+    "termsAndServicesLink": "https://www.kiiex.io/terminosycondiciones",
+    "active": true
+  },
+  "TradingLayout": {
+    "chart": "TradingView",
+    "usePagination": true,
+    "maxLines": 6,
+    "showDepthChart": true
+  },
+  "OrderHistoryData": {
+    "usePagination": true
+  },
+  "DepthChart": {
+    "depthchartzoom": 5,
+    "depthChartHeight": 150,
+    "depthChartTextColor": "rgb(200,200,200)",
+    "depthChartTextFont": "12px",
+    "depthChartTextBgColor": "rgb(26, 32, 41)",
+    "depthChartXAxisTextPadding": 60,
+    "depthChartYAxisTextPadding": 20,
+    "depthChartBottomPadding": 20,
+    "depthChartXAxisStepCnt": 9
+  },
+  "TradingView": {
+    "timezone": "America/New_York",
+    "locale": "es",
+    "disabled_features": [
+      "context_menus",
+      "control_bar",
+      "go_to_date",
+      "header_chart_type",
+      "header_compare",
+      "header_resolutions",
+      "header_screenshot",
+      "header_symbol_search",
+      "header_undo_redo",
+      "left_toolbar",
+      "show_chart_property_page",
+      "save_chart_properties_to_local_storage",
+      "use_localstorage_for_settings"
+    ]
+  },
+  "Language": {
+    "languageNames": {
+      "af": "Afrikaans",
+      "sq": "Albanian",
+      "ar": "Arabic",
+      "hy": "Armenian",
+      "az": "Azeerbaijani",
+      "eu": "Basque",
+      "be": "Belarusian",
+      "bn": "Bengali",
+      "bs": "Bosnian",
+      "bg": "Bulgarian",
+      "ca": "Catalan",
+      "zh": "Chinese",
+      "co": "Corsican",
+      "hr": "Croatian",
+      "cs": "Czech",
+      "da": "Danish",
+      "nl": "Dutch",
+      "en": "English",
+      "et": "Estonian",
+      "fi": "Finnish",
+      "fr": "French",
+      "fy": "Frisian",
+      "ka": "Georgian",
+      "de": "German",
+      "el": "Greek",
+      "hi": "Hindi",
+      "hu": "Hungarian",
+      "is": "Icelandic",
+      "id": "Indonesian",
+      "it": "Italian",
+      "ja": "Japanese",
+      "jw": "Javanese",
+      "ko": "Korean",
+      "ku": "Kurdish",
+      "ky": "Kyrgyz",
+      "lo": "Lao",
+      "lv": "Latvian",
+      "lt": "Lithuanian",
+      "lb": "Luxembourgish",
+      "mk": "Macedonian",
+      "mg": "Malagasy",
+      "ms": "Malay",
+      "ml": "Malayalam",
+      "mt": "Maltese",
+      "mi": "Maori",
+      "mn": "Mongolian",
+      "my": "Myanmar",
+      "ne": "Nepali",
+      "no": "Norwegian",
+      "ps": "Pashto",
+      "fa": "Persian",
+      "pl": "Polish",
+      "pt": "Portuguese",
+      "pa": "Punjabi",
+      "ro": "Romanian",
+      "ru": "Russian",
+      "sm": "Samoan",
+      "sr": "Serbian",
+      "sk": "Slovak",
+      "sl": "Slovenian",
+      "so": "Somali",
+      "es": "Spanish",
+      "su": "Sundanese",
+      "sw": "Swahili",
+      "sv": "Swedish",
+      "tl": "Tagalog",
+      "th": "Thai",
+      "tr": "Turkish",
+      "uk": "Ukrainian",
+      "uz": "Uzbek",
+      "vi": "Vietnamese"
+    }
+  },
+  "Footer": {
+    "openInNewWindowGlobal": true,
+    "links": [
+      [
+        {
+          "text": "Terms & Conditions",
+          "link": "https://kiiex.io/terminosycondiciones"
+        },
+        {
+          "text": "Privacy Policy",
+          "link": "https://kiiex.io/politicadeprivacidad"
+        }
+      ],
+      [
+        {
+          "text": "soporte@kiiex.io",
+          "link": "mailto:soporte@kiiex.io",
+          "openInNewWindow": true
+        },
+        {
+          "text": "https://www.kiiex.io",
+          "link": "https://www.kiiex.io"
+        }
+      ]
+    ]
+  },
+  "Countries": {
+    "AF": "Afghanistan",
+    "AX": "Åland Islands",
+    "AL": "Albania",
+    "DZ": "Algeria",
+    "AS": "American Samoa",
+    "AD": "Andorra",
+    "AO": "Angola",
+    "AI": "Anguilla",
+    "AQ": "Antarctica",
+    "AG": "Antigua and Barbuda",
+    "AR": "Argentina",
+    "AM": "Armenia",
+    "AW": "Aruba",
+    "AU": "Australia",
+    "AT": "Austria",
+    "AZ": "Azerbaijan",
+    "BS": "Bahamas",
+    "BH": "Bahrain",
+    "BD": "Bangladesh",
+    "BB": "Barbados",
+    "BY": "Belarus",
+    "BE": "Belgium",
+    "BZ": "Belize",
+    "BJ": "Benin",
+    "BM": "Bermuda",
+    "BT": "Bhutan",
+    "BO": "Bolivia",
+    "BA": "Bosnia and Herzegovina",
+    "BW": "Botswana",
+    "BV": "Bouvet Island",
+    "BR": "Brazil",
+    "IO": "British Indian Ocean Territory",
+    "BN": "Brunei Darussalam",
+    "BG": "Bulgaria",
+    "BF": "Burkina Faso",
+    "BI": "Burundi",
+    "KH": "Cambodia",
+    "CM": "Cameroon",
+    "CA": "Canada",
+    "CV": "Cape Verde",
+    "KY": "Cayman Islands",
+    "CF": "Central African Republic",
+    "TD": "Chad",
+    "CL": "Chile",
+    "CN": "China",
+    "CX": "Christmas Island",
+    "CC": "Cocos (Keeling) Islands",
+    "CO": "Colombia",
+    "KM": "Comoros",
+    "CG": "Congo",
+    "CD": "Congo, The Democratic Republic of the",
+    "CK": "Cook Islands",
+    "CR": "Costa Rica",
+    "CI": "Cote D'Ivoire",
+    "HR": "Croatia",
+    "CU": "Cuba",
+    "CY": "Cyprus",
+    "CZ": "Czech Republic",
+    "DK": "Denmark",
+    "DJ": "Djibouti",
+    "DM": "Dominica",
+    "DO": "Dominican Republic",
+    "EC": "Ecuador",
+    "EG": "Egypt",
+    "SV": "El Salvador",
+    "GQ": "Equatorial Guinea",
+    "ER": "Eritrea",
+    "EE": "Estonia",
+    "ET": "Ethiopia",
+    "FK": "Falkland Islands (Malvinas)",
+    "FO": "Faroe Islands",
+    "FJ": "Fiji",
+    "FI": "Finland",
+    "FR": "France",
+    "GF": "French Guiana",
+    "PF": "French Polynesia",
+    "TF": "French Southern Territories",
+    "GA": "Gabon",
+    "GM": "Gambia",
+    "GE": "Georgia",
+    "DE": "Germany",
+    "GH": "Ghana",
+    "GI": "Gibraltar",
+    "GR": "Greece",
+    "GL": "Greenland",
+    "GD": "Grenada",
+    "GP": "Guadeloupe",
+    "GU": "Guam",
+    "GT": "Guatemala",
+    "GG": "Guernsey",
+    "GN": "Guinea",
+    "GW": "Guinea-Bissau",
+    "GY": "Guyana",
+    "HT": "Haiti",
+    "HM": "Heard Island and Mcdonald Islands",
+    "VA": "Holy See (Vatican City State)",
+    "HN": "Honduras",
+    "HK": "Hong Kong",
+    "HU": "Hungary",
+    "IS": "Iceland",
+    "IN": "India",
+    "ID": "Indonesia",
+    "IR": "Iran, Islamic Republic Of",
+    "IQ": "Iraq",
+    "IE": "Ireland",
+    "IM": "Isle of Man",
+    "IL": "Israel",
+    "IT": "Italy",
+    "JM": "Jamaica",
+    "JP": "Japan",
+    "JE": "Jersey",
+    "JO": "Jordan",
+    "KZ": "Kazakhstan",
+    "KE": "Kenya",
+    "KI": "Kiribati",
+    "KP": "Korea, Democratic People'S Republic of",
+    "KR": "Korea, Republic of",
+    "KW": "Kuwait",
+    "KG": "Kyrgyzstan",
+    "LA": "Lao People'S Democratic Republic",
+    "LV": "Latvia",
+    "LB": "Lebanon",
+    "LS": "Lesotho",
+    "LR": "Liberia",
+    "LY": "Libyan Arab Jamahiriya",
+    "LI": "Liechtenstein",
+    "LT": "Lithuania",
+    "LU": "Luxembourg",
+    "MO": "Macao",
+    "MK": "Macedonia, The Former Yugoslav Republic of",
+    "MG": "Madagascar",
+    "MW": "Malawi",
+    "MY": "Malaysia",
+    "MV": "Maldives",
+    "ML": "Mali",
+    "MT": "Malta",
+    "MH": "Marshall Islands",
+    "MQ": "Martinique",
+    "MR": "Mauritania",
+    "MU": "Mauritius",
+    "YT": "Mayotte",
+    "MX": "Mexico",
+    "FM": "Micronesia, Federated States of",
+    "MD": "Moldova, Republic of",
+    "MC": "Monaco",
+    "MN": "Mongolia",
+    "MS": "Montserrat",
+    "MA": "Morocco",
+    "MZ": "Mozambique",
+    "MM": "Myanmar",
+    "NA": "Namibia",
+    "NR": "Nauru",
+    "NP": "Nepal",
+    "NL": "Netherlands",
+    "AN": "Netherlands Antilles",
+    "NC": "New Caledonia",
+    "NZ": "New Zealand",
+    "NI": "Nicaragua",
+    "NE": "Niger",
+    "NG": "Nigeria",
+    "NU": "Niue",
+    "NF": "Norfolk Island",
+    "MP": "Northern Mariana Islands",
+    "NO": "Norway",
+    "OM": "Oman",
+    "PK": "Pakistan",
+    "PW": "Palau",
+    "PS": "Palestinian Territory, Occupied",
+    "PA": "Panama",
+    "PG": "Papua New Guinea",
+    "PY": "Paraguay",
+    "PE": "Peru",
+    "PH": "Philippines",
+    "PN": "Pitcairn",
+    "PL": "Poland",
+    "PT": "Portugal",
+    "PR": "Puerto Rico",
+    "QA": "Qatar",
+    "RE": "Reunion",
+    "RO": "Romania",
+    "RU": "Russian Federation",
+    "RW": "Rwanda",
+    "SH": "Saint Helena",
+    "KN": "Saint Kitts and Nevis",
+    "LC": "Saint Lucia",
+    "PM": "Saint Pierre and Miquelon",
+    "VC": "Saint Vincent and the Grenadines",
+    "WS": "Samoa",
+    "SM": "San Marino",
+    "ST": "Sao Tome and Principe",
+    "SA": "Saudi Arabia",
+    "SN": "Senegal",
+    "CS": "Serbia and Montenegro",
+    "SC": "Seychelles",
+    "SL": "Sierra Leone",
+    "SG": "Singapore",
+    "SK": "Slovakia",
+    "SI": "Slovenia",
+    "SB": "Solomon Islands",
+    "SO": "Somalia",
+    "ZA": "South Africa",
+    "GS": "South Georgia and the South Sandwich Islands",
+    "ES": "Spain",
+    "LK": "Sri Lanka",
+    "SD": "Sudan",
+    "SR": "Surname",
+    "SJ": "Svalbard and Jan Mayen",
+    "SZ": "Swaziland",
+    "SE": "Sweden",
+    "CH": "Switzerland",
+    "SY": "Syrian Arab Republic",
+    "TW": "Taiwan, Province of China",
+    "TJ": "Tajikistan",
+    "TZ": "Tanzania, United Republic of",
+    "TH": "Thailand",
+    "TL": "Timor-Leste",
+    "TG": "Togo",
+    "TK": "Tokelau",
+    "TO": "Tonga",
+    "TT": "Trinidad and Tobago",
+    "TN": "Tunisia",
+    "TR": "Turkey",
+    "TM": "Turkmenistan",
+    "TC": "Turks and Caicos Islands",
+    "TV": "Tuvalu",
+    "UG": "Uganda",
+    "UA": "Ukraine",
+    "AE": "United Arab Emirates",
+    "GB": "United Kingdom",
+    "US": "United States",
+    "UM": "United States Minor Outlying Islands",
+    "UY": "Uruguay",
+    "UZ": "Uzbekistan",
+    "VU": "Vanuatu",
+    "VE": "Venezuela",
+    "VN": "Vietnam",
+    "VG": "Virgin Islands, British",
+    "VI": "Virgin Islands, U.S.",
+    "WF": "Wallis and Futuna",
+    "EH": "Western Sahara",
+    "YE": "Yemen",
+    "ZM": "Zambia",
+    "ZW ": "Zimbabwe"
+  },
+  "BaseCurrencies": [
+    "BTC",
+    "ETH",
+    "LTC",
+    "USD",
+    "XRP",
+    "XMR",
+    "DASH",
+    "EUR",
+    "EOS",
+    "ETC",
+    "DASC"
+  ],
+  "SimpleExchange": {
+    "active": false,
+    "route": "/exchange"
+  },
+  "web":{
+    "locale":"es"
+  }
+}

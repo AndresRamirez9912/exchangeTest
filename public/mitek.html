@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mitek</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Mitek code -->
+    <script>
+      var array = ['--primary__bg-color', '--general__bg-color', '--general__bg-color--hover', '--border__color-tertiary', '--success__bg-color', '--success__bg-color--hover', '--tertiary__bg-color', '--default-background-hover'];
+      var parentBody = getComputedStyle(parent.document.body);
+      array.forEach(cssVariable => {
+        document.body.style.setProperty(cssVariable, parentBody.getPropertyValue(cssVariable));
+      });
+    </script>
+    <link href="https://sidusaeast1.idchecker.com/idchecker.uploadwidget/IdCheckerUploadWidget.css" rel="stylesheet" type="text/css">
+    <!-- AlphaPoint Mitek CSS -->
+    <style>
+      h1,
+      h2 {
+        font-size: 1.2rem;
+        font-weight: normal;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      button, input, a {
+        -o-transition: all .1s linear;
+        -moz-transition: all .1s linear;
+        -webkit-transition: all .1s linear;
+        transition: all .1s linear;
+        outline: none;
+      }
+      #idCheckerUploadWidget {
+        background: none;
+        box-shadow: unset;
+        margin-top: 0;
+      }
+      #idCheckerUploadWidget .id-checker-content {
+        background: #222630;
+        color: #969db0;
+        font-family: var(--font__typeface);
+        border-radius: 2px;
+        border: 2px solid var(--border__color-tertiary);
+      }
+      #id-c-header {
+        background: #232630;
+        border-bottom: 1px solid #2d313d;
+      }
+      #idCheckerLogoContainer > img {
+        display: none;
+      }
+      #idCheckerLogoContainer::after {
+        content: 'Mitek - Upload Documents';
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: .05rem;
+      }
+      #idCheckerUploadWidget .circle-border {
+        border: 2px solid #969db0;
+        border-radius: 50%;
+        padding: 0;
+        width: 4px;
+        height: 4px;
+        font-weight: 700;
+        font-size: 0;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        background: #969db0;
+        margin-bottom: 4px;
+        margin-right: 5px;
+      }
+      #idCheckerUploadWidget > div.id-checker-content > div > div.id-c-app-wrapper.ng-scope > div > div.grid-6.grid-inline-block.ng-scope > ul {
+        margin-top: -5px;
+      }
+      #idCheckerUploadWidget .id-checker-start {
+        font-size: 1rem;
+        letter-spacing: unset;
+        font-weight: normal;
+        padding: .5rem 1.5rem;
+        margin: 25px 5px;
+        font-size: 12px;
+        display: block;
+        background: var(--general__bg-color);
+        border-radius: 2px;
+        box-shadow: none;
+        text-transform: none;
+        cursor: pointer;
+        text-shadow: none;
+        text-transform: capitalize;
+        color: #fff;
+      }
+      #idCheckerUploadWidget ul.identity-document .arrow {
+          display: inline-block;
+          padding-left: 33px;
+          font-size: .8rem;
+          background: var(--general__bg-color);
+          background-size: 15px;
+          text-align: center;
+          padding: 0;
+      }
+      #id-c-header > div > ul > li.id-c-number-circle.ng-binding.ng-scope {
+        display: none !important;
+      }
+      .bg-0, .bg-1, .bg-2 {
+        background: var(--success__bg-color);
+      }
+      #idCheckerUploadWidget .id-c-zindex-99 {
+        color: var(--primary__bg-color);
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.id-checker-container.id-checker-examples-IdentityCard,
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.id-checker-container.id-checker-examples-DrivingLicence,
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.id-checker-container.id-checker-examples-Passport {
+        display: none
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.id-c-center-btns.ng-scope > button.id-c-mobile,
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.id-c-center-btns.ng-scope > button.id-c-webcam,
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.id-c-center-btns.ng-scope > button.id-c-upload {
+        background: var(--general__bg-color);
+        text-shadow: none;
+        color: white;
+        font-size: .8rem;
+        text-align: center;
+        padding: 0.5rem 2rem;
+        outline: none;
+        cursor: pointer;
+        width: 253px;
+        display: block;
+        border-radius: 2px;
+        margin: 25px 0;
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.id-c-center-btns.ng-scope > button.id-c-mobile:hover,
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.id-c-center-btns.ng-scope > button.id-c-webcam:hover,
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.id-c-center-btns.ng-scope > button.id-c-upload:hover {
+        background: var(--general__bg-color--hover)
+      }
+      #idCheckerUploadWidget .idCheckerHandoff {
+        top: -165px;
+      }
+      #idCheckerUploadWidget .id-checker-start:hover {
+        background-color: var(--general__bg-color--hover);
+      }
+      #id-c-header > div > button {
+        background: var(--general__bg-color);
+        box-shadow: none;
+        text-shadow: none;
+        color: #fff;
+        padding: 2px 10px;
+        text-transform: capitalize;
+        cursor: pointer;
+        margin-bottom: 15px;
+      }
+      #id-c-header > div > button:hover {
+        background: var(--general__bg-color--hover);
+      }
+      .idCheckerHandoff {
+        height: 550px
+      }
+      .id-c-handoff-cancel {
+        position: absolute;
+        bottom: 0;
+        left: 4px;
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.idCheckerHandoff.ng-scope.ng-isolate-scope > div > div.id-c-handoff-title {
+        margin: 0 auto;
+        text-align: center;
+      } 
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.idCheckerHandoff.ng-scope.ng-isolate-scope > div > div.id-c-handoff-header > div.id-c-handoff-header-title {
+        display: inline-block;
+        padding-left: 12%;
+        padding-top: 17px;
+        font-weight: 400;
+        font-size: 20px;
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.idCheckerHandoff.ng-scope.ng-isolate-scope > div > div.id-c-handoff-header > div.id-c-handoff-cancel > button {
+        color: var(--general__bg-color);
+        box-shadow: none;
+        border: none;
+        border-radius: 2px;
+        font-size: .8rem;
+        cursor: pointer;
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div.idCheckerHandoff.ng-scope.ng-isolate-scope > div > div.id-c-handoff-header > div.id-c-handoff-cancel > button:hover {
+        background: var(--default-background-hover);
+        color: var(--general__bg-color--hover)
+      }
+      #idCheckerUploadWidget #idc-zoome-in,
+      #idCheckerUploadWidget #idc-zoome-out {
+        padding: 0.4rem 1rem;
+        background: var(--tertiary__bg-color);
+        text-shadow: none;
+        text-transform: uppercase;
+        color: white;
+        margin: 10px 0 14px .25%;
+        box-shadow: none;
+        cursor: pointer;
+        width: 49.5%;
+        position: absolute;
+        right: 0;
+        bottom: 45px;
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div > div:nth-child(2) > div:nth-child(2) > div.idCheckerPhoto.ng-isolate-scope > div > div:nth-child(2) {
+        max-width: 520px !important;
+        max-height: unset !important;
+      }
+      #idCheckerUploadWidget #idc-output {
+        border: none;
+      }
+      #idCheckerUploadWidget #idc-zoome-in {
+        margin: 10px .25% 14px 0;
+        left: 0;
+      }
+      #idCheckerUploadWidget #idc-zoome-in:hover,
+      #idCheckerUploadWidget #idc-zoome-out:hover {
+        background: var(--default-background-hover);
+      }
+      #idCheckerUploadWidget button.id-c-compare,
+      #idCheckerUploadWidget #idc-takePicture {
+        box-shadow: none;
+        padding: .8rem;
+        margin-top: 20px;
+        border-radius: 2px;
+        background-color: var(--general__bg-color);
+        color: white;
+        text-shadow: none;
+        text-transform: uppercase;
+        font-size: .8rem;
+        cursor: pointer;
+      }
+      #idCheckerUploadWidget .id-c-checker-green-4, 
+      #idCheckerUploadWidget .id-c-checker-green-6 {
+        background-size: 50% 50%;
+      }
+      #idCheckerUploadWidget #idc-takePicture:hover {
+        background-color: var(--general__bg-color--hover);
+      }
+      #idCheckerUploadWidget button.id-c-compare {
+        background-color: var(--success__bg-color);
+      }
+      #idCheckerUploadWidget button.id-c-compare:hover {
+        background-color: var(--success__bg-color--hover);
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div > h1 {
+        display: none;
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div > div:nth-child(2) > hr {
+        display: none;
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div > div:nth-child(2) {
+        margin-top: 140px
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div > div:nth-child(3) {
+        position: absolute;
+        width: 95%;
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div > div:nth-child(3) > h4 {
+        margin-top: 0;
+      }
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(1),
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(2),
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(3),
+      #idCheckerUploadWidget > div.id-checker-content.step-Identity > div > div.id-c-app-wrapper.ng-scope > div > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(4) {
+        width: 23%;
+      }
+      #idCheckerUploadWidget .id-checker-passport,
+      #idCheckerUploadWidget .id-checker-id-card,
+      #idChecidCheckerUploadWidgetker .id-checker-id-card,
+      #idCheckerUploadWidget .id-checker-drivers-license,
+      #idCheckerUploadWidget .id-checker-utility-bill,
+      #idCheckerUploadWidget .id-checker-bank-statement,
+      #idCheckerUploadWidget .id-checker-id-otherdocs {
+        min-height: 30px;
+        line-height: 30px;
+        margin-bottom: 25px;
+        background: var(--general__bg-color);
+        color: #fff;
+        font-size: .8rem;
+        border: var(--general__bg-color);
+        padding: 0 2rem;
+        width: 100px;
+        text-align: center;
+        border-radius: 2px;
+      }
+      #idCheckerUploadWidget ul.identity-document .arrow {
+        display: inline-block;
+        padding-left: 33px;
+        background: none;
+        background-size: 15px;
+        text-align: center;
+        padding: 0;
+      }
+      #idCheckerUploadWidget .id-checker-passport:hover,
+      #idCheckerUploadWidget .id-checker-id-card:hover,
+      #idCheckerUploadWidget .id-checker-drivers-license:hover,
+      #idCheckerUploadWidget .id-checker-utility-bill:hover,
+      #idCheckerUploadWidget .id-checker-bank-statement:hover,
+      #idCheckerUploadWidget .id-checker-id-otherdocs:hover {
+        font-size: .8rem;
+        background: var(--general__bg-color--hover);
+      }
+      .identity-document .grid-4, .id-checker-container .grid-4 {
+        width: 40%;
+        float: unset;
+      }
+    </style>
+    <div id="idCheckerUploadWidget" ng-app="idCheckerApp" class="idCheckerDirective"></div>
+    <script src="https://sidusaeast1.idchecker.com/idchecker.uploadwidget/IdCheckerUploadWidget.js"></script>
+    <script>
+    (function () {
+        'use strict';
+        angular.module('idCheckerApp').factory('CONSTS', [function () {
+        return {
+          // IDCHECKER_BASE_URL: 'https://sidusaeast1.idchecker.com/idchecker.webapi.strongid/api/v2/',
+          // EXAMPLES_PHOTOS_URL: 'https://sidusaeast1.idchecker.com/idchecker.uploadwidget/images/'
+          IDCHECKER_BASE_URL: 'https://sidusaacc.idchecker.com/idchecker.webapi.strongid/api/v2/',
+          EXAMPLES_PHOTOS_URL: 'https://sidusaacc.idchecker.com/idchecker.uploadwidget/images/'
+        };
+        }]);
+    }());
+    </script>
+  </body>
+</html>

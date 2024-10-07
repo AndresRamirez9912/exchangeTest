@@ -1,0 +1,16 @@
+.retail-dashboard-layout__container {
+  display: flex;
+  flex-flow: column;
+  background: var(--tertiary__bg-color);
+}
+
+.retail-dashboard-layout__header-secondary {
+  display: flex;
+  flex-flow: column;
+  background: var(--retail-header-secondary-background);
+  height: 300px;
+}
+
+.retail-dashboard-layout__header-secondary-row {
+  height: 75px;
+}

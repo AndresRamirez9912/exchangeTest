@@ -1,0 +1,45 @@
+.open-orders-tooltip__tooltip {
+  padding: 0;
+}
+
+.open-orders-tooltip__title {
+  background: var(--tooltip-title-background);
+  line-height: 2.8rem;
+  padding: 0 1.4rem;
+  border-radius: 3px 3px 0 0;
+}
+
+.open-orders-tooltip__body {
+  background: var(--tooltip-background);
+}
+
+.open-orders-tooltip__table {
+  width: 100%;
+}
+
+.open-orders-tooltip__row {
+  line-height: 1.8rem;
+  border-top: 1px solid var(--border__color-tertiary);
+}
+
+.open-orders-tooltip__label {
+  color: var(--tooltip-label-color);
+  font-size: 1rem;
+  padding: 0 1.4rem;
+}
+
+.open-orders-tooltip__data {
+  color: var(--tooltip-data-color);
+  font-size: 1rem;
+  padding: 0 1.4rem;
+  text-align: right;
+}
+
+.open-orders-tooltip__tooltip.show {
+  opacity: 0.95;
+}
+
+/* extracted from ReactTooltip */
+.__react_component_tooltip.type-dark.place-top:after {
+  border-top-color: var(--tooltip-border-color);
+}

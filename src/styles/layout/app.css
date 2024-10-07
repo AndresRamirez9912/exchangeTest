@@ -1,0 +1,20 @@
+.App,
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  background: var(--secondary__bg-color);
+}
+
+#lightweight-chart {
+  min-height: 40rem;
+}
+
+@media only screen and (max-width: 968px) {
+  .trading-layout__chart-tabs-container {
+    height: calc(100% - 270px) !important;
+  }
+}

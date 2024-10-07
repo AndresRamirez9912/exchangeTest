@@ -1,0 +1,3573 @@
+/* ---------- LOGIN - FORM PAGE ---------- */
+
+/* Login page container */
+.App.fluid.container {
+    background-image: url('../../images/new-background.webp') !important;
+    background-size: cover;
+    background-position: center top;
+} 
+
+
+/* Login Form container */
+#root .login-form__container {
+    margin-top: 5% !important;
+    margin-bottom: 0% !important;
+    background-color: rgba(13, 2, 39, 0.4);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* Login Form Container LOGO (responsive) */
+
+@media (min-width:1501px){
+#root a img{
+    margin-left:70px;
+    margin-top:70px;
+    width:400px !important;
+}
+}
+
+@media (max-width:1500px) {
+#root a img {
+    width: 350px !important;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+}
+
+@media (max-width:1280px) {
+#root a img {
+    width: 300px !important;
+    margin-left: 60px;
+}
+}
+
+@media (max-width:1024px) {
+#root .container>div {
+    align-self: center;
+}
+#root a img {
+    margin-left: 0px;
+}
+}
+
+@media (max-width:576px) {
+#root .login-form__container {
+    width:300px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:60px !important;
+}
+#root a img {
+    width: 280px !important;
+    margin-left: 0px;
+}
+   
+}
+
+/* Login Form header container */
+#root .login-form__header {
+    background-color: rgba(13, 2, 39, 0.5);
+    border-bottom-color: #3694ff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Login Form body container */
+#root .login-form__form .login-form__separator {
+    border-color: #100027c5;
+    border-width: 1.8px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* Login Form input username */
+.login-form__form .form-group input[type=text] {
+    background-color: rgba(108, 72, 151, 0.47);
+}
+
+/* Login Form input password */
+.ap-password-input div input[type=password] {
+    background-color: rgba(108, 72, 151, 0.47);
+}
+
+/* Login Form footer container */
+#root .login-form__footer {
+    border-top-color: #100027c5;
+    border-width: 1.8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Login Form footer separator */
+#root .container .login-form__container .login-form__footer .standalone-form__footer-separator {
+    border-left-width: 1.5px !important;
+    border-left-color: #52a3ff77;
+    border-left-style: solid;
+}
+
+/* Login Form footer text */
+#root .login-form__footer a {
+    color: #52a3ff98;
+}
+
+#root .login-form__footer a:hover {
+    color: #FFF;
+}
+
+/* Login Form button */
+#root .login-form__form .login-form__btn--additive {
+    background-color: #1f4a7c;
+}
+
+#root .login-form__form .login-form__btn--additive:hover {
+    background-color: #199DDD;
+}
+
+
+/* ---------- SIGN UP - FORM PAGE ---------- */
+
+/* Sign up page container */
+#root .standalone-layout__wrapper {
+    background-image: url('../../images/new-background.webp') !important;
+    background-size: cover;
+    background-position: center top;
+}
+
+/* Sign up Form Container LOGO (responsive) */
+
+@media (min-width:1501px){
+#root .container .standalone-layout__wrapper .ap-logo .ap-logo__link img{
+    width:380px !important;
+}
+.ap-logo .ap-logo__link img{
+    margin-top:80px !important;
+}
+}
+
+@media (max-width:1280px){
+.ap-logo .ap-logo__link img{
+    margin-left:30px !important;
+}
+}
+
+@media (max-width:1280px){
+.ap-logo .ap-logo__link img{
+    margin-left:10% !important;
+}
+#root .signup-form__form-container{
+    align-self:center;
+    margin-right:20px;
+    margin-left:20px;
+}
+}
+
+@media (max-width:1024px){
+#root .ap-logo a{
+    text-align:center;
+    width:100%;
+}
+#root .ap-logo{
+    width:100%;
+    margin-left:0px;
+}
+.ap-logo .ap-logo__link img{
+    margin-left:0px !important;
+    margin-top:20px !important;
+}
+#root .container .standalone-layout__wrapper .ap-logo .ap-logo__link img{
+    width:350px !important;
+}
+#root .signup-form__form-container{
+    align-self:center;
+    margin-right:20px;
+    margin-left:20px;
+    margin-top:160px;
+}
+}
+
+@media (max-width:768px){
+#root .signup-form__form-container{
+    align-self:center;
+    margin-right:20px;
+    margin-left:20px;
+    margin-top:50px;
+}
+}
+
+@media (max-width:576px){
+#root .signup-form__form-container{
+    align-self:center;
+    margin-right:10px;
+    margin-left:10px;
+    width:300px;
+}
+#root .container .standalone-layout__wrapper .ap-logo .ap-logo__link img{
+    width:280px !important;
+}
+}
+
+/* Sign up Form container */
+.signup-form__wrapper .form-group {
+    margin-top: 20px;
+}
+
+.signup-form__form .signup-form__wrapper .signup-form__container {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+}
+
+/* Sign up Form header container */
+#root .signup-form__header {
+    background-color: rgba(13, 2, 39, 0.5);
+    border-bottom-color: #3694ff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Sign up Form body container */
+#root .signup-form__form-container {
+    background-color: rgba(13, 2, 39, 0.4);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Sign up Form input */
+.signup-form__wrapper .form-group input[type=text] {
+    background-color: rgba(108, 72, 151, 0.47);
+}
+
+/* Sign up Form footer container */
+#root .signup-form__form .signup-form__footer {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+/* Sign up Form footer text */
+#root .signup-form__links {
+    border-top-color: rgba(13, 2, 39, 0.4);
+    border-top-width: 2px;
+    padding-left: 0px;
+}
+
+#root .signup-form__links a {
+    color: #52a3ff98;
+}
+
+#root .signup-form__links a:hover {
+    color: #fff;
+}
+
+/* Sign up Form button */
+.ap-button__btn--additive {
+    background-color: #3694ff !important;
+}
+
+.ap-button__btn--additive:hover {
+    background-color: #1b75db !important;
+}
+
+
+/* ---------- PROBLEMS LOGGIN IN FORM / FORGOT PASSWORD PAGE ---------- */
+
+/* Forgot password page container */
+#root .problem-logging-in-page__container {
+    background-color: rgba(13, 2, 39, 0.4);
+}
+
+/* Forgot password page container LOGO (responsive) */
+
+@media (max-width:1280px){
+#root .ap-logo{
+    width:100%;
+    margin-left:0px;
+}
+#root .ap-logo a{
+    width:100%;
+}
+.ap-logo .ap-logo__link img{
+    margin-left:50px !important;
+}
+#root .problem-logging-in-page__container{
+    align-self:center;
+    margin-left:20px;
+    margin-right:20px;
+}
+}
+
+@media (max-width:1024px){
+.ap-logo .ap-logo__link img{
+    margin-left:0px !important;
+}
+#root .problem-logging-in-page__container{
+    margin-top:170px;
+}
+}
+
+@media (max-width:768px){
+#root .problem-logging-in-page__container{
+    margin-top:70px;
+}
+}
+
+@media (max-width:576px){
+#root .problem-logging-in-page__container{
+    align-self:center;
+    width:300px;
+    margin-left:10px;
+    margin-right:10px;
+}
+}
+
+/* Forgot password Form header container */
+#root .problem-logging-in-page__header {
+    background-color: rgba(13, 2, 39, 0.5);
+}
+
+/* Forgot password Form input*/
+.form-group .forgot-password-form__input-box input[type=text] {
+    background-color: rgba(108, 72, 151, 0.47);
+}
+
+/* Forgot password Form footer text */
+#root .problem-logging-in-page__footer a {
+    color: rgba(82, 163, 255, 0.596);
+}
+
+#root .problem-logging-in-page__footer a:hover {
+    color: rgba(255, 255, 255);
+}
+
+
+/* ---------- DASHBOARD - Footer KIIEX Key Visual ---------- */
+
+/* Dashboard user summary nav bar */
+.user-summary__popover .page-header-user-summary__user-info-container > span{
+    font-size:14px;
+    margin-right:0px;
+    color:rgba(255,255,255,0.6);
+}
+.user-summary__popover .user-summary__user-info-container span:hover{
+    color:rgba(255,255,255,0.9);
+}
+.user-summary__popover .page-header-user-summary__user-info-container{
+    height:19%;
+}
+.page-header__right-panel .user-summary__popover .user-summary__popover-menu-trigger{
+    background-color:rgba(13,2,39,0.6);
+    border-left-color:rgba(108,72,151,0.6);
+    border-left-style:solid;
+    border-left-width:1px;
+    width:202px;
+}
+.user-summary__popover .user-summary__user-info-container{
+    padding-right:35px;
+    padding-left:45px;
+}
+.user-summary__popover .page-header-user-summary__popover-menu-trigger-triangle{
+    color:#bda1f6;
+}
+
+/* Dashboard user summary nav options */
+.user-summary__popover .user-summary__visible div{
+    background-color:rgba(21,11,44,0.9);
+    border-style:solid;
+    border-color:rgba(108,72,151,0.6);
+    border-width:1px;
+}
+.user-summary__popover div a{
+    border-bottom-color:rgba(108,72,151,0.6);
+    border-bottom-style:dotted;
+    font-size:14px;
+    height:40px;
+    max-width:200px;
+    min-height:70px;
+}
+.user-summary__popover div a:hover{
+    background-color:rgba(37, 23, 69, 0.7)
+}
+.user-summary__popover div span{
+    color:rgba(149,162,191,1);
+}
+.user-summary__popover div span:hover{
+    color:rgb(255, 255, 255);
+}
+
+/* Dashboard page container */
+.App.fluid.container-dashboard {
+    background-image: url('../../images/new-background.webp') !important;
+    background-size: cover;
+    background-position: center top;
+}
+
+/* Dashboard background content */
+#root .container-dashboard {
+    min-height: 1672px;
+    height: 100% !important;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Dashboard header container bottom line */
+#root .page-header__container {
+    border-bottom-width: 0px;
+    box-shadow: 0px 2px 0px 0px rgba(108, 72, 151, 0.5);
+    margin-bottom: 3px;
+}
+
+/* Dashboard header logo container */
+#root .page-header__content-wrapper {
+    background-color: rgba(13, 2, 39, 0.5);
+    margin-top: -15px;
+}.page-header__content-wrapper div img {
+    width:200px !important;
+    max-width:240px;
+    margin-right:40px;
+    margin-top:5px;
+    margin-left:30px
+}
+
+/* Dashboard header nav background */
+#root .page-header-nav__container a {
+    background-color: rgba(13, 2, 39, 0.6);
+    border-right-color: rgba(108, 72, 151, 0.6);
+    border-left-color: rgba(108, 72, 151, 0.6);
+}
+
+#root .page-header-nav__container a:active {
+    background-color: rgba(13, 2, 39, 0.95);
+}
+
+#root .page-header-nav__container a:hover {
+    background-color: rgba(37, 23, 69, 0.7);
+}
+
+/***********************************************************/
+
+@media (max-width:720px){
+
+/* Page header  right panel */
+#root .page-header__right-panel{
+    z-index:1000;
+    }
+
+/* Icon  user */
+.user-summary__popover .ap-icon--user{
+    position:relative;
+    left:0px;
+    }
+    
+/* Page header  right panel */
+#root .page-header__right-panel{
+    width:70px;
+    }
+    
+/* User summary  container */
+#root .page-header__right-panel .user-summary__container{
+    width:100% !important;
+    }
+    
+/* Span Tag */
+.user-summary__popover .user-summary__user-info-container{
+    height:50px;
+    width:100%;
+    padding-left:0px;
+    padding-right:0px;
+    }
+    
+/* Button */
+.page-header__right-panel .user-summary__popover .user-summary__popover-menu-trigger{
+    width:100%;
+    }
+
+/* Page header nav  container */
+#root .page-header-nav__container{
+    transform: translatex(449px);
+    /*padding-top:1px;*/
+    }    
+
+/* Page header nav  container options*/
+#root .page-header-nav__container a{
+    background-color:rgba(21,11,44,0.95);
+    border-bottom-color:rgba(108,72,151,0.95);
+    min-height:70px;
+    border-width:1px;
+    border-left-style:solid;
+    border-bottom-style:solid;
+    border-top-style:solid;
+    border-right-style:solid;
+    border-color:rgba(108,72,151,0,95);
+    border-bottom-width:1px;
+    }
+
+/* Page header nav  container options*/
+#root .page-header-nav__container a:hover{
+    background-color:rgba(37, 23, 69, 0.95);
+    }
+
+}
+
+@media (max-width:645px){
+
+#root .page-header-nav__container{
+    width:130px;
+    transform:translatex(443px) translatey(0px);
+    }
+
+/* Division */
+#root .page-header-nav__menu-toggle{
+    transform:translatex(62px) translatey(0px);
+    }
+
+}
+
+@media (max-width:576px){
+
+/* Division */
+#root .page-header-nav__menu-toggle{
+    left:-50px;
+    width:65px;
+    }
+    
+/* Page header nav  container */
+#root .page-header-nav__container{
+    left:-16px;
+    width:75px;
+    }
+    
+/* Link */
+#root .page-header-nav__container a{
+    transform: translatex(-50px);
+    left:-4px;
+    }
+    
+}
+
+@media (max-width:479px){
+
+/* Page header nav  container */
+#root .page-header-nav__container{
+    left:-120px;
+    }
+    
+/* Division */
+#root .page-header-nav__menu-toggle{
+    left:-42px;
+    }
+    
+/* Link */
+#root .page-header-nav__container a{
+    left:4px;
+    }
+    
+}
+
+@media (max-width:468px){
+
+/* Page header nav  container */
+#root .page-header-nav__container{
+    left:-130px;
+    }
+    
+/* Division */
+#root .page-header-nav__menu-toggle{
+    left:-42px;
+    }
+    
+/* Link */
+#root .page-header-nav__container a{
+    left:2px;
+    }
+    
+}
+
+@media (max-width:425px){
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left:-190px;
+        }
+        
+    /* Division */
+    #root .page-header-nav__menu-toggle{
+        left:-42px;
+        }
+        
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 4px;
+        }
+        
+    }
+
+/***********************************************************/
+/* iPhone 14pro max 430x932 */
+@media screen and (min-width: 430px) and (max-width: 430px)
+              and (min-height: 932px) and (max-height: 932px){
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left: -166px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 2px;
+        }
+
+}
+
+/* iPhone 14pro 393x852 */
+@media screen and (min-width: 393px) and (max-width: 393px)
+              and (min-height: 852px) and (max-height: 852px){
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left: -204px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 2px;
+        }
+
+}
+
+/* iPhone 13promax 428x926 */
+@media screen and (min-width: 428px) and (max-width: 428px)
+              and (min-height: 926px) and (max-height: 926px){
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left: -169px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 2px;
+        }
+
+}
+
+/* iPhone 12pro 390x844 */
+@media screen and (min-width: 390px) and (max-width: 390px)
+              and (min-height: 844px) and (max-height: 844px){
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left:-205px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 0px;
+        }
+        
+}
+
+/* iPhone 6/7/8 Plus 414x736 */
+@media screen and (min-width: 414px) and (max-width: 414px)
+              and (min-height: 736px) and (max-height: 736px){
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left:-182px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 2px;
+        }
+        
+}
+
+/* iPhone X 375x812 */
+@media screen and (min-width: 375px) and (max-width: 375px)
+              and (min-height: 812px) and (max-height: 812px){
+
+    /*Logo container*/
+    .page-header__content-wrapper div img {
+        width: 180px !important;
+        max-width: 180px;
+        }
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left:-222px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 2px;
+        }
+        
+}
+
+/* iPhone 5/SE 320x568 */
+@media screen and (min-width: 320px) and (max-width: 320px)
+              and (min-height: 568px) and (max-height: 568px){
+
+    /*Logo container*/
+    .page-header__content-wrapper div img {
+        width: 160px !important;
+        max-width: 160px;
+        }
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left:-276px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 2px;
+        }
+        
+}
+
+/* iPhone SE 375x667 */
+@media screen and (min-width: 375px) and (max-width: 375px)
+              and (min-height: 667px) and (max-height: 667px){
+
+    /*Logo container*/
+    .page-header__content-wrapper div img {
+        width: 180px !important;
+        max-width: 180px;
+        }
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left:-222px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 2px;
+        }
+        
+}
+
+/* Samsung Galaxy A51/71 412x914 */
+@media screen and (min-width: 412px) and (max-width: 412px)
+              and (min-height: 914px) and (max-height: 914px){
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left:-184px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 2px;
+        }
+        
+}
+
+/* Samsung Galaxy S20 PLus 384x854 */
+@media screen and (min-width: 384px) and (max-width: 384px)
+              and (min-height: 854px) and (max-height: 854px){
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left:-212px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 2px;
+        }
+        
+}
+
+/* Samsung Galaxy S20 360x800 */
+@media screen and (min-width: 360px) and (max-width: 360px)
+              and (min-height: 800px) and (max-height: 800px){
+
+    /*Logo container*/
+    .page-header__content-wrapper div img {
+        width: 160px !important;
+        max-width: 160px;
+        }
+    
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left:-236px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: 2px;
+        }
+        
+}
+
+/* Nokia N9 480x854 */
+@media screen and (min-width: 480px) and (max-width: 480px)
+              and (min-height: 854px) and (max-height: 854px){
+
+    /* Page header nav  container */
+    #root .page-header-nav__container{
+        left:-109px;
+        }
+
+    /* Link */
+    #root .page-header-nav__container a{
+        left: -6px;
+        }
+        
+}
+
+/***********************************************************/
+
+/* Dashboard accent bar background */
+#root .dashboard-page__accent-bar {
+    background-image: linear-gradient(to top, rgba(13, 2, 39, 0.0) 30%, rgba(13, 2, 39, 0.9) 100%)
+}
+
+/* Dashboard notification request container */
+.dashboard-page .transfer-request-notification-list .transfer-request-notification-list__empty {
+    background-color: rgba(11,2,32,0.4);
+    min-height: 60px;
+    height: 60px !important;
+    justify-content: center;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Dashboard notification request container shadow */
+#root .dashboard-page .dashboard-page__notification-row {
+    box-shadow: 0px 5px 20px 0px rgba(255, 255, 255, 0);
+}
+
+/* Dashboard notification section links bottom line */
+#root .page-sub-header {
+    box-shadow: 0px 2px 0px 0px rgba(108, 72, 151, 0.3);
+}
+
+/* Dashboard notification YOUR SNAPSHOT link */
+#root .page-sub-header a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#root .page-sub-header a:hover {
+    color: rgba(82, 163, 255, 0.596);
+}
+
+/* Dashboard market overview header background */
+.dashboard-page .dashboard-page__market-header {
+    background-color: rgba(11,2,32,0.4);
+}
+
+/* Dashboard market overview left container */
+.dashboard-page .dashboard-page__market-overview-container-left {
+    background-color: rgba(40, 46, 61, 0);
+}
+
+/* Dashboard market overview instrument selector */
+.market-overview__instrument-selector .instrument-selector-popover__popover .instrument-selector__trigger {
+    background-color: #333e58;
+}
+
+/* Dashboard market overview instrument container */
+.market-overview__body .market-overview-instrument {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-left-width: 2px;
+    border-left-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dashboard market overview instrument background */
+.market-overview__body .market-overview__instrument-selector {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard market overview instrument row */
+.market-overview__body .market-overview-instrument .market-overview-instrument__row {
+    background-color: rgba(13, 2, 39, 0.01);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+    border-bottom-style: dashed;
+}
+
+/* Dashboard balances right container */
+.dashboard-page .dashboard-page__market-overview-container-right {
+    background-color: rgba(40, 46, 61, 0);
+}
+
+/* Dashboard balances header */
+.dashboard-page .dashboard-page__balances-header {
+    background-color: rgba(11,2,32,0.4);
+}
+
+/* Dashboard Product balances container */
+.dashboard-page .product-balances__container {
+    background-color: rgba(13, 2, 39, 0);
+}
+
+/* Dashboard Product balances wrapper */
+.dashboard-page .product-balances__wrapper {
+    background-color: rgba(36,41,54,0.6);
+}
+
+/* Dashboard Balance item container */
+.dashboard-page .product-balances__wrapper .balance-item__container {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-bottom-color: rgba(255,255,255,0.3);
+    border-bottom-style: dashed;
+}
+
+#root .container-dashboard .dashboard-page .dashboard-page__market-overview-container .dashboard-page__market-overview-container-right .product-balances__container .product-balances__wrapper .balance-item__container {
+    border-bottom-width: 1px !important;
+}
+
+/* Dashboard Recent Activity container*/
+
+/* Dashboard Recent Activity header container*/
+#root .dashboard-page .dashboard-page__recent-activity-container{
+    background-color:rgba(0,0,0,0);
+}
+.dashboard-page .dashboard-page__recent-activity-container > .activity{
+    background-color:rgba(0,0,0,0);
+}
+.dashboard-page .activity .activity__header-bar{
+    background-color:rgba(11,2,32,0.4);
+    background-image:none !important;
+}
+
+/* Dashboard Activity table header */
+.dashboard-page .flex-table .activity__table-header {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-bottom-color: rgba(255, 255, 255, 0);
+}
+
+/* Dashboard Activity Flex table */
+.dashboard-page .activity .flex-table {
+    background-color: rgba(40, 46, 61, 0);
+}
+
+/* Dashboard Activity Flex table body */
+.dashboard-page .flex-table .flex-table__body {
+    background-color: rgba(40, 46, 61, 0.6);
+}
+
+/* Dashboard Activity row */
+.flex-table .flex-table__body .activity__row {
+    border-top-color: rgba(255, 255, 255, 0.3);
+    border-top-style: dashed;
+}
+
+#root .container-dashboard .dashboard-page .dashboard-page__recent-activity-container .activity .flex-table__wide-row-container .flex-table .flex-table__body .activity__row {
+    border-top-width: 1px !important;
+}
+
+/* Dashboard Footer Section Container */
+#root .dashboard-page__footer footer {
+    background-color: rgba(13, 2, 39, 0.6);
+    border-top-width: 2px !important;
+    height: auto !important;
+    padding-bottom: 0px;
+    padding-top: 50px;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+/* Dashboard Footer Section Left Container */
+#root .container-dashboard .dashboard-page__footer .page-footer .page-footer__footer-left-content {
+    width: 100% !important;
+}
+
+/* Dashboard Footer Section Logo - Section left align */
+.page-footer .page-footer__footer-left-content div {
+    display: flex;
+}
+
+/* Dashboard Footer Section Right Container */
+#root .container-dashboard .dashboard-page__footer .page-footer .page-footer__footer-right-content {
+    width: 100% !important;
+    margin-left: 0px;
+    max-width: none;
+}
+
+/* Dashboard Footer Section List - Section right align */
+#root .container-dashboard .dashboard-page__footer .page-footer .page-footer__footer-right-content ul {
+    width: 100% !important;
+    margin-left: 0px;
+    max-width: none;
+}
+
+/* Dashboard Footer Section List - Text */
+.page-footer ul {
+    text-align: right;
+    direction: rtl;
+    line-height: 1.4em;
+    padding-right: 20px;
+}
+
+/* Dashboard Footer Section List - Link color */
+.page-footer ul a {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+.page-footer ul a:hover {
+    color: #3694ff;
+}
+
+/* Dashboard notification MARKET DATA link */
+#root .page-sub-header {
+    height: 48px;
+}
+
+/* Dashboard Market data card row */
+.market-data-cards .market-data-card .market-data-card__row {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.dashboard-page .market-data-cards .market-data-cards__row{
+    margin-top:30px;
+}
+
+/* Dashboard Market data cards card */
+.market-data-cards .market-data-cards__card {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Dashboard Market data card */
+.market-data-cards .market-data-cards__card .market-data-card {
+    background-color: rgba(10, 8, 25, 0.3);
+}
+
+/* Dashboard EXCHANGE page */
+
+/* Dashboard exchange instrument trigger */
+#root .instrument-selector-popover__popover .instrument-selector__trigger{
+    background-color:rgba(11,2,32,0.4) !important;
+}
+
+/* Dashboard exchange sidepanel button */
+.order-entry__body .order-entry__btn--additive{
+    background-color:rgba(110,137,236,0.6) !important;
+}
+
+/* Dashboard exchange advanced order sidepanel */
+.slide-pane .advanced-order-sidepane__close-button{
+    top:55px;
+    left:600px;
+    bottom:880px;
+    height:30px;
+}
+.slide-pane .advanced-order-form__body .advanced-order-form__btn--additive{
+    background-color:rgba(110,137,236,0.6) !important;
+}
+
+/* Dashboard exchange report block trade sidepanel */
+.slide-pane .report-block-trade-sidepane__close-button{
+    top:55px;
+    left:600px;
+    bottom:880px;
+    height:30px;
+}
+.slide-pane__body div .report-block-trade-form__btn--additive{
+    background-color:rgba(110,137,236,0.6) !important;
+}
+
+/* Dashboard BUY & SELL Section */
+
+/* Buy&Sell Main container */
+#root .container-dashboard {
+    transform: translatex(0px) translatey(0px);
+    min-height: 100%;
+    overflow: auto;
+}
+#root .eotc-buy-sell-layout__container {
+    transform: translatex(0px) translatey(0px);
+}
+#root .eotc-buy-sell-layout__col--lg {
+    margin-top: 70px;
+}
+
+/* Buy&Sell container gradient shadow */
+#root .eotc-buy-sell-layout__accent-bar {
+    transform: translatex(0px) translatey(0px);
+    background-image: linear-gradient(to top, rgba(13, 2, 39, 0) 55%, rgba(13, 2, 39, 0.5) 100%);
+}
+
+/* Buy&Sell make a transaction background */
+#root .eotc-buy-sell-layout__make-transaction-container {
+    background-color:rgba(11,2,32,0.4);
+}
+
+/* Buy&Sell make a transaction select */
+.buy-sell-make-transaction .ap-select__select-wrapper select{
+    background-color:rgba(5,1,19,0.5);
+}
+
+/* Buy&Sell Footer Container*/
+#root footer {
+    background-color: rgba(13, 2, 39, 0.6);
+    
+    border-top-width: 2px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+}
+
+#root .container-dashboard .eotc-buy-sell-layout__footer .page-footer .page-footer__footer-right-content ul {
+    width: 100% !important;
+}
+
+@media (min-width:481px) {
+/* Buy&Sell Footer right links container */
+#root .container-dashboard .eotc-buy-sell-layout__footer .page-footer .page-footer__footer-right-content {
+    width: 50% !important;
+}
+#root .page-footer .page-footer__footer-right-content {
+    flex-direction:column;
+    margin-left: 0px;
+}
+}
+
+/* Dashboard WALLETS section */
+
+/* Wallets head container gradient shadow */
+.transfers__wrapper .transfers__body--single-page{
+    background-color:rgba(40,46,61,0);
+}
+
+/* Wallets Transfers body */
+.transfers__wrapper .transfers__body--single-page .transfers__body{
+    background-color:rgba(0,0,0,0);
+}
+
+/* Wallets Flex table pagination container */
+#root .activity .flex-table__pagination-container{
+    background-color:rgba(51,58,77,0.4);
+}
+
+/* Wallets Activity body  multipage */
+#root .activity__body--multipage{
+    background-color:rgba(40,46,61,0);
+}
+
+/* Wallets Activity */
+#root .product-details-page__content > .activity{
+    background-color:rgba(51,58,77,0.4);
+}
+
+/* Wallet unfunded accounts container */
+#root .wallets-page__wallet-list-container{
+    box-shadow:0px 2px 20px 0px rgba(0,0,0,0.3);
+}
+
+/* Wallet shadow behind funded accounts section */
+#root .wallets-page__accent-bar {
+    background-image: linear-gradient(to top, rgba(13, 2, 39, 0) 55%, rgba(13, 2, 39, 0.5) 100%);
+}
+
+/* Wallet row activity link */
+#root .wallet-row .wallet-row__activity-link-columns .wallet-row__activity-link > .wallet-row__activity-link{
+    color:#95a2bf !important;
+    font-size:14px;
+    font-weight:500;
+}
+#root .wallet-row .wallet-row__activity-link-columns .wallet-row__activity-link > .wallet-row__activity-link:hover{
+    color:rgb(255, 255, 255) !important;
+}
+
+/* Wallets row list background */
+#root .wallet-row-list{
+    background-color:rgba(40,46,61,0);
+}
+#root .wallet-row{
+    background-color: rgba(40, 46, 61, 0.6);
+}
+
+/* Wallets row icon background */
+#root .wallet-row__icon-label{
+    background-color: rgba(11,2,32,0.4);
+    border-bottom-style:dashed;
+    border-bottom-color:#4c4879;
+}
+
+#root .container-dashboard .wallets-page__container .wallets-page__wallet-list-container .wallet-row-list .wallet-row .wallet-row__icon-label{
+    border-bottom-width:1px !important;
+}
+
+/* Wallets Footer Container*/
+#root .container-dashboard .wallets-page__footer .page-footer .page-footer__footer-right-content ul {
+    width: 100% !important;
+}.page-footer ul {
+    padding-right: 0px;
+}
+
+/* Wallets Division */
+.product-details-page__transfers .transfers__wrapper .flex-table__wide-row-container{
+    background-color:rgba(0,0,0,0);
+}
+
+/* Transfers wrapper */
+#root .product-details-page__transfers .transfers__wrapper{
+    background-color:rgba(51,58,77,0.4);
+}
+
+/* Wallet details background container */
+#root .product-details-page__content{
+    background-image:none !important;
+}
+#root .product-details-page__container{
+    background-image: url('../../images/new-background.webp') !important;
+
+}
+#root .product-details-page__menu{
+    background-color:rgba(40,46,61,0);
+}
+
+/* Wallet details sidepanel background */
+#root .product-details-page__menu .balances-menu{
+    background-color:rgba(40,46,61,0.55);
+}
+
+/* Wallets details sidepanel width */
+#root .product-details-page__menu{
+    width:252px;
+}
+.balances-menu .balances-menu__list li{
+    min-width:100%;
+}
+.menu-component__item:hover, .menu-component__item:active{
+    background: rgba(18, 15, 44, 0.6) !important;
+}
+
+/* Wallets details sidepanel back to overview */
+#root .product-details-page__menu .wallet-details-back-button__item{
+    background-color:rgba(18, 15, 44, 0.6);
+    border-bottom-color:#009fe3;
+    border-bottom-width:2px !important;
+    color:#95a2bf;
+    font-size:14px;
+    font-weight:500;
+    height:75px;
+}
+#root .product-details-page__menu .wallet-details-back-button__item:hover{
+    color:rgb(255, 255, 255);
+    background-color:#120f2c;
+}
+
+/* Wallet details border radius */
+.product-details-page__wallet-details .wallet-details .wallet-details__product-actions-row{
+    background-color:rgba(11,2,32,0.4);
+    background-image:none;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.product-details-page__wallet-details .wallet-details .wallet-details__position-row{
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.wallet-details .wallet-details__position-row > .wallet-details__detail{
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+/* Wallet details position row*/
+.transfers__wrapper .transfers__body--single-page{
+    background-color:rgba(40,46,61,0);
+}
+
+/* Wallet details transfers header */
+#root .product-details-page__transfers .product-details-page__transfers-header{
+    background-image:none;
+    background-color:rgba(11,2,32,0.4);
+}
+#root .product-details-page__transfers .transfers-filters{
+    background-color:rgba(11,2,32,0.55);
+}
+
+/* Wallet details transfers background*/
+#root .product-details-page__transfers .transfers__wrapper{
+    background-color:rgba(51,58,77,0.4);
+}
+#root .product-details-page__wallet-details .wallet-details{
+    background-color:rgba(10,8,25,0);
+}
+.product-details-page__wallet-details .wallet-details .wallet-details__position-row{
+    background-color:rgba(0,0,0,0);
+}
+#root .product-details-page__wallet-details{
+    background-color:rgba(0,0,0,0);
+}
+.wallet-details .wallet-details__detail{
+    background-color:rgba(51,58,77,0.4);
+}
+
+/* Wallet details transfers button  */
+.transfers-filters__select-buttons .ap-segmented-button .transfers-filters__rt-label--checked-additive{
+    background-color:rgba(110,137,236,0.6);
+    /*align-self:center;*/
+}
+
+/* Wallet details transfers refresh button */
+.product-details-page__transfers .transfers-filters .transfers-filters__refresh-transfers__btn--general{
+    background-color:rgba(17, 21, 36, 0.6);
+}
+
+/* Wallet details recent activity header bar */
+.product-details-page__content .activity .activity__header-bar{
+    background-color:rgba(57,65,84,0);
+}
+#root .activity .activity__header-bar{
+    background-image:none !important;
+    background-color:rgba(11,2,32,0.4);
+}
+#root .activity form{
+    background-color:rgba(11,2,32,0.55);
+}
+
+/* Wallet details recent activity select control */
+.activity__select-buttons .ap-select__select-wrapper select.form-control{
+    width:180px;
+}
+.activity__select-buttons .ap-select__select-wrapper .ap-select__triangles-container{
+    left:270px;
+}
+#root .activity .ap-select__select-wrapper{
+    width:290px;
+}
+
+/* Wallet details recent activity background */
+#root .product-details-page__content > .activity{
+    background-color:rgba(51,58,77,0.4);
+}
+#root .activity .flex-table__pagination-container{
+    background-color:rgba(51,58,77,0);
+}
+
+/* Wallets details recent activity row */
+.activity__body--multipage .activity__body .activity__row{
+    border-top-color:rgba(26,32,41,0);
+}
+
+/* Wallets details recent activity button */
+.product-details-page__content .activity .activity__btn{
+    background-color:rgba(110,137,236,0.6);
+}
+.product-details-page__content .activity .activity__btn:hover{
+    background-color:rgba(72, 93, 167, 0.8);
+}
+
+/* USER SETTINGS page menu */
+
+/* User settings profile & security container*/
+#root .settings-page__container{
+    background-image: url('../../images/new-background.webp') !important;
+}
+#root .user-settings-page__container{
+    background-image:none !important;
+}
+
+/* User settings profile & security left menu width */
+#root .settings-page__menu{
+    background-color:rgba(40,46,61,0.6);
+    width:250px;
+}
+
+/* User settings profile & security page background sections */
+#root .user-settings-page__row{
+    background-color:rgba(0,0,0,0);
+}
+
+/* User settings profile & security update profile header */
+#root .user-settings-page__page-header{
+    background-color:rgba(17,5,40,0.65);
+    border-bottom-style:solid;
+    border-bottom-color:rgba(110,137,236,0.6);
+    height:120px;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-right:0px;
+    margin-left:0px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+#root .container .settings-page__container .settings-page__content .user-settings-page__container .user-settings-page__page-header{
+    border-bottom-width:1px !important;
+}
+
+/* User settings profile & security header section back  */
+#root .base-lt__header .profile-and-security-widget__header{
+    background-color:rgba(57,65,84,0);
+}
+
+/* User settings profile & security section alpha */
+#root .profile-and-security-widget__layout-template{
+    background-color:rgba(40,46,61,0.6);
+}
+
+/* User settings profile & security section background */
+#root .base-lt__header{
+    background-color:rgba(255,255,255,0.05);
+    border-right-color:rgba(4, 9, 26, 1);
+    border-right-style:solid;
+}
+
+/* User settings profile & security header border right */
+#root .container .settings-page__container .settings-page__content .user-settings-page__container .user-settings-page__row .profile-and-security-widget__layout-template .base-lt__header{
+    border-right-width:1px !important;
+}
+
+/* User settings profile & security email settings */
+#root .container .settings-page__container .settings-page__content .user-settings-page__container .user-settings-page__row--sm .profile-and-security-widget__layout-template--sm .profile-and-security-widget__body--sm{
+    height:auto !important;
+}
+
+/* User settings profile & security buttons */
+#root .region-settings .region-settings__btn--general{
+    background-color:rgba(110,137,236,0.6);
+}
+#root .profile-and-security-widget__layout-template:nth-child(1) .theme-settings__btn--general{
+    background-color:rgba(110,137,236,0.6);
+}
+#root .profile-and-security-widget__body--sm .theme-settings__btn--general{
+    background-color:rgba(110,137,236,0.6);
+}
+#root .reset-password-form .reset-password-form__btn--general{
+    background-color:rgba(110,137,236,0.6);
+}
+
+/* User settings profile & security buttons:hover */
+#root .region-settings .region-settings__btn--general:hover{
+    background-color:rgba(72, 93, 167, 0.8);
+}
+#root .profile-and-security-widget__layout-template:nth-child(1) .theme-settings__btn--general:hover{
+    background-color:rgba(72, 93, 167, 0.8);
+}
+#root .profile-and-security-widget__body--sm .theme-settings__btn--general:hover{
+    background-color:rgba(72, 93, 167, 0.8);
+}
+#root .reset-password-form .reset-password-form__btn--general:hover{
+    background-color:rgba(72, 93, 167, 0.8);
+}
+
+/* User settings profile & security update profile subheader */
+#root .base-lt__header{
+    background-color:rgba(11,2,32,0.4);
+}
+
+/* User settings verification levels page */
+#root .kyc-settings--star .kyc-settings__header{
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+/* User settings verification levels */
+#root .kyc-settings--star .kyc-settings__levels{
+    margin-left:40px;
+    margin-right:40px;
+}
+
+/* User settings verification levels background */
+#root .kyc-settings--star{
+    background-color:rgba(40,46,61,0.4);
+}
+.kyc-settings--star .kyc-settings__levels .kyc-level{
+    background-color:rgba(10,8,25,0.4);
+    min-height:100%;
+}
+.kyc-settings__levels .kyc-level .kyc-level__header-title{
+    background-color:rgba(0,0,0,0);
+}
+.kyc-settings__levels .kyc-level .kyc-level__body{
+    background-color:rgba(40,46,61,0);
+}
+
+/* User settings trade report page background */
+#root .trade-report-page{
+    background-color:rgba(40,46,61,0);
+}
+
+/* User settings trade report title */
+#root .trade-report-page .trade-report-page__activity-report{
+    background-color:rgba(17,5,40,0.6);
+    border-bottom-style:solid;
+    border-bottom-color:rgba(110,137,236,0.6);
+    border-bottom-width:1px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:15px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+/* User settings trade report button */
+.trade-report-page__activity-report .trade-report-page__activity-report-buttons .activity-reporting-buttons__btn--general{
+    background-color:rgba(110,137,236,0.6);
+}
+.trade-report-page__activity-report .trade-report-page__activity-report-buttons .activity-reporting-buttons__btn--general:hover{
+    background-color:rgba(72, 93, 167, 0.8);
+}
+
+/* User settings trade report subtitle */
+.trade-report-page .trade-report-page__cyclical-report .trade-report-page__report-header{
+    background-color:rgba(11,2,32,0.4);
+}
+.trade-report-page .trade-report-page__singal-report .trade-report-page__report-header{
+    background-color:rgba(11,2,32,0.4);
+}
+
+/* User settings trade cyclical report */
+.trade-report-page__cyclical-report .schedule-report-list{
+    background-color:rgba(40,46,61,0.6) !important;
+    border-bottom-color:rgba(11,2,32,0.3);
+    border-bottom-style:solid;
+    border-bottom-width:1.5px;
+}
+
+/* User settings trade cyclical report header */
+.trade-report-page__cyclical-report .schedule-report-list .schedule-report-list__table-header{
+    background-color:rgba(11,2,32,0.4);
+}
+
+/* User settings trade cyclical download table header */
+.trade-report-page__singal-report .download-report .download-report__table-header{
+    background-color:rgba(11,2,32,0.4);
+}
+
+/* User settings trade cyclical download report */
+.trade-report-page__singal-report .download-report{
+    background-color:rgba(40,46,61,0) !important;
+    border-bottom-color:rgba(11,2,32,0.3);
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+}
+.trade-report-page__singal-report .flex-table__wide-row-container{
+    background-color:rgba(40,46,61,0.6);
+}
+
+
+/* User settings API Key */
+
+/* User settings Api keys page */
+#root .api-keys-page{
+    background-color:rgba(40,46,61,0);
+}
+
+/* User settings API Key title */
+#root .api-keys-page .api-keys-page__description-container{
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+#root .api-keys-page .api-keys-page__description-container{
+    background-color:rgba(17,5,40,0.6);
+    border-bottom-style:solid;
+    border-bottom-color:rgba(110,137,236,0.6);
+    height:183px;
+}
+#root .container .settings-page__container .settings-page__content .api-keys-page .api-keys-page__description-container{
+    border-bottom-width:1px !important;
+}
+
+/* User settings API Key subtitle */
+.api-keys-page div .api-keys-page__table-header{
+    background-color:rgba(11,2,32,0.4);
+}
+
+/* User settings API Key Flex table */
+.api-keys-page div .flex-table{
+    background-color:rgba(244,0,0,0);
+}
+.api-keys-page .flex-table > .api-key-list__table-header{
+    background-color:rgba(11,2,32,0.6);
+}
+.api-keys-page .flex-table .flex-table__body{
+    background-color:rgba(40,46,61,0.6);
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color:rgba(11,2,32,0.3);
+}
+
+/* User settings API Key button */
+.api-keys-page .api-keys-page__actions .api-keys-side-pane-button__btn--general{
+    background-color:rgba(110,137,236,0.6);
+}
+.api-keys-page .api-keys-page__actions .api-keys-side-pane-button__btn--general:hover{
+    background-color:rgba(72,93,167,0.8);
+}
+
+/* User settings API Key button link */
+.api-keys-page__actions .api-keys-page__documentation a{
+    color:rgba(110,137,236,0.6);
+}
+.api-keys-page__actions .api-keys-page__documentation a:hover{
+    color:rgba(123, 148, 240, 0.8);
+}
+
+/* User settings contacts page */
+
+/* User settings contacts page title */
+#root .user-contacts-page{
+    background-color:rgba(40,46,61,0);
+}
+#root .user-contacts-page > div{
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    max-width:none;
+    height:125px;
+    background-color:rgba(17,5,40,0.65);
+    border-bottom-style:solid;
+    border-bottom-color:rgba(110,137,236,0.6);
+    border-bottom-width:1px;
+}
+.user-contacts-page div .user-contacts-page__header-text{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+}
+#root .container .settings-page__container .settings-page__content .user-contacts-page div .user-contacts-page__header-text{
+    width:auto !important;
+}
+#root .container .settings-page__container .settings-page__content .user-contacts-page > div:nth-child(1){
+    width:100% !important;
+}.user-contacts-page div .user-contacts-page__text{
+    padding-left:20px;
+    padding-right:40%;
+}
+#root .user-contacts-page > div:nth-child(1){
+    height:122px;
+}
+
+/* User settings contacts page subtitle */
+.user-contacts-page .user-contacts-page__transfer .user-contacts-page__transfer-header{
+    background-color:rgba(11,2,32,0.4);
+}
+.user-contacts-page .user-contacts-page__transfer .user-contacts-page__transfer-items{
+    background-color:rgba(40,46,61,0.6);
+}
+#root .user-contacts-page .user-contacts-page__transfer{
+    background-color:rgba(17,5,40,0);
+    border-bottom-color:rgba(11,2,32,0.3);
+}
+
+/***************/
+
+/* User affiliate program page */
+#root .affiliate-program-page{
+    background-color:rgba(40,46,61,0);
+}
+
+/* User affiliate program title */
+#root .affiliate-program-page .affiliate-program-page__main-header{
+    margin-left:40px;
+    margin-right:40px;
+    margin-top:40px;
+    margin-bottom:40px;
+    max-width:100%;
+}
+
+/* User affiliate program containers */
+#root .affiliate-program-page .affiliate-program-page__body{
+    margin-left:40px;
+    margin-right:40px;
+}
+.affiliate-program-page .affiliate-program-page__body > .affiliate-program-page__container{
+    margin-left:0px;
+    margin-right:30px;
+    margin-top:0px;
+    margin-bottom:30px;
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+    border-bottom-left-radius:7px;
+    border-bottom-right-radius:7px;
+    background-color:rgba(10,8,25,0.4);
+}
+.affiliate-program-page__body .affiliate-program-page__container > .affiliate-program-page__container-header{
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+    border-bottom-color:rgba(110,137,236,0.6);
+    background-color:rgba(11,2,32,0.4);
+    color:rgba(255,255,255,0.8);
+}
+
+.affiliate-program-page__body .affiliate-program-page__container > .affiliate__container-content{
+    border-bottom-left-radius:7px;
+    border-bottom-right-radius:7px;
+}
+
+.affiliate-program-page__body .affiliate__btn{
+    color:#ffffff;
+    background-color:rgba(110,137,236,0.6);
+    border-top-style:none;
+    border-right-style:none;
+    border-bottom-style:none;
+    border-left-style:none;
+}
+
+/* User affiliate program button */
+.affiliate-program-page__body .affiliate__btn-container{
+    border-top-color:rgba(110,137,236,0.6);
+    min-height:71px;
+}
+.affiliate-program-page__body .affiliate__btn-container:hover{
+    border-top-color:rgba(72,93,167,0.8);
+    background-color:rgba(72,93,167,0.8);
+    min-height:71px;
+}
+
+.affiliate__btn:hover {
+    background-color: rgba(72,93,167,0.8);
+}
+
+
+.imagen-kiiex {
+    width: 200px !important;
+}
+
+
+
+
+/******************** CAMBIOS PARA EL NUEVO REPOSITORIO ********************/
+
+
+/* Reset password  header */
+#root .reset-password__header{
+    background-color:rgba(57,65,84,0) !important;
+   }
+   
+   /* Reset password  container */
+   #root .reset-password__container{
+    background-color:rgba(25,9,50,0.63) !important;
+   }
+
+   #root .form-group input[type=password]{
+    background-color:rgba(108, 72, 151, 0.47) !important;
+   }
+
+   /* Create api key whitelist */
+.form-inline .create-api-key__form-body .create-api-key-ip-whitelist{
+    padding-left:32px;
+   }
+
+   /* Standalone modal  body */
+#root .standalone-modal__body{
+    background-color:rgba(13, 2, 39, 0.5);
+   }
+   
+   /* Standalone modal  container */
+   #root .standalone-modal__container{
+    background-color:rgba(13, 2, 39, 0.5);
+   }
+
+   /* Link */
+    #root .standalone-modal__footer a{
+    background-color:#3694ff;
+   }
+
+   /* Standalone modal  wrapper */
+    #root .standalone-modal__wrapper{
+    background-size:cover;
+   }
+
+   /* Standalone modal  footer */
+    #root .container .standalone-modal__wrapper .standalone-modal__container .standalone-modal__footer{
+    margin-left:auto !important;
+    margin-right:auto !important;
+   }
+
+   #root .standalone-modal__body-text{
+    width:100% !important;
+    text-align:center;
+   }
+
+   #root .two-factor-auth-form__container{
+    background-color:rgba(13, 2, 39, 0.5);
+    transform:translatex(0px) translatey(0px);
+   }
+   
+   /* Division */
+   #root .two-factor-auth-form__header{
+    background-color:rgba(13, 2, 39, 0.5);
+    transform:translatex(0px) translatey(0px);
+    text-align:center;
+   }
+   
+   /* Division */
+   #root .container .standalone-layout__wrapper .two-factor-auth-form__container .two-factor-auth-form__header{
+    margin-left:auto !important;
+    margin-right:auto !important;
+   }
+
+   /* Division */
+#root .container .standalone-layout__wrapper .two-factor-auth-form__container .two-factor-auth-form__header{
+    margin-left:0px !important;
+    margin-right:0px !important;
+   }
+   
+   /* Division */
+   #root .two-factor-auth-form__header-text{
+    text-align:center;
+    margin-left:0px;
+    margin-right:0px;
+   }
+   
+   /* Division */
+   #root .container .standalone-layout__wrapper .two-factor-auth-form__container .two-factor-auth-form__header .two-factor-auth-form__header-text{
+    width:100% !important;
+   }
+   
+
+@media (min-width:577px){
+
+    /* Division */
+    #root .two-factor-auth-form__header{
+     padding-left:0px;
+    }
+    
+   }
+
+   @media (min-width:769px){
+
+    /* Logo */
+    #root .ap-logo{
+     margin-top:0px;
+    }
+    
+   }
+
+   /* Image */
+.ap-logo .ap-logo__link img{
+    height:84px;
+   }
+   
+   /* Logo */
+   #root .ap-logo{
+    display:inline-block;
+    transform:translatex(0px) translatey(0px) !important;
+   }
+   
+   @media (min-width:1281px){
+   
+    /* Logo */
+    #root .ap-logo{
+     margin-left:0px;
+    }
+    
+   }
+   
+   @media (min-width:1501px){
+   
+    /* Image */
+    #root .container .standalone-layout__wrapper .ap-logo .ap-logo__link img{
+     width:400px !important;
+    }
+
+     /* Image */
+    .ap-logo .ap-logo__link img{
+    margin-top:70px !important;
+    width:400px;
+   }
+    
+   }
+
+   /* Image */
+    .container a img{
+    height:84px;
+   }
+
+   /* Container */
+#root .container{
+    background-repeat: no-repeat;
+  
+   }
+
+
+
+
+
+
+   
+
+/* Login form  container */
+#root .login-form__container{
+    height:600px;
+    border-width:2px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    background-color:rgba(255,255,255,0.17);
+    border-color:rgba(225,222,222,0.59);
+    border-style:solid;
+   }
+   
+   /* Login form  header */
+   #root .login-form__header{
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    background-color:rgba(255,255,255,0.17);
+    border-bottom-color:transparent;
+   }
+   
+   /* Login form  footer */
+   #root .login-form__footer{
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    flex-direction:column;
+    justify-content:center;
+    border-top-color:transparent;
+    margin-bottom:35px;
+   }
+   
+   /* Login form  input box */
+   .login-form__form .form-group .login-form__input-box{
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+   }
+   
+   /* Login form  input box */
+   #root .container .login-form__container .login-form__form .form-group .login-form__input-box{
+    height:auto !important;
+   }
+   
+   /* Input */
+   .login-form__form .form-group input[type=text]{
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    background-color:rgba(255,255,255,0.2);
+    border-top-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+   }
+   
+   /* Input */
+   .ap-password-input div input[type=password]{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+   }
+   
+   /* Input */
+   #root .login-form__container .login-form__form .ap-password-input .form-group .login-form__input-box div input[type=password]{
+    background-color:rgba(255,255,255,0.2) !important;
+   }
+   
+   /* Button */
+   #root .login-form__form .login-form__btn--additive{
+    background-image:linear-gradient(-180deg, #00a0e6 0%, #026a96 100%);
+    border-bottom-style:none;
+   }
+   
+   /* Link */
+   #root .login-form__footer a{
+    color:rgba(255,255,255,0.86);
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:15px;
+   }
+   
+   /* Standalone form  footer separator */
+   #root .login-form__footer .standalone-form__footer-separator{
+    display:none;
+   }
+   
+   /* Login form  separator */
+   #root .login-form__form .login-form__separator{
+    display:none;
+   }
+   
+   /* Form Division */
+   #root form{
+    margin-bottom:28px;
+   }
+   
+   @media (min-width:577px){
+   
+    /* Login form  container */
+    #root .login-form__container{
+     margin-top:0px !important;
+    }
+    
+    /* Input */
+    .login-form__form .form-group input[type=text]{
+     height:50px;
+     font-size:15px;
+    }
+    
+    /* Input */
+    .ap-password-input div input[type=password]{
+     height:50px;
+    }
+    
+   }
+
+   /* Svg */
+.ap-password-input__icon--active .custom-icon--eye svg{
+    color:#000000;
+   }
+   
+   
+   
+   /****************** CAMBIO PARA COLOCAR IMAGEN DENTRO DE LOGIN ***************/
+   
+
+   /* Image */
+#root .login-form__header img{
+    height:93px;
+    width:100px;
+   }
+   
+   /* Login form  header */
+   #root .login-form__header{
+    flex-direction:column;
+    min-height:179px;
+    justify-content:center;
+    transform:translatex(0px) translatey(0px);
+   }
+   
+   @media (min-width:577px){
+   
+    /* Login form  header */
+    #root .login-form__header{
+     padding-left:0px;
+    }
+
+     /* Button */
+ #root .login-form__form .login-form__btn--additive{
+    font-size:18px;
+   }
+    
+   }
+
+   /* Login form  header */
+#root .login-form__header{
+    background-color:transparent;
+   }
+   
+   /* Container */
+   #root .container{
+    transform:translatex(0px) translatey(0px);
+   }
+   
+   /* Image */
+   #root .login-form__header img{
+    margin-bottom:30px;
+    margin-top:30px;
+   }
+   
+
+   /* Image */
+.container a img{
+    visibility:hidden;
+   }
+   
+
+
+   /*********************** CAMBIOS PARA LOGIN *******************/
+
+
+   /* Signup form  form container */
+#root .signup-form__form-container{
+    transform:translatex(0px) translatey(0px);
+    background-color:rgba(255,255,255,0.17);
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-width:2px;
+    border-color:rgba(225,222,222,0.59);
+    border-top-width:2px;
+    border-top-style:none;
+    border-style:solid;
+   }
+   
+   /* Signup form  header */
+   #root .signup-form__header{
+    background-color:transparent;
+    border-bottom-color:transparent;
+    font-size:11px;
+    height:64px;
+    margin-top:0px;
+    justify-content:center;
+    align-items:flex-end;
+   }
+   
+   /* Signup form  header text */
+   #root .signup-form__header .signup-form__header-text{
+    font-size:25px;
+    text-align:center;
+    font-weight:700;
+   }
+   
+   /* Signup form  header text */
+   #root .container .standalone-layout__wrapper .signup-form__form-container .signup-form__header .signup-form__header-text{
+    width:100% !important;
+   }
+   
+   /* Input */
+   .signup-form__wrapper .form-group input[type=text]{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    background-color:rgba(255,255,255,0.2);
+   }
+   
+   /* Standalone layout  wrapper */
+   #root .standalone-layout__wrapper{
+    transform:translatex(0px) translatey(0px);
+   }
+   
+   /* Input */
+   #root .container .standalone-layout__wrapper .signup-form__form-container .signup-form__form .signup-form__wrapper .signup-form__container .ap-password-input .form-group .signup-form__input-box div input[type=password]{
+    background-color:rgba(255,255,255,0.2) !important;
+   }
+   
+   /* Button */
+   .signup-form__form .signup-form__footer .signup-form__btn--additive{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-bottom-style:none;
+   }
+   
+   /* Link */
+   .signup-form__text span a{
+    color:#00a0e6;
+   }
+   
+   /* Signup form  links */
+   #root .signup-form__links{
+    flex-direction:column;
+    border-top-color:transparent;
+    margin-bottom:30px;
+    padding-bottom:0px;
+    justify-content:center;
+    padding-right:0px;
+   }
+   
+   #root .signup-form__links .standalone-form__footer-separator{
+    display:none;
+   }
+   
+   /* Link */
+   #root .signup-form__links a{
+    margin-top:5px;
+    margin-bottom:5px;
+    font-size:15px;
+    color:rgba(255,255,255,0.86);
+   }
+   
+   @media (min-width:577px){
+   
+    /* Signup form  header */
+    #root .signup-form__header{
+     padding-left:0px;
+    }
+    
+    /* Input */
+    .signup-form__wrapper .form-group input[type=text]{
+     height:50px;
+     font-size:15px;
+    }
+    
+   }
+
+   .signup-form__form .signup-form__wrapper .signup-form__container{
+    border-bottom-color:transparent;
+   }
+   
+   /* Signup form  header text */
+   #root .signup-form__header .signup-form__header-text{
+    margin-top:5px;
+    padding-top:20px;
+    height:30px;
+   }
+
+   /* Division */
+#root .problem-logging-in-page__container{
+    background-color:transparent;
+    transform:translatex(0px) translatey(0px);
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    border-top-color:rgba(225,222,222,0.59);
+    border-width:2px;
+    border-style:solid;
+    border-color:rgba(225,222,222,0.59);
+    background-image:linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 41%);
+   }
+   
+   /* Division */
+   #root .problem-logging-in-page__header{
+    background-color:transparent;
+    border-bottom-style:none;
+   }
+   
+   /* Division */
+   #root .container .standalone-layout__wrapper .problem-logging-in-page__container .problem-logging-in-page__header .problem-logging-in-page__header-text{
+    width:100% !important;
+   }
+   
+   /* Division */
+   #root .problem-logging-in-page__header .problem-logging-in-page__header-text{
+    text-align:center;
+   }
+   
+   /* Form Division */
+   #root form{
+    transform:translatex(0px) translatey(0px);
+   }
+   
+   /* Standalone form  separator */
+   #root .forgot-password-form__form .standalone-form__separator{
+    display:none;
+   }
+   
+   /* Forgot password form  separator */
+   #root .forgot-password-form__form .forgot-password-form__separator{
+    display:none;
+   }
+   
+   /* Input */
+   .form-group .forgot-password-form__input-box input[type=text]{
+    border-bottom-left-radius:15px;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    background-color:rgba(255,255,255,0.2);
+   }
+   
+   /* Button */
+   #root .forgot-password-form__form .forgot-password-form__btn--additive{
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+    border-bottom-style:none;
+   }
+   
+   /* Link */
+   #root .container .standalone-layout__wrapper .problem-logging-in-page__container .problem-logging-in-page__footer a{
+    width:100% !important;
+   }
+   
+   /* Link */
+   #root .problem-logging-in-page__footer a{
+    text-align:center;
+    font-size:18px;
+    color:#52a3ff;
+   }
+   
+   /* Division */
+   #root .problem-logging-in-page__footer{
+    border-top-style:none;
+    align-items:flex-start;
+   }
+   
+   /* Division */
+   #root .forgot-password-form__form .forgot-password-form__information-text{
+    color:rgba(255,255,255,0.75);
+   }
+   
+   @media (min-width:577px){
+   
+    /* Division */
+    #root .problem-logging-in-page__header{
+     padding-left:0px;
+    }
+    
+    /* Input */
+    .form-group .forgot-password-form__input-box input[type=text]{
+     height:50px;
+     font-size:15px;
+    }
+    
+    /* Button */
+    #root .forgot-password-form__form .forgot-password-form__btn--additive{
+     font-size:18px;
+    }
+    
+   }
+
+   /* Login form  container */
+    #root .login-form__container{
+    background-image:linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 58%);
+    background-color:transparent;
+   }
+
+   /* Signup form  form container */
+    #root .signup-form__form-container{
+    background-image:linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 58%);
+    background-color:transparent;
+   }
+
+   @media (min-width:577px){
+
+    /* Button */
+    .signup-form__form .signup-form__footer .signup-form__btn--additive{
+     font-size:18px;
+    }
+    
+   }
+   
+
+   /* Button */
+    #root .login-form__form .login-form__btn--additive{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+   }
+
+   /* Input */
+    .form-group .forgot-password-form__input-box input[type=text]{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+   }
+   
+   /* Button */
+   #root .forgot-password-form__form .forgot-password-form__btn--additive{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+   }
+   
+  /* Division */
+#root .two-factor-auth-form__container{
+    background-color:transparent;
+    background-image:linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 58%);
+    transform:translatex(0px) translatey(0px);
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-style:solid;
+    border-width:2px;
+    border-color:rgba(225,222,222,0.59);
+    height:400px;
+   }
+   
+   /* Division */
+   #root .two-factor-auth-form__header{
+    background-color:transparent;
+    border-bottom-style:none;
+    background-image: url(../../images/icon-kiiex.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+    padding-top: 180px;
+   }
+   
+   /* Division */
+   #root .two-factor-auth-form__information-text{
+    color:rgba(255,255,255,0.81);
+
+
+   }
+
+   /* Division */
+    #root .two-factor-auth-form__header-text{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 25px;
+   }
+
+   @media (min-width:577px){
+
+    /* Form Division */
+    #root form{
+     margin-top:50px;
+    }
+    
+   }
+   
+
+   @media (max-width:425px){
+
+    /* Division */
+    #root .two-factor-auth-form__container{
+     height:490px;
+    }
+    
+   }
+
+   /* Login form  container */
+    #root .login-form__container{
+    height:620px;
+    border-radius: 15px;
+    border: double 3px transparent;
+    background-image: linear-gradient(#0c071d1d, #b7b5bf15),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.269), #00000056);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+   }
+   
+   /* Paragraph */
+   #root p{
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align:center;
+   }
+
+   /* Standalone modal  container */
+#root .standalone-modal__container{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-width:2px;
+    border-style:solid;
+    background-color:transparent;
+    background-image:linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 58%);
+    border-color:rgba(225,222,222,0.59);
+    transform:translatex(0px) translatey(0px);
+   }
+   
+   /* Standalone modal  body */
+   #root .standalone-modal__body{
+    background-color:transparent;
+   }
+   
+   /* Standalone modal  footer */
+   #root .standalone-modal__footer{
+    border-top-style:none;
+   }
+   
+   /* Link */
+   #root .standalone-modal__footer a{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+    background-color:transparent;
+    border-right-style:none;
+    border-top-style:none;
+    border-bottom-style:none;
+    border-left-style:none;
+    border-style:none;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+   }
+   
+   /* Division */
+    #root .problem-logging-in-page__header{
+    align-items:flex-end;
+   }
+   
+   @media (min-width:577px){
+   
+    /* Form Division */
+    #root form{
+     margin-top:15px;
+    }
+    
+   }
+   
+   #root .signup-form__form-container{
+    border-radius: 15px;
+    border: double 3px transparent;
+    background-image: linear-gradient(#0c071d1d, #b7b5bf15),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.269), #00000056);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+   }
+
+   #root .problem-logging-in-page__container{
+    border-radius: 15px;
+    border: double 3px transparent;
+    background-image: linear-gradient(#0c071d1d, #b7b5bf15),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.269), #00000056);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+   }
+
+   #root .two-factor-auth-form__container{
+    border-radius: 15px;
+    border: double 3px transparent;
+    background-image: linear-gradient(#0c071d1d, #b7b5bf15),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.269), #00000056);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+   }
+
+   /* Standalone modal  container */
+    #root .standalone-modal__container{
+    border-radius: 15px;
+    border: double 3px transparent;
+    background-image: linear-gradient(#0c071d1d, #b7b5bf15),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.269), #00000056);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+   }
+   
+   /* Division */
+    #root .two-factor-auth-form__information-text{
+    margin-top:28px;
+   }
+   
+   /* Footer */
+    #root .dashboard-page__footer footer{
+        background-color:rgba(11,2,32,0.2);
+    border-top-style:none;
+   }
+
+   #root footer{
+    background-color:rgba(11,2,32,0.2);
+    border-top-style:none;
+   }
+   
+   
+   
+   /*********************************** Side Wallets **************************/
+
+   .ReactModalPortal .slide-pane .slide-pane__content{
+    background-color: #07001E;
+   }
+   
+   
+/* .ReactModalPortal .slide-pane .slide-pane__content{
+    background-image:linear-gradient(-1deg, #07001e 25%, rgba(7,0,30,0.85) 80%);
+    background-color:transparent;
+   }
+   
+
+   .slide-pane .fiat-sidepane .fiat-sidepane__main{
+    border-right-color:#000000;
+    border-right-width:1px;
+   }
+    */
+
+   /*  #009ee1 */
+
+
+   /******************** Se hacen cambios en los colores de las variables dentro de variables.css ****************/
+
+/*    --component__border-color--glow: #009ee1; */ /* Cambia la linea de color azul */
+
+/* Dentro de las variables, se hizo el cambio de los bordes al siguiente color "#009ee1" si se busca por este nombre se encontrarán todas las variables modificadas */
+
+
+
+/****************************  CAMBIOS PAGINA BUY AND SELL  *********************************/
+
+/* Division */
+.buy-sell-make-transaction .buy-sell__tab-wrapper .buy-sell__tab--buy-selected{
+    border-bottom-color:#009ee1;
+   }
+
+   /* Button */
+.buy-sell-make-transaction .ap-button__btn--additive{
+
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%) !important;
+   }
+
+   
+   /* Activity  header bar */
+    .dashboard-page__recent-activity-container .activity .activity__header-bar{
+    border-bottom-color:#009ee1;
+   }
+
+   /* Instrument Unknownor  trigger */
+    #root .instrument-selector-popover__popover .instrument-selector__trigger{
+    border-bottom-color:#009ee1;
+   }
+
+   /* Trading layout  container */
+    #root .trading-layout__container{
+    background-color:#282e3d;
+   }
+
+   /* Button */
+    .fiat-sidepane__main-form div .manual-deposit__btn--additive{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+
+   /* Button */
+    .fiat-withdraw-form__form-body .fiat-withdraw-form__footer .fiat-withdraw-form__btn--additive{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+    background-color:transparent !important;
+   }
+
+   /* Button */
+    .fiat-deposit-form__send-to-friend .receive-form .receive-form__btn--additive{ 
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+
+   /* Button */
+    .fiat-withdraw-form__send-to-friend .send-form .ap-button__btn--additive{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+
+   /* Button */
+    .send-receive__main-form .send-form .ap-button__btn--additive{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+   
+   /* Fiat sidepane  main form */
+    .fiat-sidepane .fiat-sidepane__main .fiat-sidepane__main-form{
+    background-color:#222136;
+    transform:translatex(0px) translatey(0px);
+   }
+   
+   /* Input */
+   .manual-deposit__frame .form-group input[type=text]{
+    background-color:rgba(82,85,100,0.68);
+   }
+   
+   /* Input */
+   .manual-deposit__frame .form-group input[type=number]{
+    background-color:rgba(82,85,100,0.68);
+   }
+   
+   /* Form control */
+   .manual-deposit__frame .form-group .form-control{
+    background-color:rgba(82,85,100,0.68);
+   }
+   
+
+   /* Input */
+    .fiat-withdraw-form__frame .form-group input[type=text]{
+    background-color:rgba(82,85,100,0.68);
+   }
+   
+   /* Input */
+   .fiat-withdraw-form__frame .form-group input[type=number]{
+    background-color:rgba(82,85,100,0.68);
+   }
+
+   .fiat-withdraw-form__frame .form-group input[type=text]{
+    background-color:rgba(82,85,100,0.68);
+   }
+   
+   /* Form control */
+   .fiat-withdraw-form__frame .form-group .form-control{
+    transform:translatex(0px) translatey(0px);
+    background-color:rgba(82,85,100,0.68);
+   }
+
+   /* Form control */
+.receive-form__receive-from .form-group .form-control{
+    transform:translatex(0px) translatey(0px);
+    background-color:rgba(82,85,100,0.68);
+   }
+   
+   /* Input */
+   .receive-form__amounts .form-group input[type=number]{
+    background-color:rgba(82,85,100,0.68);
+   }
+   
+   /* Text Area */
+   .receive-form__note .form-group textarea{
+    background-color:rgba(82,85,100,0.68);
+   }
+   
+   /* Form control */
+   .send-form .form-group .form-control{
+    background-color:rgba(82,85,100,0.68);
+   }
+
+   /* Form Division */
+    .buy-sell-make-transaction form{
+    background-color:#222136;
+   }
+
+   /* Send receive  main form */
+    .send-receive .send-receive__main .send-receive__main-form{
+    background-color:#222136;
+   }
+   
+
+   /* Button */
+    .order-entry__body .order-entry__btn--additive{
+    background-color: transparent !important;
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%) !important;
+   }
+
+   @media (max-width:425px){
+
+    /* Page header nav  label */
+    #root .page-header-nav__item .page-header-nav__label{
+     text-align:left;
+    }
+    
+   }
+   
+
+   /********************** FOOTER MOBILE  ******************/
+
+   @media (max-width:650px){
+
+    /* Page header nav  label */
+    #root .page-header-nav__item .page-header-nav__label{
+     text-align:left;
+    }
+    
+    /* Footer */
+    #root .wallets-page__footer footer{
+     display:flex;
+     flex-direction:column;
+     transform:translatex(0px) translatey(0px);
+     justify-content:center;
+     align-items:center;
+     padding-left:0px;
+     padding-right:0px;
+     padding-top:0px;
+    }
+    
+    /* Division */
+    .wallets-page__footer .page-footer .page-footer__footer-left-content{
+     width:80%;
+     transform:translatex(0px) translatey(0px);
+     text-align:center;
+    }
+    
+    /* Image */
+    .page-footer div img{
+     width:300px !important;
+    }
+    
+    /* Wallets page  footer */
+    #root .wallets-page__footer{
+     margin-top:34px;
+     transform:translatex(0px) translatey(0px);
+    }
+    
+    /* Division */
+    .page-footer .page-footer__footer-left-content div{
+     padding-right:0px;
+     width:100%;
+     text-align:center;
+     justify-content:center;
+    }
+    
+    /* Division */
+    .wallets-page__footer .page-footer .page-footer__footer-right-content{
+     text-align:center !important;
+     justify-content:center;
+     align-items:center;
+    }
+    
+    /* List */
+    .page-footer ul{
+     text-align:center;
+     font-size:13px;
+    }
+    
+    /* List Item */
+    .page-footer ul li{
+     font-size:13px;
+    }
+
+
+    /* Footer */
+    #root footer{
+    transform:translatex(0px) translatey(0px);
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+   }
+   
+   /* Division */
+   #root .page-footer .page-footer__footer-left-content{
+    width:100%;
+   }
+
+    /* Page header  container */
+    #root .page-header__container{
+    width:100%;
+   }
+   
+   }
+
+   @media (max-width:1010px){
+
+    /* Image */
+    #root .container-dashboard .eotc-buy-sell-layout__footer .page-footer .page-footer__footer-left-content div img{
+     width:80% !important;
+    }
+    
+   }
+
+   @media (max-width:650px){
+
+    /* Login form  container */
+    #root .login-form__container{
+     margin-top:0px !important;
+     width:90%;
+    }
+    
+   }
+
+   /* Activity */
+    .product-details-page__content .activity .activity__btn{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+
+   /* Form control (hover) */
+    .activity__select-buttons .form-group .form-control:hover{
+    border-width:1px;
+    border-style:solid;
+    border-color:#009ee1;
+   }
+
+   /* Form control (hover) */
+   .activity__select-buttons .form-group .form-control:focus{
+    border-width:1px;
+    border-style:solid;
+    border-color:#009ee1;
+   }
+
+   /* Form control (hover) */
+   .activity__select-buttons .form-group .form-control:active{
+    border-width:1px;
+    border-style:solid;
+    border-color:#009ee1;
+   }
+   
+   
+   
+
+   /**************  CAMBIO COLOR EXCHANGE  ******************/
+
+    /*    #222136 */
+
+    /* Orderbook */
+    #root .orderbook{
+    background-color:#222136;
+   }
+   
+   /* Order history table */
+   .order-history__tab .order-history-table{
+    background-color:#222136;
+   }
+   
+   /* Pagination  container */
+   .order-history__tab .pagination__container{
+    background-color:#222136;
+   }
+   
+   /* Recent trades */
+   #root .recent-trades{
+    background-color:#222136;
+   }
+   
+   /* Order entry */
+   #root .order-entry{
+    background-color:#222136;
+   }
+   
+   /* Orderbook  header */
+   .orderbook .orderbook__body .orderbook__header{
+    background-color:#222136;
+   }
+   
+   /* Recent trades  table header */
+   #root .recent-trades .recent-trades__table-header{
+    background-color:#222136;
+   }
+   
+   /* Recent trades  row */
+   .recent-trades .recent-trades__body .recent-trades__row{
+    background-color:#222136;
+   }
+   
+   /* Trading layout  container */
+   #root .trading-layout__container{
+    background-color:#222136;
+   }
+   
+   /* Lightweight chart */
+   #lightweight-chart{
+    background-color:#222136;
+   }
+   
+   /* Tab  menu */
+   .trading-layout__chart-tabs-container .ap-tab__tab .ap-tab__menu{
+    background-color:#222136;
+   }
+
+   /* Flex table  title */
+#root .recent-trade__container .flex-table__title{
+    background-color:#394154;
+   }
+   
+   /* Tab  menu */
+   .trading-layout__chart-tabs-container .ap-tab__tab .ap-tab__menu{
+    background-color:#394154;
+   }
+   
+   
+   body:before {
+    background: #000000 !important;
+   }
+
+   /* Container */
+#root .container{
+    height: auto !important;
+   }
+
+
+
+   
+   @media (min-width:577px){
+   
+    /* Login form  container */
+    #root .container .login-form__container{
+     margin-right:auto !important;
+     margin-left:auto !important;
+    }
+    
+    /* Login form  container */
+    #root .login-form__container{
+     margin-top:auto;
+     margin-bottom:auto;
+    }
+    
+   }
+   
+   /* Orderbook  order book body */
+.orderbook .orderbook__body .orderbook__order-book-body{
+    border-color:rgba(0,158,225,0.47);
+    border-width:2px;
+    border-style:solid;
+   }
+   
+   /* Instrument positions summary  row */
+   #root div .instrument-positions-summary__row{
+    background-color:#222136;
+   }
+
+   /* Orderbook  order book body */
+    .orderbook .orderbook__body .orderbook__order-book-body{
+    border-right-width:0px;
+    border-top-color:rgba(0,158,225,0.20);
+    border-bottom-color:rgba(0,158,225,0.20);
+    border-left-color:rgba(0,158,225,0.20);
+   }
+   
+
+   /* Recent trades  body */
+    #root .recent-trades .recent-trades__body{
+    border-right-width:2px;
+    border-right-style:solid;
+    border-right-color:rgba(0,158,225,0.20);
+   }
+
+   /* Orderbook  header */
+    .orderbook .orderbook__body .orderbook__header{
+    border-color:rgba(0,158,225,0.20);
+    border-width:2px;
+    border-style:solid;
+    border-bottom-style:none;
+   }
+   
+   /* Orderbook  order book body */
+   .orderbook .orderbook__body .orderbook__order-book-body{
+    border-top-style:none;
+   }
+
+   /* Link */
+    .container > div > a{
+    height:0px;
+   }
+
+
+   /* Settings enable two factor auth */
+   #root .profile-and-security-widget__body--sm .settings-enable-two-factor-auth{
+    padding-bottom:0px;
+   }
+   
+   /* Reset password form */
+   #root .profile-and-security-widget__body--sm .reset-password-form{
+    padding-bottom:0px;
+   }
+
+   /* Container */
+#root .container{
+    background-image:url("../../images/new-background.webp")
+   }
+   
+   /* Root */
+   #root{
+    background-image:url("../../images/new-background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   /* Login form  container */
+    #root .login-form__container{
+    height:580px;
+   }
+
+   @media (max-width:3000px){
+
+    /* Login form  container */
+    #root .login-form__container{
+     margin-top:50px !important;
+    }
+    
+   }
+
+   @media (max-width:2000px){
+
+    /* Login form  container */
+    #root .login-form__container{
+     margin-top:0px !important;
+    }
+    
+   }
+
+
+
+   /* Button */
+    .order-entry__body .order-entry__btn--additive{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+   
+   /* Button */
+   .region-settings .region-settings__btn--general{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+   
+   /* Button */
+   #root .theme-settings__main .theme-settings__btn--general{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+   
+   /* Button */
+   .reset-password-form .reset-password-form__btn--general{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+
+   /* Division */
+    #root .user-settings-page__page-header{
+    border-bottom-color:rgba(0,158,225,0.20);
+   }
+
+   /* Button */
+    .region-settings .region-settings__btn--general{
+    background-color:rgba(0,158,225,0.65) !important;
+   }
+   
+   /* Button */
+   .reset-password-form .reset-password-form__btn--general{
+    background-color:rgba(0,158,225,0.65) !important;
+   }
+
+   /* Recent trades  table header */
+    #root .recent-trades .recent-trades__table-header{
+    border-right-width:2px;
+    border-right-color:rgba(0,158,225,0.20);
+    border-width:1px;
+    border-style:solid;
+    border-color:rgba(0,158,225,0.20);
+   }
+
+   /* Recent trades  table header */
+#root .recent-trades .recent-trades__table-header{
+    border-bottom-style:none;
+    border-style:none;
+    border-bottom-width:0px;
+    border-right-style:solid;
+    border-right-width:2px;
+    border-top-width:0px;
+    border-top-style:solid;
+   }
+
+   /* Button */
+.trade-report-page__activity-report .trade-report-page__activity-report-buttons .activity-reporting-buttons__btn--general{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+   
+   /* Button */
+   .api-keys-page .api-keys-page__actions .api-keys-side-pane-button__btn--general{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+   
+   /* Affiliate */
+   .affiliate-program-page__body .affiliate__btn{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+   
+   
+
+   /* Container */
+    #root .container{
+    justify-content:center;
+   }
+
+   /* Container */
+    #root .container{
+    justify-self: center;
+   
+   }
+
+   /* Image */
+    #root a img{
+    display:none;
+   }
+
+    
+/* Container */
+    #root .container {
+    height: 300% !important;
+    }
+
+    /* Wallet row */
+    #root .wallet-row{
+    background-color:rgba(40,46,61,0.6);
+   }
+   
+   /* Wallet card */
+   #root .wallet-card-grid .wallet-card{
+    background-color:rgba(40,46,61,0.6);
+   }
+   
+   /* Division */
+    .wallet-card-grid .wallet-card .wallet-card__activity-link-row{
+    background-color:rgba(40,46,61,0.33);
+   }
+
+   /* Link */
+    .wallet-card-grid .wallet-card a{
+    color:#009ee1;
+   }
+
+
+   @media (max-width:425px){ 
+
+   
+       #root footer {
+        justify-content: start;
+       }
+
+       /* Wallets page  footer */
+       #root .wallets-page__footer{
+        display:flex;
+        align-items:flex-start;
+        justify-content:flex-start;
+       }
+   }
+
+   @media (max-width:650px){
+
+    /* Footer */
+    #root .wallets-page__footer footer{
+     align-items:center;
+     justify-content:flex-start;
+    }
+}   
+
+@media (max-width:1280px){
+
+    /* Image */
+    .page-footer div img{
+     width:300px !important;
+    }
+    
+    /* Link */
+    .page-footer ul a{
+     font-size:15px;
+    }
+    
+   }
+
+   @media (max-width:700px){
+
+    /* Division */
+    .settings-page__footer .page-footer .page-footer__footer-right-content{
+     text-align:center !important;
+     justify-content:center;
+    }
+
+     /* Root */
+    #root{
+    height:auto !important;
+   }
+  
+    
+   }
+
+   @media (max-width:468px){
+
+    /* Settings page  container */
+    #root .settings-page__container{
+     width:100%;
+    }
+    
+   }
+
+   @media (max-width:468px){
+
+    /* Settings page  container */
+    #root .settings-page__container{
+     width:100%;
+    }
+    
+    /* Settings page  container */
+    #root .container .settings-page__container{
+     height:auto !important;
+    }
+    
+    /* Settings page  content */
+    #root .settings-page__content{
+     height:60vh;
+    }
+    
+    /* Api keys page */
+    #root .container .settings-page__container .settings-page__content .api-keys-page{
+     height:100vh !important;
+    }
+    
+    /* Division */
+    #root .api-keys-page > div{
+     height:300px !important;
+    }
+    
+    /* User contacts page  transfer */
+    #root .user-contacts-page .user-contacts-page__transfer{
+     justify-content:center;
+     height:400px;
+    }
+    
+    /* User contacts page */
+    #root .container .settings-page__container .settings-page__content .user-contacts-page{
+     height:auto !important;
+    }
+    
+    /* User contacts page  text */
+    #root .container .settings-page__container .settings-page__content .user-contacts-page div .user-contacts-page__text{
+     height:auto !important;
+    }
+    
+   }
+
+   /* Select */
+   .fiat-deposit-form__frame .form-group select{
+    background-color:rgba(82,85,100,0.68);
+   }
+
+   /* Signup form  form container */
+#root .signup-form__form-container{
+    height:650px;
+   }
+
+   /* Auto tab input */
+    #root .form-group .ap-auto-tab-input{
+    background-color:rgba(255,255,255,0.32);
+    
+   }
+
+   /* Modal  header */
+    .ReactModal__Overlay .ap-modal .ap-modal__header{
+    background-color:rgba(105,114,134,0.49);
+   }
+   
+   /* Modal */
+   .ReactModalPortal .ap-modal{
+    background-color:#222136;
+   }
+   
+   /* Auto tab input */
+   .ap-modal form .ap-auto-tab-input{
+    background-color:rgba(105,114,134,0.74);
+   }
+
+
+   /* Button */
+.ap-modal form .reset-password-form__btn--general{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+   
+   /* Button */
+   .theme-form .retail-region-editable-cwf-lt__footer .theme-form__btn--general{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+   
+   @media (min-width:577px){
+   
+    /* Button */
+    .theme-form .retail-region-editable-cwf-lt__footer .theme-form__btn--general{
+     font-size:15px;
+    }
+    
+   }
+
+   /* Division */
+#root .trade-report-page .trade-report-page__activity-report{
+    border-bottom-color:rgba(0,158,225,0.2);
+   }
+   
+   /* Division */
+   #root .user-settings-page__page-header{
+    border-bottom-color:rgba(0,158,225,0.2);
+   }
+   
+   /* Division */
+   #root .api-keys-page .api-keys-page__description-container{
+    border-bottom-color:rgba(0,158,225,0.2);
+   }
+   
+   /* Division */
+   #root .user-contacts-page > div{
+    border-bottom-color:rgba(0,158,225,0.2) !important;
+   }
+   
+   /* Division */
+   .affiliate-program-page__body .affiliate-program-page__container-header{
+    border-bottom-color:rgba(0,158,225,0.2) !important;
+   }
+   
+   /* Affiliate  container */
+   .affiliate-program-page__body .affiliate__btn-container{
+    border-top-color:rgba(0,158,225,0.2);
+   }
+
+   .affiliate__btn-container:hover {
+    background-color: rgba(0, 157, 225, 0.534) !important;
+   }
+
+   /* Button */
+    .region-form .retail-region-editable-cwf-lt__footer .region-form__btn--general{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+
+   /* Wallet nav item */
+    .wallet-details .wallet-details__wallet-nav-items .wallet-nav-item{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+
+   /* Button */
+    .kyc-level--selected .kyc-level__footer--can-increase .kyc-level__change__btn--general{
+    background-color:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+    border-style:none;
+   }
+
+   .kyc-level--selected .kyc-level__footer--can-increase .kyc-level__change__btn--general:hover{
+    background-color:linear-gradient(-180deg, rgba(0, 161, 230, 0.4) rgba(2, 106, 150, 0.441) 100%);
+    background-image:linear-gradient(-180deg, rgba(0, 161, 230, 0.6) rgba(2, 106, 150, 0.511) 100%);
+    border-style:none;
+   }
+
+   /* Button */
+    .kyc-level--selected .kyc-level__footer--can-increase .kyc-level__change__btn--general{
+    background-color:transparent;
+   }
+
+   /* Level  Unknowned */
+    .kyc-settings--star .kyc-settings__levels .kyc-level--selected{
+    border-style:solid;
+    border-color:rgba(0,158,225,0.73);
+    border-width:2px;
+   }
+
+   /* Wallet nav item */
+    .wallet-card-grid .wallet-card .wallet-nav-item{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+
+   /* Svg (hover) */
+   .wallet-card-grid .wallet-card .wallet-nav-item svg{
+    color:rgba(255,255,255,0.65) !important;
+    transition: all .5s ease;
+   }
+   
+   /* Svg (hover) */
+   .wallet-card-grid .wallet-card .wallet-nav-item:hover svg{
+    color:#ffffff !important;
+   }
+
+   /* Button */
+    .theme-confirm .theme-confirm-cwf-lt__footer .theme-confirm__btn--general{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+   /* Button */
+    .region-confirm .region-confirm-cwf-lt__footer .region-confirm__btn--general{
+    background-image:linear-gradient(-180deg, rgb(0, 160, 230) 0%, rgb(2, 106, 150) 100%);
+   }
+
+   @media (max-width:600px){
+
+    /* Division */
+    #root .page-header-nav__menu-toggle{
+     margin-right:0px;
+     padding-right:90px;
+    }
+
+    /* Level  Unknowned */
+    #root .container .settings-page__container .settings-page__content .kyc-settings--star .kyc-settings__levels .kyc-level--selected{
+        height:0px !important;
+    } 
+    
+   }
+
+   @media (max-width:750px) {
+
+     /* Root */
+     #root{
+        height:100% !important;
+       }
+
+
+    /* Product details page  container */
+    #root .product-details-page__container{
+    width:100%;
+   }
+   }
+
+   /* Recent trades  table header */
+    #root .recent-trades .recent-trades__table-header{
+    background-color:#222136;
+   }
+   
+   /* Division */
+   .orderbook__order-book-body .orderbook__table-filler .orderbook__order-row--sell{
+    background-color:#222136 !important;
+   }
+   
+   /* Division */
+   .orderbook__order-book-body .orderbook__order-row--buy{
+    background-color:#222136 !important;
+   }
+
+  /* Input */
+.buy-sell-make-transaction div input[type=number]{
+    background-color:#394154;
+   }
+   
+   /* Radio  check */
+   .buy-sell-make-transaction .ap-radio .ap-radio__check{
+    background-color:#394154 !important;
+   }
+
+   /* Login form  container */
+    #root .container .login-form__container{
+    height:auto !important;
+   }
+
+   /* Signup form  form container */
+    #root .container .standalone-layout__wrapper .signup-form__form-container{
+    height:auto !important;
+   }
+
+   #root .login-form__header {
+    background-image: url(../../images/icon-kiiex.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px;
+    justify-content: end;
+    height: 220px;
+   }
+   
+
+/* CHECKBOX  */
+
+.signup-form__text {
+    padding-left: 20px;
+}
+
+
+.signup-form__checkbox-container {
+    position: absolute;
+    left: 0px;
+    padding-top: 2px;
+}
+
+   
+   
+   
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
+   
+   
+   
+   
+   
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+   
+
+
+   
+   
+   

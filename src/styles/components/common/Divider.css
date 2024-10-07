@@ -1,0 +1,29 @@
+.divider {
+  height: 1px;
+  background: var(--border__color);
+  border: none;
+}
+
+.divider--default-padding {
+  margin: 1.3rem 0;
+}
+
+.divider--side-pane-size {
+  width: 100%;
+  margin: 2.5rem 3rem 2.5rem 0;
+}
+
+.divider--side-pane-size-small {
+  width: 100%;
+  margin: 1.3rem 3rem 1.3rem 0;
+}
+
+.divider--advanced-order-side-pane-size {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.divider--advanced-order-side-pane-size-small {
+  width: 100%;
+  margin: 1rem 0;
+}

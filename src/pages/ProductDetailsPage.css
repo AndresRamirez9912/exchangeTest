@@ -1,0 +1,71 @@
+.product-details-page__container {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.product-details-page__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.product-details-page__menu {
+  display: flex;
+  flex-direction: column;
+  border-right: var(--component__border);
+  background: var(--secondary__bg-color);
+}
+ 
+.product-details-page__content .activity:not(.activity__body) {
+  margin: 0 var(--wallet-details__body-margin);
+  margin-bottom: var(--wallet-details__body-margin);
+  width: var(--wallet-details__body-width);
+}
+
+.product-details-page__wallet-details,
+.product-details-page__transfers {
+  margin: 0 var(--wallet-details__body-margin) var(--wallet-details__body-margin);
+}
+
+.product-details-page__wallet-details {
+  margin-top: var(--wallet-details__body-margin);
+}
+
+.product-details-page__transfers-header {
+  display: flex;
+  padding: 0rem 1.5rem 0rem 3.5rem;
+  line-height: 7rem;
+  justify-content: space-between;
+  background: var(--nav-header__bg-color);
+  border-bottom: 2px solid var(--component__border-color--glow);
+  font-size: 2rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+  .product-details-page__content .activity:not(.activity__body) {
+    width: auto;
+    margin: 0;
+    border-radius: 0;
+    border-top: 2px solid var(--border__color);
+    box-shadow: none;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .product-details-page__container {
+    flex-direction: column;
+  }
+
+  .product-details-page__content {
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+}

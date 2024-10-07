@@ -1,0 +1,81 @@
+.nav-menu-vertical {
+  background: var(--sidebar-nav-background);
+}
+
+.nav-menu-vertical__list {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: auto;
+  flex-direction: column;
+}
+
+.nav-menu-vertical__list li {
+  display: flex;
+  border-bottom: solid 1px var(--border__color);
+}
+
+.nav-menu-vertical__list li:last-child {
+  border-bottom: solid 0.5px var(--border__color);
+}
+
+.nav-menu-vertical__item {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  border-left: solid 4px transparent;
+  padding: 0 2rem 0 1.75rem;
+  cursor: pointer;
+  width: var(--side-menu__item-width);
+  height: var(--side-menu__item-height);
+  color: var(--font__color-secondary);
+}
+
+.nav-menu-vertical__item-icon {
+  margin-right: 25px;
+}
+
+.nav-menu-vertical__item:hover {
+  color: var(--font__color-primary);
+  background: var(--side-menu__item-bg-color--selected);
+  border-left-color: var(--side-menu__item-accent-color);
+}
+
+.nav-menu-vertical__item.active,
+.nav-menu-vertical__item.active:hover {
+  color: var(--font__color-primary);
+  background: var(--side-menu__item-bg-color--selected);
+  border-left-color: var(--side-menu__item-accent-color--selected);
+}
+
+/* MEDIA QUERIES */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .nav-menu-vertical__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-menu-vertical__list li {
+    list-style-type: none;
+    flex: 1 0 auto;
+  }
+
+  .nav-menu-vertical__item {
+    flex:unset;
+    width: auto;
+    border-left: 0;
+    border-right: 1px solid var(--border__color);
+    border-bottom: solid 4px transparent;
+  }
+
+  .nav-menu-vertical__item:hover {
+    border-bottom-color: var(--side-menu__item-accent-color);
+  }
+
+  .nav-menu-vertical__item.active,
+  .nav-menu-vertical__item.active:hover {
+    border-bottom-color: var(--side-menu__item-accent-color--selected);
+  }
+}

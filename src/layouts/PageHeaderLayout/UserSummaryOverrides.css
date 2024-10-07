@@ -1,0 +1,62 @@
+.user-summary__container {
+    width: unset;
+    min-width: unset;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.page-header-user-summary__user-info-container{
+    padding: 0 2.6rem;
+}
+
+.user-summary__username-in-display{
+    padding-right: 2.1rem;
+    color: var(--font__color-primary);
+}
+
+.user-summary__icon {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+/* Medium Devices, Tablets */
+@media only screen and (max-width: 1024px) {
+    .user-summary__username-in-display{
+        padding-right: 1.3rem;
+    }
+
+    .user-summary__username-in-display {
+        display: block;
+    }
+
+    .user-summary__popover-menu-trigger-triangle {
+        display: block;
+    }
+}
+
+/* Small Devices, Phones */
+@media only screen and (max-width: 720px) {
+
+    .user-summary__container {
+        border-left: 1px solid var(--user-summary__border-color);
+        width: auto;
+        min-width: 6rem;
+    }
+
+    .page-header-user-summary__user-info-container{
+        padding: 0;
+    }
+
+    .user-summary__username-in-display {
+        display: none;
+    }
+
+    .user-summary__popover-menu-trigger-triangle {
+        display: none;
+    }
+
+    .user-summary__icon {
+        display: block;
+    }
+}

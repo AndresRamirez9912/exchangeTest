@@ -1,0 +1,90 @@
+.ap-button__btn {
+  font-size: 1.1rem;
+  display: inline-block;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 1rem;
+  border: 1px solid transparent;
+  color: var(--font__color-primary);
+  white-space: nowrap;
+}
+
+/* general */
+.ap-button__btn--general {
+  color: var(--general__color);
+  background: var(--general__bg-color);
+}
+
+.ap-button__btn--general:hover {
+  background: var(--general__bg-color--hover);
+}
+
+.ap-button__btn--general:focus {
+  background: var(--general__bg-color--focus);
+  border: solid 1px var(--general__border-color--focus);
+}
+
+/* additive button */
+.ap-button__btn--additive {
+  background: var(--success__bg-color);
+}
+
+.ap-button__btn--additive:hover {
+  background: var(--success__bg-color--hover);
+}
+
+.ap-button__btn--additive:focus {
+  background: var(--success__bg-color--focus);
+  border: solid 1px var(--success__border-color--focus);
+}
+
+/* subtractive button */
+.ap-button__btn--subtractive {
+  background: var(--danger__bg-color);
+}
+
+.ap-button__btn--subtractive:hover {
+  background: var(--danger__bg-color--hover);
+}
+
+.ap-button__btn--subtractive:focus {
+  background: var(--danger__bg-color--focus);
+  border: solid 1px var(--danger__border-color--focus);
+}
+
+/* warning button */
+.ap-button__btn--subtractive {
+  background: var(--danger__bg-color);
+}
+
+.ap-button__btn--subtractive:hover {
+  background: var(--danger__bg-color--hover);
+}
+
+.ap-button__btn--subtractive:focus {
+  background: var(--danger__bg-color--focus);
+  border: solid 1px var(--danger__border-color--focus);
+}
+
+/* disabled */
+.ap-button__btn--disabled,
+.ap-button__btn--disabled:hover,
+.ap-button__btn--disabled:focus,
+.ap-button__btn:disabled,
+.ap-button__btn:disabled:hover {
+  color: var(--input__color--disabled);
+  background: var(--input__bg-color--disabled);
+  cursor: not-allowed;
+}
+
+/* media */
+@media (max-width: 576px) {
+  .ap-button__btn {
+    font-size: 1.3rem;
+    height: 4rem;
+    line-height: 4rem;
+  }
+}

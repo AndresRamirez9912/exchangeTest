@@ -1,0 +1,94 @@
+.component-exhibit-page__header {
+  z-index: var(--z-index__header);
+}
+
+.component-exhibit-page__container {
+  display: flex;
+  flex: 1 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.component-exhibit-page__accent-bar {
+  visibility: hidden;
+  height: 21.5rem;
+  margin-bottom: -21.5rem;
+  background-image: var(--accent-bar__gradient);
+  width: 100%;
+  flex-shrink: 0;
+  display: var(--settings__accent-bar-display);
+}
+
+.component-exhibit-page__main {
+  width: calc(100% - var(--side-menu__item-width) - 5rem);
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: calc(var(--side-menu__item-width) + 5rem);
+}
+
+.component-exhibit-page__side-bar {
+  display: flex;
+  flex-direction: column;
+  border-right: var(--component__border);
+  background: white;
+  overflow-y: scroll;
+  position: fixed;
+  padding-top: var(--nav-header__height);
+  bottom:0;
+  z-index: 298;
+  height: 100vh;
+}
+
+.component-exhibit-page__footer {
+  flex-shrink: 0;
+}
+
+/* Balance menu */
+
+.balances-menu__item {
+  width: auto;
+}
+
+/* Order Entry */ 
+.advanced-order-form__body .form-control {
+  width: 22rem;
+}
+
+.advanced-order-form__body .ap-select__triangles-container {
+  right: .75rem;
+}
+
+.report-block-trade-form__main-section .form-control,
+.report-block-trade-form__inputs-container .form-control {
+  width: 22rem;
+}
+
+.report-block-trade-form__main-section .ap-select__triangles-container {
+  right: .75rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 768px) {
+  .component-exhibit-page__container {
+    flex-direction: column;
+  }
+
+  .component-exhibit-page__main {
+    flex-direction: column;
+    flex: 1 0 auto;
+    width: auto;
+    margin:3rem;
+  }
+
+  .component-exhibit-page__side-bar {
+    background: none;
+    position: relative;
+    padding-top: unset;
+    bottom: unset;
+    height: auto;
+  }
+}

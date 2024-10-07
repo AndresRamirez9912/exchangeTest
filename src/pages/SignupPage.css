@@ -1,0 +1,23 @@
+.signup-page__container {
+  border-radius: 10px;
+}
+
+.signup-page__header {
+  height: 6.8rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 2px solid var(--standalone-form__header-border-color);
+}
+
+.signup-page__header-text {
+  font-size: 2rem;
+}
+
+.signup-page__footer {
+  padding: 0 2.8rem;
+  margin: 0;
+}
+
+.signup-page__link {
+  font-size: 1.2rem;
+}
